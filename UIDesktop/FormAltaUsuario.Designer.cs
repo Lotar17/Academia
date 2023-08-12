@@ -31,14 +31,18 @@
             btnCancelar = new Button();
             btnAceptar = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            txt_userName = new TextBox();
+            txt_pass = new TextBox();
+            txt_Name = new TextBox();
+            txt_lastName = new TextBox();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            txt_Email = new TextBox();
+            label6 = new Label();
+            label7 = new Label();
+            txt_idPersona = new TextBox();
             SuspendLayout();
             // 
             // btnCancelar
@@ -48,10 +52,9 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(228, 445);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(200, 334);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(162, 75);
+            btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 0;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -64,13 +67,13 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(508, 445);
-            btnAceptar.Margin = new Padding(3, 4, 3, 4);
+            btnAceptar.Location = new Point(444, 334);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(162, 75);
+            btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 1;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // label1
             // 
@@ -78,47 +81,45 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(236, 117);
+            label1.Location = new Point(137, 87);
             label1.Name = "label1";
-            label1.Size = new Size(53, 20);
+            label1.Size = new Size(131, 17);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "Nombre de Usuario";
+            label1.Click += label1_Click;
             // 
-            // textBox1
+            // txt_userName
             // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(313, 113);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(356, 27);
-            textBox1.TabIndex = 3;
+            txt_userName.Anchor = AnchorStyles.None;
+            txt_userName.Location = new Point(274, 85);
+            txt_userName.Name = "txt_userName";
+            txt_userName.Size = new Size(312, 23);
+            txt_userName.TabIndex = 3;
             // 
-            // textBox2
+            // txt_pass
             // 
-            textBox2.Anchor = AnchorStyles.None;
-            textBox2.Location = new Point(313, 166);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(356, 27);
-            textBox2.TabIndex = 4;
+            txt_pass.Anchor = AnchorStyles.None;
+            txt_pass.Location = new Point(274, 124);
+            txt_pass.Name = "txt_pass";
+            txt_pass.Size = new Size(312, 23);
+            txt_pass.TabIndex = 4;
+            txt_pass.UseSystemPasswordChar = true;
             // 
-            // textBox3
+            // txt_Name
             // 
-            textBox3.Anchor = AnchorStyles.None;
-            textBox3.Location = new Point(313, 218);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(356, 27);
-            textBox3.TabIndex = 5;
+            txt_Name.Anchor = AnchorStyles.None;
+            txt_Name.Location = new Point(274, 164);
+            txt_Name.Name = "txt_Name";
+            txt_Name.Size = new Size(312, 23);
+            txt_Name.TabIndex = 5;
             // 
-            // textBox4
+            // txt_lastName
             // 
-            textBox4.Anchor = AnchorStyles.None;
-            textBox4.Location = new Point(313, 270);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(356, 27);
-            textBox4.TabIndex = 6;
+            txt_lastName.Anchor = AnchorStyles.None;
+            txt_lastName.Location = new Point(274, 202);
+            txt_lastName.Name = "txt_lastName";
+            txt_lastName.Size = new Size(312, 23);
+            txt_lastName.TabIndex = 6;
             // 
             // label2
             // 
@@ -126,11 +127,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gainsboro;
-            label2.Location = new Point(236, 170);
+            label2.Location = new Point(191, 124);
             label2.Name = "label2";
-            label2.Size = new Size(53, 20);
+            label2.Size = new Size(43, 17);
             label2.TabIndex = 7;
-            label2.Text = "label2";
+            label2.Text = "Clave";
             // 
             // label3
             // 
@@ -138,11 +139,11 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gainsboro;
-            label3.Location = new Point(236, 222);
+            label3.Location = new Point(191, 164);
             label3.Name = "label3";
-            label3.Size = new Size(53, 20);
+            label3.Size = new Size(58, 17);
             label3.TabIndex = 8;
-            label3.Text = "label3";
+            label3.Text = "Nombre";
             // 
             // label4
             // 
@@ -150,42 +151,85 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gainsboro;
-            label4.Location = new Point(236, 274);
+            label4.Location = new Point(191, 204);
             label4.Name = "label4";
-            label4.Size = new Size(53, 20);
+            label4.Size = new Size(58, 17);
             label4.TabIndex = 9;
-            label4.Text = "label4";
+            label4.Text = "Apellido";
             // 
             // label5
             // 
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
-            label5.Font = new Font("Copperplate Gothic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(52, 22);
+            label5.Location = new Point(46, 16);
             label5.Name = "label5";
-            label5.Size = new Size(285, 34);
+            label5.Size = new Size(176, 29);
             label5.TabIndex = 10;
             label5.Text = "Alta de Usuario";
             // 
+            // txt_Email
+            // 
+            txt_Email.Anchor = AnchorStyles.None;
+            txt_Email.Location = new Point(274, 240);
+            txt_Email.Name = "txt_Email";
+            txt_Email.Size = new Size(312, 23);
+            txt_Email.TabIndex = 11;
+            // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.None;
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Gainsboro;
+            label6.Location = new Point(191, 242);
+            label6.Name = "label6";
+            label6.Size = new Size(42, 17);
+            label6.TabIndex = 12;
+            label6.Text = "Email";
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.None;
+            label7.AutoSize = true;
+            label7.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.Gainsboro;
+            label7.Location = new Point(171, 279);
+            label7.Name = "label7";
+            label7.Size = new Size(78, 17);
+            label7.TabIndex = 13;
+            label7.Text = "ID Persona";
+            // 
+            // txt_idPersona
+            // 
+            txt_idPersona.Anchor = AnchorStyles.None;
+            txt_idPersona.Location = new Point(274, 277);
+            txt_idPersona.Name = "txt_idPersona";
+            txt_idPersona.Size = new Size(312, 23);
+            txt_idPersona.TabIndex = 14;
+            // 
             // FormAltaUsuario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(888, 558);
+            ClientSize = new Size(777, 418);
+            Controls.Add(txt_idPersona);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(txt_Email);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txt_lastName);
+            Controls.Add(txt_Name);
+            Controls.Add(txt_pass);
+            Controls.Add(txt_userName);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormAltaUsuario";
             Text = "Alta de Usuario";
             ResumeLayout(false);
@@ -197,13 +241,17 @@
         private Button btnCancelar;
         private Button btnAceptar;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txt_userName;
+        private TextBox txt_pass;
+        private TextBox txt_Name;
+        private TextBox txt_lastName;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
+        private TextBox txt_Email;
+        private Label label6;
+        private Label label7;
+        private TextBox txt_idPersona;
     }
 }

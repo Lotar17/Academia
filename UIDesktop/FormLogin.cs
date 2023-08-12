@@ -73,8 +73,8 @@ namespace AcademiaDesktop
             {
                 if (txtPass.Text != "Contraseña")
                 {
-                    UsuarioModelo usuario = new UsuarioModelo();
-                    var loginValido = usuario.LoginUsuario(txtUser.Text, txtPass.Text);
+                    Controller controller = new Controller();
+                    var loginValido = controller.LoginUsuario(txtUser.Text, txtPass.Text);
                     if (loginValido)
                     {
                         FormMenu menu = new FormMenu();

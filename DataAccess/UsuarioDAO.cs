@@ -34,5 +34,34 @@ namespace DataAccess
                 }
             }
         }
+
+        public bool create_user(string nombreUsuario)
+        {
+            return false;
+        }
+
+        public bool verificarUser (int idPersona)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.Parameters.AddWithValue ("id", idPersona);
+                    command.CommandText = "SELECT * FROM usuarios WHERE id_persona = @id";
+                    command.CommandType = CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
     }
 }
