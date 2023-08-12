@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "restore": {
+    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj": {}
+  },
+  "projects": {
+    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
+        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj",
+        "projectName": "Dominio",
+        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
+        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj",
+        "projectName": "UIDesktop",
+        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj",
+        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
+        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj": {
+                "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "FontAwesome.Sharp": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

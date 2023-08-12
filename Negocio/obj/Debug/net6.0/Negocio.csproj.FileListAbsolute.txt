@@ -1,0 +1,15 @@
+C:\NET\Academia\Negocio\bin\Debug\net6.0\Negocio.deps.json
+C:\NET\Academia\Negocio\bin\Debug\net6.0\Negocio.dll
+C:\NET\Academia\Negocio\bin\Debug\net6.0\Negocio.pdb
+C:\NET\Academia\Negocio\bin\Debug\net6.0\DataAccess.dll
+C:\NET\Academia\Negocio\bin\Debug\net6.0\DataAccess.pdb
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.csproj.AssemblyReference.cache
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.AssemblyInfoInputs.cache
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.AssemblyInfo.cs
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.csproj.CoreCompileInputs.cache
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.csproj.CopyComplete
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.dll
+C:\NET\Academia\Negocio\obj\Debug\net6.0\refint\Negocio.dll
+C:\NET\Academia\Negocio\obj\Debug\net6.0\Negocio.pdb
+C:\NET\Academia\Negocio\obj\Debug\net6.0\ref\Negocio.dll
