@@ -79,3 +79,5 @@ L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\refint\UIDe
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.pdb
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.genruntimeconfig.cache
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\ref\UIDesktop.dll
+L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.dll
+L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.pdb

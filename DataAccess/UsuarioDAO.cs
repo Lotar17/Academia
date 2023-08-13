@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using Entities;
 
 
 namespace DataAccess
@@ -35,8 +36,31 @@ namespace DataAccess
             }
         }
 
-        public bool create_user(string nombreUsuario)
+        public bool create_user(Usuario usuario, int idPersona)
         {
+            using(var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.Parameters.AddWithValue("@nombre_usuario", usuario.NombreUsuario);
+                    command.Parameters.AddWithValue("@clave", usuario.Clave);
+                    command.Parameters.AddWithValue("@habilitado", usuario.Habilitado);
+                    command.Parameters.AddWithValue("@nombre", usuario.Nombre);
+                    command.Parameters.AddWithValue("@apellido", usuario.Apellido);
+                    command.Parameters.AddWithValue("@email", usuario.Email);
+                    command.Parameters.AddWithValue("@idPersona", idPersona);
+                    command.CommandText =
+                        "INSERT INTO usuarios(nombre_usuario,clave,habilitado,nombre,apellido,email, id_persona) VALUES (@nombre_usuario,@clave,@habilitado,@nombre,@apellido,@email, @idPersona)";
+                    command.CommandType = CommandType.Text;
+                    int filasAfectadas = command.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        return true;
+                    }
+                }
+            }
             return false;
         }
 

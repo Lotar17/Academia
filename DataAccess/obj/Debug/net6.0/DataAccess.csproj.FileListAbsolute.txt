@@ -22,3 +22,6 @@ L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.dll
 L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
 L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\Entities.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\Entities.pdb
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete

@@ -100,6 +100,7 @@
       "System.Security.Principal.Windows/4.7.0": {},
       "DataAccess/1.0.0": {
         "dependencies": {
+          "Entities": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
@@ -108,10 +109,16 @@
       },
       "Dominio/1.0.0": {
         "dependencies": {
-          "DataAccess": "1.0.0"
+          "DataAccess": "1.0.0",
+          "Entities": "1.0.0"
         },
         "runtime": {
           "Dominio.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "runtime": {
+          "Entities.dll": {}
         }
       }
     }
@@ -198,6 +205,11 @@
       "sha512": ""
     },
     "Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
