@@ -33,7 +33,7 @@ namespace Academia
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             var nuevo = false;
-            if (txt_Name.Text is not null && txt_lastName.Text is not null && txt_userName.Text is not null && txt_Email.Text is not null && txt_idPersona.Text is not null && txt_pass.Text is not null && cbx_Habilitado.Text is not null)
+            if (txt_userName.Text is not null && txt_idPersona.Text is not null && txt_pass.Text is not null && cbx_Habilitado.Text is not null)
             {
                 Controller controller = new Controller();
                 if (controller.verificarUsuario(int.Parse(txt_idPersona.Text)))
@@ -48,18 +48,18 @@ namespace Academia
                 {
                     if (cbx_Habilitado.Text == "Si")
                     {
-                        Usuario usuario = new Usuario(txt_lastName.Text, txt_pass.Text, txt_Email.Text, true, txt_Name.Text, txt_userName.Text);
+                        Usuario usuario = new Usuario(txt_pass.Text, true, txt_userName.Text);
                         nuevo = controller.newUser(usuario, int.Parse(txt_idPersona.Text));
                     }
                     else
                     {
-                        Usuario usuario = new Usuario(txt_lastName.Text, txt_pass.Text, txt_Email.Text, false, txt_Name.Text, txt_userName.Text);
+                        Usuario usuario = new Usuario(txt_pass.Text, false, txt_userName.Text);
                         nuevo = controller.newUser(usuario, int.Parse(txt_idPersona.Text));
                     }
                     if (nuevo)
                     {
                         MessageBox.Show("Usuario cargado con exito");
-                        txt_Name.Text = txt_pass.Text = txt_userName.Text = txt_lastName.Text = txt_Email.Text = cbx_Habilitado.Text = txt_idPersona.Text = null;
+                        txt_pass.Text = txt_userName.Text = cbx_Habilitado.Text = txt_idPersona.Text = null;
                     }
                 }
             }

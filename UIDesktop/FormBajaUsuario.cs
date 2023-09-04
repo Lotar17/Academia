@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dominio;
+using Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,13 @@ namespace Academia
         public FormBajaUsuario()
         {
             InitializeComponent();
+            Controller ctrlBaja = new Controller();
+            dtgv_BajaUsuario.DataSource = ctrlBaja.GetUsuarios;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

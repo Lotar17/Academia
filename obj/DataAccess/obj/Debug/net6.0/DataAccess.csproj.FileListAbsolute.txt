@@ -1,0 +1,42 @@
+C:\NET\Academia\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\NET\Academia\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\NET\Academia\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\NET\Academia\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\Entities.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\Entities.pdb
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\NET\Academia-main\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\NET\Academia-main\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\NET\Academia-main\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\NET\Academia-main\DataAccess\bin\Debug\net6.0\Entities.dll
+C:\NET\Academia-main\DataAccess\bin\Debug\net6.0\Entities.pdb
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\NET\Academia-main\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

@@ -33,5 +33,10 @@ namespace Dominio
         {
             return personaDAO.getOne(idPersona);
         }
+
+        public LinkedList<Usuario> GetUsuarios()
+        {
+            return usuarioDAO.getAll();
+        }
     }
 }

@@ -28,114 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label1 = new Label();
             btnAceptar = new Button();
             btnCancelar = new Button();
+            dtgv_BajaUsuario = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            nombre_usuario = new DataGridViewTextBoxColumn();
+            Habilitado = new DataGridViewTextBoxColumn();
+            id_persona = new DataGridViewTextBoxColumn();
+            controllerBindingSource = new BindingSource(components);
+            ((System.ComponentModel.ISupportInitialize)dtgv_BajaUsuario).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)controllerBindingSource).BeginInit();
             SuspendLayout();
             // 
             // label5
             // 
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
-            label5.Font = new Font("Copperplate Gothic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(85, 30);
+            label5.Location = new Point(74, 22);
             label5.Name = "label5";
-            label5.Size = new Size(287, 34);
+            label5.Size = new Size(184, 29);
             label5.TabIndex = 21;
             label5.Text = "Baja de Usuario";
-            // 
-            // label4
-            // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Gainsboro;
-            label4.Location = new Point(224, 276);
-            label4.Name = "label4";
-            label4.Size = new Size(53, 20);
-            label4.TabIndex = 20;
-            label4.Text = "label4";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Gainsboro;
-            label3.Location = new Point(224, 224);
-            label3.Name = "label3";
-            label3.Size = new Size(53, 20);
-            label3.TabIndex = 19;
-            label3.Text = "label3";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Gainsboro;
-            label2.Location = new Point(224, 172);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 20);
-            label2.TabIndex = 18;
-            label2.Text = "label2";
-            // 
-            // textBox4
-            // 
-            textBox4.Anchor = AnchorStyles.None;
-            textBox4.Location = new Point(301, 272);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(356, 27);
-            textBox4.TabIndex = 17;
-            // 
-            // textBox3
-            // 
-            textBox3.Anchor = AnchorStyles.None;
-            textBox3.Location = new Point(301, 220);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(356, 27);
-            textBox3.TabIndex = 16;
-            // 
-            // textBox2
-            // 
-            textBox2.Anchor = AnchorStyles.None;
-            textBox2.Location = new Point(301, 168);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(356, 27);
-            textBox2.TabIndex = 15;
-            // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(301, 115);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(356, 27);
-            textBox1.TabIndex = 14;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(224, 119);
-            label1.Name = "label1";
-            label1.Size = new Size(53, 20);
-            label1.TabIndex = 13;
-            label1.Text = "label1";
             // 
             // btnAceptar
             // 
@@ -144,10 +61,9 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(496, 447);
-            btnAceptar.Margin = new Padding(3, 4, 3, 4);
+            btnAceptar.Location = new Point(434, 335);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(162, 75);
+            btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 12;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -159,34 +75,65 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(216, 447);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(189, 335);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(162, 75);
+            btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 11;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // dtgv_BajaUsuario
+            // 
+            dtgv_BajaUsuario.Anchor = AnchorStyles.None;
+            dtgv_BajaUsuario.AutoGenerateColumns = false;
+            dtgv_BajaUsuario.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgv_BajaUsuario.Columns.AddRange(new DataGridViewColumn[] { ID, nombre_usuario, Habilitado, id_persona });
+            dtgv_BajaUsuario.DataSource = controllerBindingSource;
+            dtgv_BajaUsuario.Location = new Point(172, 80);
+            dtgv_BajaUsuario.Name = "dtgv_BajaUsuario";
+            dtgv_BajaUsuario.RowTemplate.Height = 25;
+            dtgv_BajaUsuario.Size = new Size(443, 205);
+            dtgv_BajaUsuario.TabIndex = 22;
+            dtgv_BajaUsuario.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            // 
+            // nombre_usuario
+            // 
+            nombre_usuario.HeaderText = "Nombre de Usuario";
+            nombre_usuario.Name = "nombre_usuario";
+            // 
+            // Habilitado
+            // 
+            Habilitado.HeaderText = "Habilitado";
+            Habilitado.Name = "Habilitado";
+            // 
+            // id_persona
+            // 
+            id_persona.HeaderText = "ID Persona";
+            id_persona.Name = "id_persona";
+            // 
+            // controllerBindingSource
+            // 
+            controllerBindingSource.DataSource = typeof(Dominio.Controller);
+            // 
             // FormBajaUsuario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(888, 558);
+            ClientSize = new Size(777, 418);
+            Controls.Add(dtgv_BajaUsuario);
             Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormBajaUsuario";
             Text = "Baja de Usuario";
+            ((System.ComponentModel.ISupportInitialize)dtgv_BajaUsuario).EndInit();
+            ((System.ComponentModel.ISupportInitialize)controllerBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,15 +141,13 @@
         #endregion
 
         private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Label label1;
         private Button btnAceptar;
         private Button btnCancelar;
+        private DataGridView dtgv_BajaUsuario;
+        private BindingSource controllerBindingSource;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn nombre_usuario;
+        private DataGridViewTextBoxColumn Habilitado;
+        private DataGridViewTextBoxColumn id_persona;
     }
 }

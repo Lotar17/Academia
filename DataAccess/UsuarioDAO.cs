@@ -47,12 +47,9 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@nombre_usuario", usuario.NombreUsuario);
                     command.Parameters.AddWithValue("@clave", usuario.Clave);
                     command.Parameters.AddWithValue("@habilitado", usuario.Habilitado);
-                    command.Parameters.AddWithValue("@nombre", usuario.Nombre);
-                    command.Parameters.AddWithValue("@apellido", usuario.Apellido);
-                    command.Parameters.AddWithValue("@email", usuario.Email);
                     command.Parameters.AddWithValue("@idPersona", idPersona);
                     command.CommandText =
-                        "INSERT INTO usuarios(nombre_usuario,clave,habilitado,nombre,apellido,email, id_persona) VALUES (@nombre_usuario,@clave,@habilitado,@nombre,@apellido,@email, @idPersona)";
+                        "INSERT INTO usuarios(nombre_usuario,clave,habilitado,id_persona) VALUES (@nombre_usuario,@clave,@habilitado,@idPersona)";
                     command.CommandType = CommandType.Text;
                     int filasAfectadas = command.ExecuteNonQuery();
                     if (filasAfectadas > 0)
@@ -86,6 +83,32 @@ namespace DataAccess
                     }
                 }
             }
+        }
+
+        public LinkedList<Usuario> getAll()
+        {
+            LinkedList<Usuario> usuarios = new LinkedList<Usuario>();
+            using (var connection = GetConnection())
+            {
+                connection.Open ();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * FROM usuarios";
+                    command.CommandType = CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader ();
+                    while(reader.HasRows)
+                    {
+                        int id = reader.GetInt32("id");
+                        string nombreUsuario = reader.GetString("nombre_usuario");
+                        bool habilitado = reader.GetBoolean("habilitado");
+                        int idPersona = reader.GetInt32 ("id_persona");
+                        Usuario usuario = new Usuario(id, nombreUsuario, habilitado, idPersona);
+                        usuarios.AddLast(usuario);
+                    }
+                }
+            }
+            return usuarios;
         }
     }
 }

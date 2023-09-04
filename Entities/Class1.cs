@@ -6,22 +6,27 @@ namespace Entities
 {
     public class Usuario
     {
-        private string _Apellido;
         private string _Clave;
-        private string _Email;
         private bool _Habilitado;
-        private string _Nombre;
         private string _NombreUsuario;
+        private int _Id;
+        private int _IdPersona;
 
-        public Usuario(string apellido, string clave, string email, bool habilitado, string nombre, string nombreUsuario) 
+        public Usuario(string clave, bool habilitado, string nombreUsuario) 
         {
-           this.Apellido = apellido;
            this.Clave = clave;
-           this.Email = email;
            this.Habilitado = habilitado;
-           this.Nombre = nombre;
            this.NombreUsuario = nombreUsuario;
         }
+
+        public Usuario(int id, string nombreUsuario, bool habilitado, int idPersona)
+        {
+            this.Id = id;
+            this.Habilitado = habilitado;
+            this.NombreUsuario = nombreUsuario;
+            this.IdPersona = idPersona;
+        }
+
 
         static string CalculateSHA256(string input)
         {
@@ -44,22 +49,10 @@ namespace Entities
         }
 
 
-        public string Apellido
-        {
-            get { return _Apellido; }
-            set { _Apellido = value; }
-        }
-
         public string Clave
         {
             get { return _Clave; }
             set { _Clave = CalculateSHA256(value); }
-        }
-
-        public string Email
-        {
-            get { return _Email; }
-            set { _Email = value; }
         }
 
         public bool Habilitado
@@ -68,16 +61,22 @@ namespace Entities
             set { _Habilitado = value; }
         }
 
-        public string Nombre
-        {
-            get { return _Nombre; }
-            set { _Nombre = value; }
-        }
-
         public string NombreUsuario
         {
             get { return _NombreUsuario; }
             set { _NombreUsuario = value; }
+        }
+
+        public int Id
+        {
+            get { return _Id; }
+            set { _Id = value; }
+        }
+
+        public int IdPersona
+        {
+            get { return _IdPersona; }
+            set { _IdPersona = value; }
         }
     }
 }
