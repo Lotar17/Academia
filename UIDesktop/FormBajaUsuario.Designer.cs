@@ -85,10 +85,8 @@
             // dtgv_BajaUsuario
             // 
             dtgv_BajaUsuario.Anchor = AnchorStyles.None;
-            dtgv_BajaUsuario.AutoGenerateColumns = false;
             dtgv_BajaUsuario.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgv_BajaUsuario.Columns.AddRange(new DataGridViewColumn[] { ID, nombre_usuario, Habilitado, id_persona });
-            dtgv_BajaUsuario.DataSource = controllerBindingSource;
             dtgv_BajaUsuario.Location = new Point(172, 80);
             dtgv_BajaUsuario.Name = "dtgv_BajaUsuario";
             dtgv_BajaUsuario.RowTemplate.Height = 25;

@@ -97,12 +97,20 @@ namespace DataAccess
                     command.CommandText = "SELECT * FROM usuarios";
                     command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader ();
-                    while(reader.HasRows)
+                    while(reader.Read())
                     {
-                        int id = reader.GetInt32("id");
+                        int id = reader.GetInt32("id_usuario");
                         string nombreUsuario = reader.GetString("nombre_usuario");
                         bool habilitado = reader.GetBoolean("habilitado");
-                        int idPersona = reader.GetInt32 ("id_persona");
+                        int idPersona;
+                        if (reader.IsDBNull("id_persona"))
+                        {
+                            idPersona = 0;
+                        }
+                        else
+                        {
+                            idPersona = reader.GetInt32("id_persona");
+                        }
                         Usuario usuario = new Usuario(id, nombreUsuario, habilitado, idPersona);
                         usuarios.AddLast(usuario);
                     }

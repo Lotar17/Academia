@@ -18,7 +18,16 @@ namespace Academia
         {
             InitializeComponent();
             Controller ctrlBaja = new Controller();
-            dtgv_BajaUsuario.DataSource = ctrlBaja.GetUsuarios;
+            LinkedList<Usuario> usuarios = ctrlBaja.GetUsuarios();
+            foreach (Usuario u in usuarios)
+            {
+                // Agrega una nueva fila al DataGridView y obtiene su índice
+                int rowIndex = dtgv_BajaUsuario.Rows.Add();
+                dtgv_BajaUsuario.Rows[rowIndex].Cells["ID"].Value = u.Id;
+                dtgv_BajaUsuario.Rows[rowIndex].Cells["nombre_usuario"].Value = u.NombreUsuario;
+                dtgv_BajaUsuario.Rows[rowIndex].Cells["Habilitado"].Value = u.Habilitado;
+                dtgv_BajaUsuario.Rows[rowIndex].Cells["id_persona"].Value = u.IdPersona;
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
