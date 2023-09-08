@@ -39,6 +39,8 @@
             label1 = new Label();
             btnAceptar = new Button();
             btnCancelar = new Button();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label5
@@ -47,7 +49,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(67, 34);
+            label5.Location = new Point(153, 55);
             label5.Name = "label5";
             label5.Size = new Size(336, 36);
             label5.TabIndex = 21;
@@ -59,7 +61,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gainsboro;
-            label4.Location = new Point(240, 283);
+            label4.Location = new Point(56, 317);
             label4.Name = "label4";
             label4.Size = new Size(53, 20);
             label4.TabIndex = 20;
@@ -71,7 +73,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gainsboro;
-            label3.Location = new Point(240, 231);
+            label3.Location = new Point(56, 265);
             label3.Name = "label3";
             label3.Size = new Size(53, 20);
             label3.TabIndex = 19;
@@ -83,7 +85,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gainsboro;
-            label2.Location = new Point(240, 179);
+            label2.Location = new Point(56, 213);
             label2.Name = "label2";
             label2.Size = new Size(53, 20);
             label2.TabIndex = 18;
@@ -92,7 +94,7 @@
             // textBox4
             // 
             textBox4.Anchor = AnchorStyles.None;
-            textBox4.Location = new Point(317, 279);
+            textBox4.Location = new Point(133, 313);
             textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(356, 27);
@@ -101,7 +103,7 @@
             // textBox3
             // 
             textBox3.Anchor = AnchorStyles.None;
-            textBox3.Location = new Point(317, 227);
+            textBox3.Location = new Point(133, 261);
             textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(356, 27);
@@ -110,7 +112,7 @@
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.None;
-            textBox2.Location = new Point(317, 175);
+            textBox2.Location = new Point(133, 209);
             textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(356, 27);
@@ -119,7 +121,7 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(317, 122);
+            textBox1.Location = new Point(133, 156);
             textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(356, 27);
@@ -131,7 +133,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(240, 126);
+            label1.Location = new Point(56, 160);
             label1.Name = "label1";
             label1.Size = new Size(53, 20);
             label1.TabIndex = 13;
@@ -144,7 +146,7 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(520, 422);
+            btnAceptar.Location = new Point(606, 443);
             btnAceptar.Margin = new Padding(3, 4, 3, 4);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(162, 75);
@@ -159,7 +161,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(240, 422);
+            btnCancelar.Location = new Point(326, 443);
             btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(162, 75);
@@ -167,12 +169,23 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(545, 149);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(300, 188);
+            dataGridView1.TabIndex = 22;
+            // 
             // FormModificacionUsuarios
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(888, 558);
+            ClientSize = new Size(1061, 600);
+            Controls.Add(dataGridView1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -186,6 +199,7 @@
             Controls.Add(btnCancelar);
             Name = "FormModificacionUsuarios";
             Text = "FormModificacionUsuarios";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -203,5 +217,6 @@
         private Label label1;
         private Button btnAceptar;
         private Button btnCancelar;
+        private DataGridView dataGridView1;
     }
 }
