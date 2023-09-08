@@ -19,24 +19,29 @@ namespace Dominio
             return usuarioDAO.Login(nombre_usuario, clave);
         }
 
-        public bool verificarUsuario(int idPersona)
+        public bool crearUsuario(Usuario usuario, int idPersona)
         {
-            return usuarioDAO.verificarUser(idPersona);
+            return usuarioDAO.createUser(usuario, idPersona);
         }
 
-        public bool newUser(Usuario usuario, int idPersona)
+        public bool borrarUsuario(int idUsuario)
         {
-            return usuarioDAO.create_user(usuario, idPersona);
-        }
-
-        public bool verificarPersona(int idPersona)
-        {
-            return personaDAO.getOne(idPersona);
+            return usuarioDAO.deleteUser(idUsuario);
         }
 
         public LinkedList<Usuario> GetUsuarios()
         {
             return usuarioDAO.getAll();
+        }
+
+        public bool verificarUsuarioPersona(int idPersona)
+        {
+            return usuarioDAO.getUsuario_Persona(idPersona);
+        }
+
+        public bool verificarPersona(int idPersona)
+        {
+            return personaDAO.getOne(idPersona);
         }
     }
 }

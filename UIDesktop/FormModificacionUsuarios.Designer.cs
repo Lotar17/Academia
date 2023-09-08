@@ -45,11 +45,11 @@
             // 
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
-            label5.Font = new Font("Copperplate Gothic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
             label5.Location = new Point(67, 34);
             label5.Name = "label5";
-            label5.Size = new Size(428, 34);
+            label5.Size = new Size(336, 36);
             label5.TabIndex = 21;
             label5.Text = "Modificacion de Usuario";
             // 

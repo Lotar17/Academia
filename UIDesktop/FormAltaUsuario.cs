@@ -25,18 +25,13 @@ namespace Academia
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             var nuevo = false;
             if (txt_userName.Text is not null && txt_idPersona.Text is not null && txt_pass.Text is not null && cbx_Habilitado.Text is not null)
             {
                 Controller controller = new Controller();
-                if (controller.verificarUsuario(int.Parse(txt_idPersona.Text)))
+                if (controller.verificarUsuarioPersona(int.Parse(txt_idPersona.Text)))
                 {
                     mensajeError("Ya hay un usuario que tiene esa persona asignada");
                 }
@@ -49,12 +44,12 @@ namespace Academia
                     if (cbx_Habilitado.Text == "Si")
                     {
                         Usuario usuario = new Usuario(txt_pass.Text, true, txt_userName.Text);
-                        nuevo = controller.newUser(usuario, int.Parse(txt_idPersona.Text));
+                        nuevo = controller.crearUsuario(usuario, int.Parse(txt_idPersona.Text));
                     }
                     else
                     {
                         Usuario usuario = new Usuario(txt_pass.Text, false, txt_userName.Text);
-                        nuevo = controller.newUser(usuario, int.Parse(txt_idPersona.Text));
+                        nuevo = controller.crearUsuario(usuario, int.Parse(txt_idPersona.Text));
                     }
                     if (nuevo)
                     {
@@ -67,6 +62,7 @@ namespace Academia
             {
                 mensajeError("Debe llenar todos los campos para ingresar un nuevo usuario");
             }
+            this.Close();
         }
 
         private void mensajeError(string mensaje)
@@ -75,14 +71,5 @@ namespace Academia
             lblMensajeError.Visible = true;
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormAltaUsuario_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

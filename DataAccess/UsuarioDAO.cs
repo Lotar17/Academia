@@ -22,21 +22,27 @@ namespace DataAccess
                     command.Connection = connection;
                     command.Parameters.AddWithValue("@nombre_usuario", nombre_usuario);
                     command.Parameters.AddWithValue("@clave", clave);
-                    command.CommandText = "SELECT * FROM usuarios WHERE nombre_usuario = @nombre_usuario AND clave = @clave";
+                    command.CommandText = "SELECT * FROM usuarios u INNER JOIN personas p ON u.id_persona = p.id_persona WHERE nombre_usuario = @nombre_usuario AND clave = @clave";
                     command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
+                        while (reader.Read())
+                        {
+                            UsuarioLoginCache._IdUsuario = reader.GetInt32(0);  //guarda el usuario logeado actual en el cache
+                            UsuarioLoginCache._Nombre = reader.GetString(7);
+                            UsuarioLoginCache._Apellido = reader.GetString(8);
+                            UsuarioLoginCache._Email = reader.GetString(10);
+                            UsuarioLoginCache._TipoUsuario = reader.GetInt32(14);
+                        }
                         return true;
-                    } else
-                    {
-                        return false;
                     }
+                    return false;
                 }
             }
         }
 
-        public bool create_user(Usuario usuario, int idPersona)
+        public bool createUser(Usuario usuario, int idPersona)
         {
             using(var connection = GetConnection())
             {
@@ -61,7 +67,7 @@ namespace DataAccess
             return false;
         }
 
-        public bool verificarUser (int idPersona)
+        public bool deleteUser(int idUsuario)
         {
             using (var connection = GetConnection())
             {
@@ -69,18 +75,36 @@ namespace DataAccess
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.Parameters.AddWithValue ("id", idPersona);
-                    command.CommandText = "SELECT * FROM usuarios WHERE id_persona = @id";
+                    command.Parameters.AddWithValue("id", idUsuario);
+                    command.CommandText = "DELETE FROM usuarios WHERE id_usuario = @id";
+                    command.CommandType = CommandType.Text;
+                    int filasAfectadas = command.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        return true;
+                    }
+                    return false;
+                }
+            }
+        }
+
+        public bool getUsuario_Persona(int id)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.Parameters.AddWithValue("@id_persona", id);
+                    command.CommandText = "SELECT * FROM personas p INNER JOIN usuarios u ON p.id_persona = u.id_persona WHERE u.id_persona = @id_persona";
                     command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
                         return true;
                     }
-                    else
-                    {
-                        return false;
-                    }
+                    return false;
                 }
             }
         }
@@ -118,5 +142,6 @@ namespace DataAccess
             }
             return usuarios;
         }
+
     }
 }

@@ -1,4 +1,4 @@
-
+using Entities;
 using FontAwesome.Sharp;
 using UIDesktop;
 
@@ -13,12 +13,13 @@ namespace Academia
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7,60);
+            leftBorderBtn.Size = new Size(7, 60);
             panelSideMenu.Controls.Add(leftBorderBtn);
         }
 
         private void Academia_Load(object sender, EventArgs e)          //carga los dropdown
         {
+            loadUserData();
             DropdownUsuarios.IsMainMenu = true;
             DropdownAlumnos.IsMainMenu = true;
             DropdownEspecialidades.IsMainMenu = true;
@@ -31,17 +32,17 @@ namespace Academia
         private void ActivateButton(object senderBtn, Color color)      //efecto al presionar un boton del side menu
         {
             DisableButton();
-            if(senderBtn != null)
+            if (senderBtn != null)
             {
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37,36,81);
+                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
                 leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0,currentBtn.Location.Y);
+                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
             }
@@ -49,9 +50,9 @@ namespace Academia
 
         private void DisableButton()                                    //desabilita el efecto de algun boton que se haya tocado antes
         {
-            if(currentBtn != null)
+            if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(30,11,99);
+                currentBtn.BackColor = Color.FromArgb(30, 11, 99);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Gainsboro;
@@ -186,6 +187,13 @@ namespace Academia
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void loadUserData()
+        {
+            lblNombreApellido.Text = UsuarioLoginCache._Apellido + ", " + UsuarioLoginCache._Nombre;
+            lblEmail.Text = UsuarioLoginCache._Email;
+            lblTipoUsuario.Text = "Tipo de usuario: " + UsuarioLoginCache._TipoUsuario;
         }
     }
 }

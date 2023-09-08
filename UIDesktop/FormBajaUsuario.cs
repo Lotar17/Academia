@@ -14,9 +14,17 @@ namespace Academia
 {
     public partial class FormBajaUsuario : Form
     {
+        private int rowIndexToDelete;
+
         public FormBajaUsuario()
         {
             InitializeComponent();
+            retrieveUsuarios();
+        }
+
+        private void retrieveUsuarios()
+        {
+            dtgv_BajaUsuario.Rows.Clear();
             Controller ctrlBaja = new Controller();
             LinkedList<Usuario> usuarios = ctrlBaja.GetUsuarios();
             foreach (Usuario u in usuarios)
@@ -26,13 +34,23 @@ namespace Academia
                 dtgv_BajaUsuario.Rows[rowIndex].Cells["ID"].Value = u.Id;
                 dtgv_BajaUsuario.Rows[rowIndex].Cells["nombre_usuario"].Value = u.NombreUsuario;
                 dtgv_BajaUsuario.Rows[rowIndex].Cells["Habilitado"].Value = u.Habilitado;
-                dtgv_BajaUsuario.Rows[rowIndex].Cells["id_persona"].Value = u.IdPersona;
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgv_BajaUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            rowIndexToDelete = e.RowIndex;
+        }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (rowIndexToDelete >= 0)
+            {
+                int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
+                Controller controller = new Controller();
+                controller.borrarUsuario(idToDelete);
+                retrieveUsuarios();
+            }
         }
     }
 }

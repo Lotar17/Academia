@@ -81,3 +81,42 @@ L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.g
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\ref\UIDesktop.dll
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.dll
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\UIDesktop.exe
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\UIDesktop.deps.json
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\UIDesktop.runtimeconfig.json
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\UIDesktop.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\UIDesktop.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\DataAccess.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Dominio.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Dominio.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\DataAccess.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.csproj.AssemblyReference.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormAltaUsuario.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormBajaUsuario.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaUsuarios.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\AcademiaDesktop.FormLogin.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormMenu.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionUsuarios.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.Properties.Resources.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.csproj.GenerateResource.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.AssemblyInfoInputs.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.AssemblyInfo.cs
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.csproj.CoreCompileInputs.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.csproj.CopyComplete
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\refint\UIDesktop.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.genruntimeconfig.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\ref\UIDesktop.dll
+C:\NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.dll
+C:\NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.pdb

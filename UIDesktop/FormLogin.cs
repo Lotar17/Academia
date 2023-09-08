@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
 using Dominio;
+using Entities;
 
 namespace AcademiaDesktop
 {
@@ -77,6 +78,7 @@ namespace AcademiaDesktop
                     var loginValido = controller.LoginUsuario(txtUser.Text, txtPass.Text);
                     if (loginValido)
                     {
+                        MessageBox.Show("¡Bienvenido " + UsuarioLoginCache._Nombre + "!");
                         FormMenu menu = new FormMenu();
                         menu.Show();
                         menu.FormClosed += Logout;

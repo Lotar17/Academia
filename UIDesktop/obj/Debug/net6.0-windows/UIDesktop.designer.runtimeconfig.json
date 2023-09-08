@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\lotar\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\lotar\\.nuget\\packages"
+      "C:\\Users\\matia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\matia\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
