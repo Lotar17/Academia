@@ -55,6 +55,7 @@ namespace Academia
                     {
                         MessageBox.Show("Usuario cargado con exito");
                         txt_pass.Text = txt_userName.Text = cbx_Habilitado.Text = txt_idPersona.Text = null;
+                        this.Close();
                     }
                 }
             }
@@ -62,7 +63,6 @@ namespace Academia
             {
                 mensajeError("Debe llenar todos los campos para ingresar un nuevo usuario");
             }
-            this.Close();
         }
 
         private void mensajeError(string mensaje)
