@@ -52,9 +52,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(168, 35);
+            label5.Location = new Point(147, 26);
             label5.Name = "label5";
-            label5.Size = new Size(227, 36);
+            label5.Size = new Size(184, 29);
             label5.TabIndex = 21;
             label5.Text = "Baja de Usuario";
             // 
@@ -65,10 +65,9 @@
             btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnEliminar.ForeColor = Color.Gainsboro;
-            btnEliminar.Location = new Point(592, 469);
-            btnEliminar.Margin = new Padding(3, 4, 3, 4);
+            btnEliminar.Location = new Point(518, 352);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(162, 75);
+            btnEliminar.Size = new Size(142, 56);
             btnEliminar.TabIndex = 12;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -81,10 +80,9 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(312, 469);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(273, 352);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(162, 75);
+            btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 11;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -121,8 +119,7 @@
             dtgv_BajaUsuario.DefaultCellStyle = dataGridViewCellStyle2;
             dtgv_BajaUsuario.EnableHeadersVisualStyles = false;
             dtgv_BajaUsuario.GridColor = Color.Gainsboro;
-            dtgv_BajaUsuario.Location = new Point(269, 106);
-            dtgv_BajaUsuario.Margin = new Padding(3, 4, 3, 4);
+            dtgv_BajaUsuario.Location = new Point(235, 80);
             dtgv_BajaUsuario.MultiSelect = false;
             dtgv_BajaUsuario.Name = "dtgv_BajaUsuario";
             dtgv_BajaUsuario.ReadOnly = true;
@@ -134,15 +131,17 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             dtgv_BajaUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dtgv_BajaUsuario.RowHeadersVisible = false;
             dtgv_BajaUsuario.RowHeadersWidth = 51;
             dtgv_BajaUsuario.RowTemplate.Height = 25;
             dtgv_BajaUsuario.ShowCellErrors = false;
             dtgv_BajaUsuario.ShowCellToolTips = false;
             dtgv_BajaUsuario.ShowEditingIcon = false;
             dtgv_BajaUsuario.ShowRowErrors = false;
-            dtgv_BajaUsuario.Size = new Size(547, 273);
+            dtgv_BajaUsuario.Size = new Size(479, 205);
             dtgv_BajaUsuario.TabIndex = 22;
             dtgv_BajaUsuario.CellClick += dtgv_BajaUsuario_CellClick;
+            dtgv_BajaUsuario.CellContentClick += dtgv_BajaUsuario_CellContentClick;
             // 
             // ID
             // 
@@ -174,34 +173,33 @@
             lbl_IdDelete.Anchor = AnchorStyles.None;
             lbl_IdDelete.AutoSize = true;
             lbl_IdDelete.ForeColor = Color.Gainsboro;
-            lbl_IdDelete.Location = new Point(348, 412);
+            lbl_IdDelete.Location = new Point(304, 309);
             lbl_IdDelete.Name = "lbl_IdDelete";
-            lbl_IdDelete.Size = new Size(251, 20);
+            lbl_IdDelete.Size = new Size(197, 15);
             lbl_IdDelete.TabIndex = 23;
             lbl_IdDelete.Text = "Ingrese el ID del usuario a ELIMINAR";
             // 
             // txt_IdDelete
             // 
             txt_IdDelete.Anchor = AnchorStyles.None;
-            txt_IdDelete.Location = new Point(603, 408);
-            txt_IdDelete.Margin = new Padding(3, 4, 3, 4);
+            txt_IdDelete.Location = new Point(528, 306);
             txt_IdDelete.Name = "txt_IdDelete";
-            txt_IdDelete.Size = new Size(117, 27);
+            txt_IdDelete.Size = new Size(103, 23);
             txt_IdDelete.TabIndex = 24;
+            txt_IdDelete.KeyPress += txt_IdDelete_KeyPress;
             // 
             // FormBajaUsuario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1061, 600);
+            ClientSize = new Size(928, 450);
             Controls.Add(txt_IdDelete);
             Controls.Add(lbl_IdDelete);
             Controls.Add(dtgv_BajaUsuario);
             Controls.Add(label5);
             Controls.Add(btnEliminar);
             Controls.Add(btnCancelar);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormBajaUsuario";
             Text = "Baja de Usuario";
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaUsuario).EndInit();

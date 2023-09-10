@@ -63,7 +63,6 @@ L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\DataAccess.
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.csproj.AssemblyReference.cache
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormAltaUsuario.resources
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormBajaUsuario.resources
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaUsuarios.resources
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\AcademiaDesktop.FormLogin.resources
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormMenu.resources
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionUsuarios.resources
@@ -157,3 +156,4 @@ C:\Users\matia\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\refint\U
 C:\Users\matia\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.pdb
 C:\Users\matia\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.genruntimeconfig.cache
 C:\Users\matia\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\ref\UIDesktop.dll
+L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.frm_ConsultaUsuario.resources

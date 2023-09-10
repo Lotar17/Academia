@@ -46,10 +46,33 @@ namespace Academia
         {
             if (rowIndexToDelete >= 0)
             {
-                int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
+                // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
+                int idToDelete = int.Parse(txt_IdDelete.Text);
                 Controller controller = new Controller();
-                controller.borrarUsuario(idToDelete);
+                if (controller.borrarUsuario(idToDelete))
+                {
+                    MessageBox.Show("Usuario borrado con exito");
+                }
+                else
+                {
+                    MessageBox.Show("El ID ingresado no existe");
+                }
                 retrieveUsuarios();
+            }
+        }
+
+        private void dtgv_BajaUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txt_IdDelete_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceso).
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Si no es un número ni una tecla de control, ignora la tecla presionada.
+                e.Handled = true;
             }
         }
     }

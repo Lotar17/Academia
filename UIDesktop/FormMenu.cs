@@ -84,7 +84,7 @@ namespace Academia
 
         private void menuItemConsultaUsuarios_Click(object sender, EventArgs e)
         {
-            openChildForm(new FormConsultaUsuarios());
+            openChildForm(new frm_ConsultaUsuario());
         }
 
         private void btnMenuAlumnos_Click(object sender, EventArgs e)

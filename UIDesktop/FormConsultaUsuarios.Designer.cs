@@ -1,6 +1,6 @@
 ﻿namespace UIDesktop
 {
-    partial class FormConsultaUsuarios
+    partial class frm_ConsultaUsuario : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,101 +29,40 @@
         private void InitializeComponent()
         {
             label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txt_Id = new TextBox();
             label1 = new Label();
             btnAceptar = new Button();
             btnCancelar = new Button();
+            panel1 = new Panel();
+            lbl_IdPersona = new Label();
+            lbl_Habilitado = new Label();
+            lbl_NombreUsuario = new Label();
+            lbl_Id = new Label();
+            ipb_Usuario = new FontAwesome.Sharp.IconPictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ipb_Usuario).BeginInit();
             SuspendLayout();
             // 
             // label5
             // 
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
-            label5.Font = new Font("Copperplate Gothic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(74, 25);
+            label5.Location = new Point(65, 19);
             label5.Name = "label5";
-            label5.Size = new Size(368, 34);
+            label5.Size = new Size(230, 29);
             label5.TabIndex = 21;
             label5.Text = "Consulta de Usuario";
             // 
-            // label4
+            // txt_Id
             // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.Gainsboro;
-            label4.Location = new Point(258, 277);
-            label4.Name = "label4";
-            label4.Size = new Size(53, 20);
-            label4.TabIndex = 20;
-            label4.Text = "label4";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.Gainsboro;
-            label3.Location = new Point(258, 225);
-            label3.Name = "label3";
-            label3.Size = new Size(53, 20);
-            label3.TabIndex = 19;
-            label3.Text = "label3";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Gainsboro;
-            label2.Location = new Point(258, 173);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 20);
-            label2.TabIndex = 18;
-            label2.Text = "label2";
-            // 
-            // textBox4
-            // 
-            textBox4.Anchor = AnchorStyles.None;
-            textBox4.Location = new Point(335, 273);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(356, 27);
-            textBox4.TabIndex = 17;
-            // 
-            // textBox3
-            // 
-            textBox3.Anchor = AnchorStyles.None;
-            textBox3.Location = new Point(335, 221);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(356, 27);
-            textBox3.TabIndex = 16;
-            // 
-            // textBox2
-            // 
-            textBox2.Anchor = AnchorStyles.None;
-            textBox2.Location = new Point(335, 169);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(356, 27);
-            textBox2.TabIndex = 15;
-            // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(335, 116);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(356, 27);
-            textBox1.TabIndex = 14;
+            txt_Id.Anchor = AnchorStyles.None;
+            txt_Id.Location = new Point(93, 168);
+            txt_Id.Name = "txt_Id";
+            txt_Id.Size = new Size(220, 23);
+            txt_Id.TabIndex = 14;
+            txt_Id.KeyPress += txt_Id_KeyPress;
             // 
             // label1
             // 
@@ -131,11 +70,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(258, 120);
+            label1.Location = new Point(93, 139);
             label1.Name = "label1";
-            label1.Size = new Size(53, 20);
+            label1.Size = new Size(220, 17);
             label1.TabIndex = 13;
-            label1.Text = "label1";
+            label1.Text = "Ingrese el ID del usuario a buscar";
             // 
             // btnAceptar
             // 
@@ -144,13 +83,13 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(530, 448);
-            btnAceptar.Margin = new Padding(3, 4, 3, 4);
+            btnAceptar.Location = new Point(464, 336);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(162, 75);
+            btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 12;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCancelar
             // 
@@ -159,33 +98,112 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(250, 448);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(219, 336);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(162, 75);
+            btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 11;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // FormConsultaUsuarios
+            // panel1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            panel1.Anchor = AnchorStyles.None;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(ipb_Usuario);
+            panel1.Controls.Add(lbl_IdPersona);
+            panel1.Controls.Add(lbl_Habilitado);
+            panel1.Controls.Add(lbl_NombreUsuario);
+            panel1.Controls.Add(lbl_Id);
+            panel1.Location = new Point(420, 59);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(318, 223);
+            panel1.TabIndex = 22;
+            panel1.Visible = false;
+            // 
+            // lbl_IdPersona
+            // 
+            lbl_IdPersona.Anchor = AnchorStyles.None;
+            lbl_IdPersona.AutoSize = true;
+            lbl_IdPersona.ForeColor = Color.Gainsboro;
+            lbl_IdPersona.Location = new Point(16, 180);
+            lbl_IdPersona.Name = "lbl_IdPersona";
+            lbl_IdPersona.Size = new Size(82, 15);
+            lbl_IdPersona.TabIndex = 3;
+            lbl_IdPersona.Text = "ID de Persona:";
+            lbl_IdPersona.Visible = false;
+            // 
+            // lbl_Habilitado
+            // 
+            lbl_Habilitado.Anchor = AnchorStyles.None;
+            lbl_Habilitado.AutoSize = true;
+            lbl_Habilitado.ForeColor = Color.Gainsboro;
+            lbl_Habilitado.Location = new Point(16, 151);
+            lbl_Habilitado.Name = "lbl_Habilitado";
+            lbl_Habilitado.Size = new Size(38, 15);
+            lbl_Habilitado.TabIndex = 2;
+            lbl_Habilitado.Text = "label2";
+            lbl_Habilitado.Visible = false;
+            // 
+            // lbl_NombreUsuario
+            // 
+            lbl_NombreUsuario.Anchor = AnchorStyles.None;
+            lbl_NombreUsuario.AutoSize = true;
+            lbl_NombreUsuario.ForeColor = Color.Gainsboro;
+            lbl_NombreUsuario.Location = new Point(16, 125);
+            lbl_NombreUsuario.Name = "lbl_NombreUsuario";
+            lbl_NombreUsuario.Size = new Size(38, 15);
+            lbl_NombreUsuario.TabIndex = 1;
+            lbl_NombreUsuario.Text = "label2";
+            lbl_NombreUsuario.Visible = false;
+            lbl_NombreUsuario.Click += lbl_NombreUsuario_Click;
+            // 
+            // lbl_Id
+            // 
+            lbl_Id.Anchor = AnchorStyles.None;
+            lbl_Id.AutoSize = true;
+            lbl_Id.ForeColor = Color.Gainsboro;
+            lbl_Id.Location = new Point(16, 97);
+            lbl_Id.Name = "lbl_Id";
+            lbl_Id.Size = new Size(21, 15);
+            lbl_Id.TabIndex = 0;
+            lbl_Id.Text = "ID:";
+            lbl_Id.Visible = false;
+            // 
+            // ipb_Usuario
+            // 
+            ipb_Usuario.Anchor = AnchorStyles.None;
+            ipb_Usuario.BackColor = Color.FromArgb(32, 30, 45);
+            ipb_Usuario.ForeColor = Color.Gainsboro;
+            ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            ipb_Usuario.IconColor = Color.Gainsboro;
+            ipb_Usuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            ipb_Usuario.IconSize = 100;
+            ipb_Usuario.Location = new Point(197, 12);
+            ipb_Usuario.Name = "ipb_Usuario";
+            ipb_Usuario.Size = new Size(100, 100);
+            ipb_Usuario.TabIndex = 23;
+            ipb_Usuario.TabStop = false;
+            ipb_Usuario.Visible = false;
+            // 
+            // frm_ConsultaUsuario
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(888, 558);
+            ClientSize = new Size(777, 418);
+            Controls.Add(panel1);
             Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txt_Id);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
-            Name = "FormConsultaUsuarios";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frm_ConsultaUsuario";
             Text = "FormConsultaUsuarios";
+            Load += frm_ConsultaUsuario_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ipb_Usuario).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -193,15 +211,15 @@
         #endregion
 
         private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txt_Id;
         private Label label1;
         private Button btnAceptar;
         private Button btnCancelar;
+        private Panel panel1;
+        private Label lbl_IdPersona;
+        private Label lbl_Habilitado;
+        private Label lbl_NombreUsuario;
+        private Label lbl_Id;
+        private FontAwesome.Sharp.IconPictureBox ipb_Usuario;
     }
 }

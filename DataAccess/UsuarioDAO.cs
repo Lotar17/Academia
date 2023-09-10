@@ -143,5 +143,67 @@ namespace DataAccess
             return usuarios;
         }
 
+        public bool modificarUsuario(int id, string nombreUsuario, int habilitado)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.Parameters.AddWithValue("id", id);
+                    command.Parameters.AddWithValue("name", nombreUsuario);
+                    command.Parameters.AddWithValue("habilitado", habilitado);
+                    command.CommandText = "UPDATE usuarios SET nombre_usuario = @name, habilitado = @habilitado WHERE id_usuario = @id";
+                    command.CommandType = CommandType.Text;
+                    int filasAfectadas = command.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        return true;
+                    }
+                    return false;
+                }
+            }
+        }
+
+        public Usuario getOne(int idUsuario)
+        {
+            Usuario usuario = new Usuario(0, "null", false, 0);
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.Parameters.AddWithValue("id", idUsuario);
+                    command.CommandText = "SELECT * FROM usuarios WHERE id_usuario = @id";
+                    command.CommandType = CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    if(reader.HasRows)
+                    {
+                        reader.Read();
+                        int id = reader.GetInt32("id_usuario");
+                        string nombreUsuario = reader.GetString("nombre_usuario");
+                        bool habilitado = reader.GetBoolean("habilitado");
+                        int idPersona;
+                        if (reader.IsDBNull("id_persona"))
+                        {
+                            idPersona = 0;
+                        }
+                        else
+                        {
+                            idPersona = reader.GetInt32("id_persona");
+                        }
+                        usuario.Id = id;
+                        usuario.NombreUsuario = nombreUsuario;
+                        usuario.Habilitado = habilitado;
+                        usuario.IdPersona = idPersona;
+                    }
+                    
+                }
+            }
+            return usuario;
+        }
+
     }
 }

@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6mjvqlcndYZ8ubJY7s+nKrVEPvkE3+kr4p9DTzijxy1z/jJPOgZu3m66Nk46vqr+Fq6owJVPBmrbVXCd8p/sTg==",
+  "dgSpecHash": "kTxscVlhIwNqq6k2tF2IHfQ7+1n7gwohJ3r6Iqs8o3xYd8EWksvytEqQIwWC7Zag5vWrwM3WukthY1/IRSzQ2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\matia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\matia\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\matia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

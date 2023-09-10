@@ -43,5 +43,15 @@ namespace Dominio
         {
             return personaDAO.getOne(idPersona);
         }
+
+        public bool modificarUsuario(int idUsuario, string nombreUsuario, int habilitado)
+        {
+            return usuarioDAO.modificarUsuario(idUsuario, nombreUsuario, habilitado);
+        }
+
+        public Usuario usuarioGetOne(int idUsuario)
+        {
+            return usuarioDAO.getOne(idUsuario);
+        }
     }
 }
