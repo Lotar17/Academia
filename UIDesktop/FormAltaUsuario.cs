@@ -43,12 +43,12 @@ namespace Academia
                 {
                     if (cbx_Habilitado.Text == "Si")
                     {
-                        Usuario usuario = new Usuario(txt_pass.Text, true, txt_userName.Text);
+                        UsuarioADO usuario = new UsuarioADO(txt_pass.Text, true, txt_userName.Text);
                         nuevo = controller.crearUsuario(usuario, int.Parse(txt_idPersona.Text));
                     }
                     else
                     {
-                        Usuario usuario = new Usuario(txt_pass.Text, false, txt_userName.Text);
+                        UsuarioADO usuario = new UsuarioADO(txt_pass.Text, false, txt_userName.Text);
                         nuevo = controller.crearUsuario(usuario, int.Parse(txt_idPersona.Text));
                     }
                     if (nuevo)

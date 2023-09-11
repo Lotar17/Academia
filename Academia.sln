@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIDesktop", "UIDesktop\UIDesktop.csproj", "{3AC7817B-681B-46AE-8634-6180BF092C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{4D9C6917-E2B1-48CF-AF8B-643C336C9214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{4D9C6917-E2B1-48CF-AF8B-643C336C9214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

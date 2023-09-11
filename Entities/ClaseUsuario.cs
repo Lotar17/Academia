@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace Entities
 {
-    public class Usuario
+    public class UsuarioADO
     {
         private string _Clave;
         private bool _Habilitado;
@@ -12,14 +12,14 @@ namespace Entities
         private int _Id;
         private int _IdPersona;
 
-        public Usuario(string clave, bool habilitado, string nombreUsuario) 
+        public UsuarioADO(string clave, bool habilitado, string nombreUsuario) 
         {
            this.Clave = clave;
            this.Habilitado = habilitado;
            this.NombreUsuario = nombreUsuario;
         }
 
-        public Usuario(int id, string nombreUsuario, bool habilitado, int idPersona)
+        public UsuarioADO(int id, string nombreUsuario, bool habilitado, int idPersona)
         {
             this.Id = id;
             this.Habilitado = habilitado;

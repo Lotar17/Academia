@@ -1,0 +1,12 @@
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\bin\Debug\net6.0\Entities.deps.json
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\bin\Debug\net6.0\Entities.dll
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\bin\Debug\net6.0\Entities.pdb
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\Entities.dll
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\refint\Entities.dll
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\Entities.pdb
+L:\lotar\UTN\3 Año\.NET\Academia\Entities\obj\Debug\net6.0\ref\Entities.dll
