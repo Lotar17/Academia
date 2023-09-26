@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UIDesktop;
+namespace Entities;
 
 public partial class ModulosUsuario
 {
     public int IdModuloUsuario { get; set; }
 
-    public int IdModulo { get; set; }
+    public int? IdModulo { get; set; }
 
-    public int IdUsuario { get; set; }
+    public int? IdUsuario { get; set; }
 
     public bool? Alta { get; set; }
 
@@ -19,7 +19,7 @@ public partial class ModulosUsuario
 
     public bool? Consulta { get; set; }
 
-    public virtual Modulo IdModuloNavigation { get; set; } = null!;
+    public virtual Modulo? IdModuloNavigation { get; set; }
 
-    public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+    public virtual Usuario? IdUsuarioNavigation { get; set; }
 }

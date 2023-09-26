@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UIDesktop;
+namespace Entities;
 
 public partial class Especialidade
 {
     public int IdEspecialidad { get; set; }
 
-    public string DescEspecialidad { get; set; } = null!;
+    public string? DescEspecialidad { get; set; }
 
     public virtual ICollection<Plane> Planes { get; set; } = new List<Plane>();
 }

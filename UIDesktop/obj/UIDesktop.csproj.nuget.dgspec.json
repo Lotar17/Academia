@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj": {}
+    "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\UIDesktop.csproj": {}
   },
   "projects": {
-    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj": {
-                "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj"
+              "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj"
               }
             }
           }
@@ -85,21 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj": {
+    "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -140,21 +140,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj": {
+    "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\obj\\",
+        "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,11 +168,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj"
               },
-              "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj": {
-                "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj"
+              "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj"
               }
             }
           }
@@ -202,21 +202,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj": {
+    "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\UIDesktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
         "projectName": "UIDesktop",
-        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj",
-        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\obj\\",
+        "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -230,8 +230,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj": {
-                "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj"
+              "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj"
               }
             }
           }
@@ -246,11 +246,19 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[6.3.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
@@ -276,7 +284,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

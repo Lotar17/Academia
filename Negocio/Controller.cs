@@ -19,7 +19,7 @@ namespace Dominio
             return usuarioDAO.Login(nombre_usuario, clave);
         }
 
-        public bool crearUsuario(UsuarioADO usuario, int idPersona)
+        public bool crearUsuario(Usuario usuario, int idPersona)
         {
             return usuarioDAO.createUser(usuario, idPersona);
         }
@@ -29,7 +29,7 @@ namespace Dominio
             return usuarioDAO.deleteUser(idUsuario);
         }
 
-        public LinkedList<UsuarioADO> GetUsuarios()
+        public LinkedList<Usuario> GetUsuarios()
         {
             return usuarioDAO.getAll();
         }
@@ -49,7 +49,7 @@ namespace Dominio
             return usuarioDAO.modificarUsuario(idUsuario, nombreUsuario, habilitado);
         }
 
-        public UsuarioADO usuarioGetOne(int idUsuario)
+        public Usuario usuarioGetOne(int idUsuario)
         {
             return usuarioDAO.getOne(idUsuario);
         }

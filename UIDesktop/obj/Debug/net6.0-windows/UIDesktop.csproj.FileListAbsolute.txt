@@ -101,7 +101,6 @@ C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Entities.pdb
 C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.csproj.AssemblyReference.cache
 C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormAltaUsuario.resources
 C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormBajaUsuario.resources
-C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaUsuarios.resources
 C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\AcademiaDesktop.FormLogin.resources
 C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormMenu.resources
 C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionUsuarios.resources
@@ -167,36 +166,77 @@ L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.E
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
 L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Azure.Core.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Azure.Identity.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Memory.Data.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Humanizer.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Text.Json.dll
-L:\lotar\UTN\3 Año\.NET\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.frm_ConsultaUsuario.resources
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\alpine-arm\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\alpine-arm64\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\browser-wasm\nativeassets\net6.0\e_sqlite3.a
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\UIDesktop\bin\Debug\net6.0-windows\EntityFramework.dll

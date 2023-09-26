@@ -26,8 +26,8 @@ namespace Academia
         {
             dtgv_BajaUsuario.Rows.Clear();
             Controller ctrlBaja = new Controller();
-            LinkedList<UsuarioADO> usuarios = ctrlBaja.GetUsuarios();
-            foreach (UsuarioADO u in usuarios)
+            LinkedList<Usuario> usuarios = ctrlBaja.GetUsuarios();
+            foreach (Usuario u in usuarios)
             {
                 // Agrega una nueva fila al DataGridView y obtiene su índice
                 int rowIndex = dtgv_BajaUsuario.Rows.Add();

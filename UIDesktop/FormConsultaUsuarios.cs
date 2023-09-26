@@ -48,7 +48,7 @@ namespace UIDesktop
             lbl_Habilitado.Text = string.Empty;
             if (txt_Id != null)
             {
-                UsuarioADO usuario = controller.usuarioGetOne(int.Parse(txt_Id.Text));
+                Usuario usuario = controller.usuarioGetOne(int.Parse(txt_Id.Text));
                 if (usuario.Id == 0)
                 {
                     ipb_Usuario.Visible = false;

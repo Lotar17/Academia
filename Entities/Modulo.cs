@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UIDesktop;
+namespace Entities;
 
 public partial class Modulo
 {

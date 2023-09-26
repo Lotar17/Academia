@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="AcademiaDb.cs" />
     <Compile Include="alumnos_inscripciones.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="comisiones.cs" />
     <Compile Include="cursos.cs" />
     <Compile Include="docentes_cursos.cs" />

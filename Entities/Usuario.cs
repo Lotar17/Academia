@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UIDesktop;
+namespace Entities;
 
 public partial class Usuario
 {
     public int IdUsuario { get; set; }
 
-    public string NombreUsuario { get; set; } = null!;
+    public string? NombreUsuario { get; set; }
 
-    public string Clave { get; set; } = null!;
+    public string? Clave { get; set; }
 
-    public bool Habilitado { get; set; }
+    public bool? Habilitado { get; set; }
 
     public bool? CambiaClave { get; set; }
 

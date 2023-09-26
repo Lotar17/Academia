@@ -1,0 +1,12 @@
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\bin\Debug\net6.0\Prueba.deps.json
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\bin\Debug\net6.0\Prueba.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\bin\Debug\net6.0\Prueba.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\Prueba.csproj.AssemblyReference.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\Prueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\Prueba.AssemblyInfoInputs.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\Prueba.AssemblyInfo.cs
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\Prueba.csproj.CoreCompileInputs.cache
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\Prueba.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\refint\Prueba.dll
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\Prueba.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia\Prueba\obj\Debug\net6.0\ref\Prueba.dll

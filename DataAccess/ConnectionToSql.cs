@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess
 {
@@ -13,7 +14,8 @@ namespace DataAccess
 
         public ConnectionToSql()
         {
-            connectionString = "Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=true";
+            connectionString = "Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=false; User Id=net;Password=net;";
+            
         }
 
         protected SqlConnection GetConnection()

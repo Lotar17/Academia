@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace UIDesktop;
+namespace DataAccess;
 
 public partial class AcademiaDbContext : DbContext
 {
@@ -39,10 +40,12 @@ public partial class AcademiaDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=true; TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=false; User Id=net;Password=net; TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseCollation("Latin1_General_CI_AI");
+
         modelBuilder.Entity<AlumnosInscripcione>(entity =>
         {
             entity.HasKey(e => e.IdInscripcion);
@@ -60,12 +63,10 @@ public partial class AcademiaDbContext : DbContext
 
             entity.HasOne(d => d.IdAlumnoNavigation).WithMany(p => p.AlumnosInscripciones)
                 .HasForeignKey(d => d.IdAlumno)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_alumnos_inscripciones_personas");
 
             entity.HasOne(d => d.IdCursoNavigation).WithMany(p => p.AlumnosInscripciones)
                 .HasForeignKey(d => d.IdCurso)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_alumnos_inscripciones_cursos");
         });
 
@@ -85,7 +86,6 @@ public partial class AcademiaDbContext : DbContext
 
             entity.HasOne(d => d.IdPlanNavigation).WithMany(p => p.Comisiones)
                 .HasForeignKey(d => d.IdPlan)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_comisiones_planes");
         });
 
@@ -103,12 +103,10 @@ public partial class AcademiaDbContext : DbContext
 
             entity.HasOne(d => d.IdComisionNavigation).WithMany(p => p.Cursos)
                 .HasForeignKey(d => d.IdComision)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_cursos_comisiones");
 
             entity.HasOne(d => d.IdMateriaNavigation).WithMany(p => p.Cursos)
                 .HasForeignKey(d => d.IdMateria)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_cursos_materias");
         });
 
@@ -125,12 +123,10 @@ public partial class AcademiaDbContext : DbContext
 
             entity.HasOne(d => d.IdCursoNavigation).WithMany(p => p.DocentesCursos)
                 .HasForeignKey(d => d.IdCurso)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_docentes_cursos_cursos");
 
             entity.HasOne(d => d.IdDocenteNavigation).WithMany(p => p.DocentesCursos)
                 .HasForeignKey(d => d.IdDocente)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_docentes_cursos_personas");
         });
 
@@ -164,7 +160,6 @@ public partial class AcademiaDbContext : DbContext
 
             entity.HasOne(d => d.IdPlanNavigation).WithMany(p => p.Materia)
                 .HasForeignKey(d => d.IdPlan)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_materias_planes");
         });
 
@@ -201,12 +196,10 @@ public partial class AcademiaDbContext : DbContext
 
             entity.HasOne(d => d.IdModuloNavigation).WithMany(p => p.ModulosUsuarios)
                 .HasForeignKey(d => d.IdModulo)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_modulos_usuarios_modulos");
 
             entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.ModulosUsuarios)
                 .HasForeignKey(d => d.IdUsuario)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_modulos_usuarios_usuarios");
         });
 
@@ -243,11 +236,6 @@ public partial class AcademiaDbContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("telefono");
             entity.Property(e => e.TipoPersona).HasColumnName("tipo_persona");
-
-            entity.HasOne(d => d.IdPlanNavigation).WithMany(p => p.Personas)
-                .HasForeignKey(d => d.IdPlan)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_personas_planes");
         });
 
         modelBuilder.Entity<Plane>(entity =>
@@ -265,7 +253,6 @@ public partial class AcademiaDbContext : DbContext
 
             entity.HasOne(d => d.IdEspecialidadNavigation).WithMany(p => p.Planes)
                 .HasForeignKey(d => d.IdEspecialidad)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_planes_especialidades");
         });
 
@@ -296,5 +283,5 @@ public partial class AcademiaDbContext : DbContext
         OnModelCreatingPartial(modelBuilder);
     }
 
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder); */
 }
