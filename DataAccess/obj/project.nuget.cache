@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nsM8DBzG2Fv7m7aJfV3+IraToY8O6LtvnuR50aUAp/C6Z1Lf9DQYc30I7caoFGd3YTEuexJRTCeJeXD++Sj7UA==",
+  "dgSpecHash": "uIrOL2yZiSGOlaKlDGswq8ukkGe8+9H3TXZQtxeIF/csy1G+PNTsBSv/GQJiVtTdKiKhtMjrz0kzqAHwssYxhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\matia\\Source\\Repos\\Academia\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matia\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\matia\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

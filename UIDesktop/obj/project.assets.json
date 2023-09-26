@@ -4328,11 +4328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
+      "projectUniqueName": "C:\\Users\\matia\\Source\\Repos\\Academia\\UIDesktop\\UIDesktop.csproj",
       "projectName": "UIDesktop",
-      "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
+      "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\UIDesktop\\UIDesktop.csproj",
       "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\obj\\",
+      "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\UIDesktop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4349,8 +4349,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj"
+            "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\Dominio.csproj"
             }
           }
         }

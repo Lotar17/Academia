@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nbuwrhOSGLYhZAjqBNR+x7RtGlY6jizAJFojsH5DPcyTvQoDKGUEjpka7MrGjE9i+LuIdFUCRwQ/umVh2cmeCA==",
+  "dgSpecHash": "zZuIb7H7JVfkR2xj9Cg4/DkNFYVFnpJHrPnlCh/U7HFmUvZd8IrPBBz8hVG3ceQ+7O7l2VrNpJoJK5PIIMqU4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matia\\source\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
+  "projectFilePath": "C:\\Users\\matia\\Source\\Repos\\Academia\\UIDesktop\\UIDesktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matia\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\matia\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

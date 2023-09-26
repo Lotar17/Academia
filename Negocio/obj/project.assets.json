@@ -3477,11 +3477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj",
+      "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\obj\\",
+      "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3498,11 +3498,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\matia\\Source\\Repos\\Academia\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj"
+            "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj"
             }
           }
         }

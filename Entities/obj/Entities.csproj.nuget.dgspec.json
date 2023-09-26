@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj": {}
+    "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj": {
+    "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
