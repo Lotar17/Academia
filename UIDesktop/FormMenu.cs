@@ -163,6 +163,12 @@ namespace Academia
             DropdownCursos.Show(btnMenuCursos, btnMenuCursos.Width, 0);
         }
 
+        private void btnReporteCursos_Click(Object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Gainsboro);
+            openChildForm(new FormReporteCursos());
+        }
+
         private void btnLogout_Click(object Sender, EventArgs e)
         {
             if (MessageBox.Show("¿Estas seguro de que quieres cerrar sesion?", "ATENCION", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)

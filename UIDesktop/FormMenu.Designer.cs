@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             panelSideMenu = new Panel();
+            btnReporteCursos = new FontAwesome.Sharp.IconButton();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             btnMenuCursos = new FontAwesome.Sharp.IconButton();
             btnMenuComisiones = new FontAwesome.Sharp.IconButton();
@@ -84,10 +85,10 @@
             menuItemModificacionCursos = new ToolStripMenuItem();
             menuItemConsultaCursos = new ToolStripMenuItem();
             panel1 = new Panel();
-            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            lblNombreApellido = new Label();
-            lblEmail = new Label();
             lblTipoUsuario = new Label();
+            lblEmail = new Label();
+            lblNombreApellido = new Label();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo).BeginInit();
             panelChildForm.SuspendLayout();
@@ -107,6 +108,7 @@
             // 
             panelSideMenu.AutoScroll = true;
             panelSideMenu.BackColor = Color.FromArgb(30, 11, 99);
+            panelSideMenu.Controls.Add(btnReporteCursos);
             panelSideMenu.Controls.Add(iconButton1);
             panelSideMenu.Controls.Add(btnMenuCursos);
             panelSideMenu.Controls.Add(btnMenuComisiones);
@@ -120,6 +122,28 @@
             panelSideMenu.Name = "panelSideMenu";
             panelSideMenu.Size = new Size(250, 647);
             panelSideMenu.TabIndex = 0;
+            // 
+            // btnReporteCursos
+            // 
+            btnReporteCursos.Dock = DockStyle.Top;
+            btnReporteCursos.FlatAppearance.BorderSize = 0;
+            btnReporteCursos.FlatStyle = FlatStyle.Flat;
+            btnReporteCursos.ForeColor = Color.Gainsboro;
+            btnReporteCursos.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
+            btnReporteCursos.IconColor = Color.Gainsboro;
+            btnReporteCursos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnReporteCursos.IconSize = 40;
+            btnReporteCursos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReporteCursos.Location = new Point(0, 420);
+            btnReporteCursos.Name = "btnReporteCursos";
+            btnReporteCursos.Padding = new Padding(10, 0, 30, 0);
+            btnReporteCursos.Size = new Size(250, 60);
+            btnReporteCursos.TabIndex = 13;
+            btnReporteCursos.Text = "Reporte de Cursos";
+            btnReporteCursos.TextAlign = ContentAlignment.MiddleLeft;
+            btnReporteCursos.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReporteCursos.UseVisualStyleBackColor = true;
+            btnReporteCursos.Click += btnReporteCursos_Click;
             // 
             // iconButton1
             // 
@@ -630,6 +654,36 @@
             panel1.Size = new Size(1329, 100);
             panel1.TabIndex = 13;
             // 
+            // lblTipoUsuario
+            // 
+            lblTipoUsuario.AutoSize = true;
+            lblTipoUsuario.ForeColor = Color.Gainsboro;
+            lblTipoUsuario.Location = new Point(335, 60);
+            lblTipoUsuario.Name = "lblTipoUsuario";
+            lblTipoUsuario.Size = new Size(104, 20);
+            lblTipoUsuario.TabIndex = 4;
+            lblTipoUsuario.Text = "Tipo Usuario";
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.ForeColor = Color.Gainsboro;
+            lblEmail.Location = new Point(335, 40);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(51, 20);
+            lblEmail.TabIndex = 3;
+            lblEmail.Text = "Email";
+            // 
+            // lblNombreApellido
+            // 
+            lblNombreApellido.AutoSize = true;
+            lblNombreApellido.ForeColor = Color.Gainsboro;
+            lblNombreApellido.Location = new Point(335, 20);
+            lblNombreApellido.Name = "lblNombreApellido";
+            lblNombreApellido.Size = new Size(145, 20);
+            lblNombreApellido.TabIndex = 2;
+            lblNombreApellido.Text = "Nombre y Apellido";
+            // 
             // iconPictureBox1
             // 
             iconPictureBox1.BackColor = Color.FromArgb(35, 10, 125);
@@ -643,36 +697,6 @@
             iconPictureBox1.Size = new Size(52, 49);
             iconPictureBox1.TabIndex = 1;
             iconPictureBox1.TabStop = false;
-            // 
-            // lblNombreApellido
-            // 
-            lblNombreApellido.AutoSize = true;
-            lblNombreApellido.ForeColor = Color.Gainsboro;
-            lblNombreApellido.Location = new Point(335, 20);
-            lblNombreApellido.Name = "lblNombreApellido";
-            lblNombreApellido.Size = new Size(145, 20);
-            lblNombreApellido.TabIndex = 2;
-            lblNombreApellido.Text = "Nombre y Apellido";
-            // 
-            // lblEmail
-            // 
-            lblEmail.AutoSize = true;
-            lblEmail.ForeColor = Color.Gainsboro;
-            lblEmail.Location = new Point(335, 40);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(51, 20);
-            lblEmail.TabIndex = 3;
-            lblEmail.Text = "Email";
-            // 
-            // lblTipoUsuario
-            // 
-            lblTipoUsuario.AutoSize = true;
-            lblTipoUsuario.ForeColor = Color.Gainsboro;
-            lblTipoUsuario.Location = new Point(335, 60);
-            lblTipoUsuario.Name = "lblTipoUsuario";
-            lblTipoUsuario.Size = new Size(104, 20);
-            lblTipoUsuario.TabIndex = 4;
-            lblTipoUsuario.Text = "Tipo Usuario";
             // 
             // FormMenu
             // 
@@ -765,5 +789,6 @@
         private Label lblEmail;
         private Label lblNombreApellido;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconButton btnReporteCursos;
     }
 }

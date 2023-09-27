@@ -14,8 +14,7 @@ namespace DataAccess
 
         public ConnectionToSql()
         {
-            connectionString = "Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=false; User Id=net;Password=net;";
-            
+            connectionString = "Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=true";     
         }
 
         protected SqlConnection GetConnection()

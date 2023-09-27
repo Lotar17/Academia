@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DataAccess;
 
 public partial class AcademiaDbContext : DbContext
-{
+{ /*
     public AcademiaDbContext()
     {
     }

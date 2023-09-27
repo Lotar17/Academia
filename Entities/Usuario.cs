@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace Entities;
-
+/*
 public partial class Usuario
 {
     public int IdUsuario { get; set; }
@@ -21,3 +21,4 @@ public partial class Usuario
 
     public virtual ICollection<ModulosUsuario> ModulosUsuarios { get; set; } = new List<ModulosUsuario>();
 }
+*/
