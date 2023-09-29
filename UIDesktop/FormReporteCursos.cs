@@ -11,6 +11,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
 using System.IO;
+using Entities;
 
 namespace UIDesktop
 {
@@ -27,7 +28,8 @@ namespace UIDesktop
             guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf";
             guardar.ShowDialog();
             string paginahtml_text = Properties.Resources.Plantilla.ToString();
-            paginahtml_text = paginahtml_text.Replace("@nombre_usuario", "COMPLETAR");
+            paginahtml_text = paginahtml_text.Replace("@nombre_usuario", UsuarioLoginCache._NombreUsuario);
+            paginahtml_text = paginahtml_text.Replace("@nombreapellido", UsuarioLoginCache._Apellido + ", " + UsuarioLoginCache._Nombre);
             paginahtml_text = paginahtml_text.Replace("@fecha", DateTime.Now.ToString("dd/MM/yyyy"));
 
             string filas = string.Empty;

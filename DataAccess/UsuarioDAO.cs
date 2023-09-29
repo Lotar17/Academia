@@ -30,6 +30,7 @@ namespace DataAccess
                         while (reader.Read())
                         {
                             UsuarioLoginCache._IdUsuario = reader.GetInt32(0);  //guarda el usuario logeado actual en el cache
+                            UsuarioLoginCache._NombreUsuario = reader.GetString(1);
                             UsuarioLoginCache._Nombre = reader.GetString(7);
                             UsuarioLoginCache._Apellido = reader.GetString(8);
                             UsuarioLoginCache._Email = reader.GetString(10);

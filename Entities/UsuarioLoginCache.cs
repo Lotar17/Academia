@@ -9,6 +9,7 @@ namespace Entities
     public static class UsuarioLoginCache
     {
         public static int _IdUsuario { get; set; }
+        public static string _NombreUsuario { get; set; }
         public static string _Nombre { get; set; }   
         public static string _Apellido { get; set; }
         public static string _Email { get; set;}
