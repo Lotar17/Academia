@@ -79,3 +79,5 @@ C:\Users\Administrador\source\repos\Academia\DataAccess\obj\Debug\net6.0\refint\
 C:\Users\Administrador\source\repos\Academia\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\Administrador\source\repos\Academia\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\Administrador\source\repos\Academia\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+L:\lotar\UTN\3 Año\.NET\Academia\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache

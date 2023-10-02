@@ -43,7 +43,7 @@ namespace DataAccess
             }
         }
 
-        public bool createUser(Usuario usuario, int idPersona)
+        public bool createUser(UsuarioADO usuario, int idPersona)
         {
             using(var connection = GetConnection())
             {
@@ -110,9 +110,9 @@ namespace DataAccess
             }
         }
 
-        public LinkedList<Usuario> getAll()
+        public LinkedList<UsuarioADO> getAll()
         {
-            LinkedList<Usuario> usuarios = new LinkedList<Usuario>();
+            LinkedList<UsuarioADO> usuarios = new LinkedList<UsuarioADO>();
             using (var connection = GetConnection())
             {
                 connection.Open ();
@@ -136,7 +136,7 @@ namespace DataAccess
                         {
                             idPersona = reader.GetInt32("id_persona");
                         }
-                        Usuario usuario = new Usuario(id, nombreUsuario, habilitado, idPersona);
+                        UsuarioADO usuario = new UsuarioADO(id, nombreUsuario, habilitado, idPersona);
                         usuarios.AddLast(usuario);
                     }
                 }
@@ -167,9 +167,9 @@ namespace DataAccess
             }
         }
 
-        public Usuario getOne(int idUsuario)
+        public UsuarioADO getOne(int idUsuario)
         {
-            Usuario usuario = new Usuario(0, "null", false, 0);
+            UsuarioADO usuario = new UsuarioADO(0, "null", false, 0);
             using (var connection = GetConnection())
             {
                 connection.Open();

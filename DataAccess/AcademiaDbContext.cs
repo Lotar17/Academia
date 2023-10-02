@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DataAccess;
 
 public partial class AcademiaDbContext : DbContext
-{ /*
+{
     public AcademiaDbContext()
     {
     }
@@ -40,7 +40,7 @@ public partial class AcademiaDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=false; User Id=net;Password=net; TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; DataBase=AcademiaDb; integrated security=False; TrustServerCertificate=True;", builder => builder.EnableRetryOnFailure());
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -179,7 +179,7 @@ public partial class AcademiaDbContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("ejecuta");
         });
-
+        
         modelBuilder.Entity<ModulosUsuario>(entity =>
         {
             entity.HasKey(e => e.IdModuloUsuario);
@@ -202,7 +202,7 @@ public partial class AcademiaDbContext : DbContext
                 .HasForeignKey(d => d.IdUsuario)
                 .HasConstraintName("FK_modulos_usuarios_usuarios");
         });
-
+        
         modelBuilder.Entity<Persona>(entity =>
         {
             entity.HasKey(e => e.IdPersona);
@@ -255,7 +255,7 @@ public partial class AcademiaDbContext : DbContext
                 .HasForeignKey(d => d.IdEspecialidad)
                 .HasConstraintName("FK_planes_especialidades");
         });
-
+        
         modelBuilder.Entity<Usuario>(entity =>
         {
             entity.HasKey(e => e.IdUsuario);
@@ -282,6 +282,8 @@ public partial class AcademiaDbContext : DbContext
 
         OnModelCreatingPartial(modelBuilder);
     }
+    
 
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder); */
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder); 
+
 }
