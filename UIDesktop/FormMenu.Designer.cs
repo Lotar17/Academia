@@ -450,18 +450,21 @@
             menuItemBajaEspecialidades.Name = "menuItemBajaEspecialidades";
             menuItemBajaEspecialidades.Size = new Size(180, 22);
             menuItemBajaEspecialidades.Text = "Baja";
+            menuItemBajaEspecialidades.Click += menuItemBajaEspecialidades_Click_1;
             // 
             // menuItemModificacionEspecialidades
             // 
             menuItemModificacionEspecialidades.Name = "menuItemModificacionEspecialidades";
             menuItemModificacionEspecialidades.Size = new Size(180, 22);
             menuItemModificacionEspecialidades.Text = "Modificacion";
+            menuItemModificacionEspecialidades.Click += menuItemModificacionEspecialidades_Click_1;
             // 
             // menuItemConsultaEspecialidades
             // 
             menuItemConsultaEspecialidades.Name = "menuItemConsultaEspecialidades";
             menuItemConsultaEspecialidades.Size = new Size(180, 22);
             menuItemConsultaEspecialidades.Text = "Consulta";
+            menuItemConsultaEspecialidades.Click += menuItemConsultaEspecialidades_Click_1;
             // 
             // DropdownProfesores
             // 

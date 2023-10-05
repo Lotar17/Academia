@@ -3477,11 +3477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj",
+      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj",
+      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\obj\\",
+      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3498,11 +3498,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj"
+            "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\DataAccess\\DataAccess.csproj"
             },
-            "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj": {
-              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj"
+            "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj": {
+              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj"
             }
           }
         }

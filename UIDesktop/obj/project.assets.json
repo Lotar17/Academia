@@ -4406,11 +4406,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj",
+      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
       "projectName": "UIDesktop",
-      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj",
+      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
       "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\obj\\",
+      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\UIDesktop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4427,8 +4427,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj": {
-              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj"
+            "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\Dominio.csproj": {
+              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\Dominio.csproj"
             }
           }
         }

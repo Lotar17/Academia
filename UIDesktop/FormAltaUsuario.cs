@@ -28,7 +28,7 @@ namespace Academia
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             var nuevo = false;
-            if (txt_userName.Text is not null && txt_idPersona.Text is not null && txt_pass.Text is not null && cbx_Habilitado.Text is not null)
+            if (txt_userName.Text != "" && txt_idPersona.Text != "" && txt_pass.Text != "" && cbx_Habilitado.Text != "")
             {
                 Controller controller = new Controller();
                 if (controller.verificarUsuarioPersona(int.Parse(txt_idPersona.Text)))

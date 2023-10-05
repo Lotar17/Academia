@@ -58,6 +58,27 @@ namespace Dominio
         public bool crearEspecialidad(Especialidade e)
         {
             return especialidadDAO.altaEspecialidad(e);
+        } 
+
+        public bool borrarEspecialidad(int idEspecialidad)
+        {
+            return especialidadDAO.bajaEspecialidad(idEspecialidad);
         }
+
+        public bool modificarEspecialidad(int idEspecialidad, string descEspecialidad)
+        {
+            return especialidadDAO.modificarEspecialidad(idEspecialidad, descEspecialidad);
+        }
+
+        public Especialidade especialidadGetOne(int idEspecialidad)
+        {
+            return especialidadDAO.getOne(idEspecialidad);
+        }
+
+        public LinkedList<Especialidade> GetEspecialidades()
+        {
+            return especialidadDAO.getAll();
+        }
+
     }
 }

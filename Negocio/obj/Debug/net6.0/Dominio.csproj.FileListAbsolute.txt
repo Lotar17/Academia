@@ -83,3 +83,37 @@ C:\Users\Administrador\source\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.dl
 C:\Users\Administrador\source\repos\Academia\Negocio\obj\Debug\net6.0\refint\Dominio.dll
 C:\Users\Administrador\source\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.pdb
 C:\Users\Administrador\source\repos\Academia\Negocio\obj\Debug\net6.0\ref\Dominio.dll
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\bin\Debug\net6.0\Dominio.deps.json
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\bin\Debug\net6.0\Dominio.dll
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\bin\Debug\net6.0\Dominio.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\bin\Debug\net6.0\DataAccess.dll
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\bin\Debug\net6.0\Entities.dll
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\bin\Debug\net6.0\DataAccess.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\bin\Debug\net6.0\Entities.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.csproj.AssemblyReference.cache
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.AssemblyInfoInputs.cache
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.AssemblyInfo.cs
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.csproj.CopyComplete
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.dll
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\refint\Dominio.dll
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\Dominio.pdb
+C:\Net\LOTAR (NO TOCAR)\Academia-main\Negocio\obj\Debug\net6.0\ref\Dominio.dll
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\bin\Debug\net6.0\Dominio.deps.json
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\bin\Debug\net6.0\Dominio.dll
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\bin\Debug\net6.0\Dominio.pdb
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\bin\Debug\net6.0\DataAccess.dll
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\bin\Debug\net6.0\Entities.dll
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\bin\Debug\net6.0\DataAccess.pdb
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\bin\Debug\net6.0\Entities.pdb
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.csproj.AssemblyReference.cache
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.AssemblyInfoInputs.cache
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.AssemblyInfo.cs
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.csproj.CoreCompileInputs.cache
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.csproj.CopyComplete
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.dll
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\refint\Dominio.dll
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\Dominio.pdb
+L:\lotar\UTN\3 Año\.NET\repos\Academia\Negocio\obj\Debug\net6.0\ref\Dominio.dll

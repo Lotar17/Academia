@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h4pTe8eEICqzzNCm+2mbpNRT7PBA295MQN3QUh7pF+REfpkee33/dyEM5PnnhrMk5qewlw7if7lAGD6FtaY0aQ==",
+  "dgSpecHash": "we1ngDJ6dTIXJ4wDyheRJbolGMKCL5W7KhdGyclNl6oBbvVplBuZMpJXnra3MwNHt9d6p2sjghpiR3bDxV1jrg==",
   "success": true,
-  "projectFilePath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Negocio\\Dominio.csproj",
+  "projectFilePath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lotar\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lotar\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

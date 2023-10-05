@@ -55,6 +55,56 @@ namespace DataAccess
             }
         }
 
+        public Especialidade getOne(int idEspecialidad)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                Especialidade especialidad = context.Especialidades.Find(idEspecialidad);
+
+                return especialidad;
+            }
+        }
+
+        public bool modificarEspecialidad(int idEspecialidad, string descEspecialidad)
+        {
+            try
+            {
+                using(AcademiaDbContext context = new AcademiaDbContext())
+                {
+                    Especialidade especialidad = context.Especialidades.Find(idEspecialidad);
+                    
+                    if(especialidad != null)
+                    {
+                        especialidad.DescEspecialidad = descEspecialidad;
+                        context.SaveChanges();
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            } catch (DbUpdateException ex)
+            {
+                System.Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public LinkedList<Especialidade> getAll()
+        {
+            LinkedList<Especialidade> especialidades = new LinkedList<Especialidade>();
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                foreach (var especialidad in context.Especialidades)
+                {
+                    especialidades.AddLast(especialidad);
+                }
+            }
+            return especialidades;
+
+        }
+
 
 
     }

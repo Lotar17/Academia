@@ -27,7 +27,7 @@ namespace Academia
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txt_descEspecialidad.Text is not null)
+            if (txt_descEspecialidad.Text != "")
             {
                 Controller controller = new Controller();
                 Especialidade especialidad = new Especialidade();
@@ -42,7 +42,7 @@ namespace Academia
                 {
                     MessageBox.Show("No se pudo cargar la nueva especialidad");
                 }
-                
+
             }
             else
             {

@@ -51,7 +51,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(134, 41);
+            label5.Location = new Point(201, 120);
             label5.Name = "label5";
             label5.Size = new Size(272, 29);
             label5.TabIndex = 21;
@@ -63,7 +63,7 @@
             lbl_Habilitado.AutoSize = true;
             lbl_Habilitado.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lbl_Habilitado.ForeColor = Color.Gainsboro;
-            lbl_Habilitado.Location = new Point(72, 208);
+            lbl_Habilitado.Location = new Point(139, 287);
             lbl_Habilitado.Name = "lbl_Habilitado";
             lbl_Habilitado.Size = new Size(71, 17);
             lbl_Habilitado.TabIndex = 18;
@@ -72,7 +72,7 @@
             // txt_NombreUsuario
             // 
             txt_NombreUsuario.Anchor = AnchorStyles.None;
-            txt_NombreUsuario.Location = new Point(149, 147);
+            txt_NombreUsuario.Location = new Point(216, 226);
             txt_NombreUsuario.Name = "txt_NombreUsuario";
             txt_NombreUsuario.Size = new Size(279, 23);
             txt_NombreUsuario.TabIndex = 14;
@@ -83,7 +83,7 @@
             lbl_NombreUsuario.AutoSize = true;
             lbl_NombreUsuario.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lbl_NombreUsuario.ForeColor = Color.Gainsboro;
-            lbl_NombreUsuario.Location = new Point(12, 149);
+            lbl_NombreUsuario.Location = new Point(79, 228);
             lbl_NombreUsuario.Name = "lbl_NombreUsuario";
             lbl_NombreUsuario.Size = new Size(131, 17);
             lbl_NombreUsuario.TabIndex = 13;
@@ -97,7 +97,7 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(530, 332);
+            btnAceptar.Location = new Point(597, 411);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 12;
@@ -112,7 +112,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(285, 332);
+            btnCancelar.Location = new Point(352, 411);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 11;
@@ -149,7 +149,7 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dtgv_ModificacionUsuario.DefaultCellStyle = dataGridViewCellStyle2;
             dtgv_ModificacionUsuario.GridColor = Color.Gainsboro;
-            dtgv_ModificacionUsuario.Location = new Point(493, 75);
+            dtgv_ModificacionUsuario.Location = new Point(560, 154);
             dtgv_ModificacionUsuario.MultiSelect = false;
             dtgv_ModificacionUsuario.Name = "dtgv_ModificacionUsuario";
             dtgv_ModificacionUsuario.ReadOnly = true;
@@ -192,7 +192,7 @@
             cbx_Habilitado.DropDownStyle = ComboBoxStyle.DropDownList;
             cbx_Habilitado.FormattingEnabled = true;
             cbx_Habilitado.Items.AddRange(new object[] { "Si", "No" });
-            cbx_Habilitado.Location = new Point(149, 206);
+            cbx_Habilitado.Location = new Point(216, 285);
             cbx_Habilitado.Name = "cbx_Habilitado";
             cbx_Habilitado.Size = new Size(121, 23);
             cbx_Habilitado.TabIndex = 23;
@@ -202,7 +202,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(928, 450);
+            ClientSize = new Size(1063, 608);
             Controls.Add(cbx_Habilitado);
             Controls.Add(dtgv_ModificacionUsuario);
             Controls.Add(label5);

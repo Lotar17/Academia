@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7VPbtHoOnvFvDNI3ZEVaaos5yHdeA/WqqNROMlLNU0TiObN9kOAlvJweDpS32e5Au1fAIZfwaWFWeQC1be3/sA==",
+  "dgSpecHash": "E6RyqraaPfXaDBhbw7llXXVctfmybHlxtuZpeLo8PXuecXr8X1hOq+XcdTrPj9tHtl8oWlzjFHWcusNL/bfV2g==",
   "success": true,
-  "projectFilePath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\UIDesktop\\UIDesktop.csproj",
+  "projectFilePath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lotar\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lotar\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

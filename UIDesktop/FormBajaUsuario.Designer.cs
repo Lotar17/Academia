@@ -52,7 +52,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(147, 26);
+            label5.Location = new Point(214, 105);
             label5.Name = "label5";
             label5.Size = new Size(184, 29);
             label5.TabIndex = 21;
@@ -65,7 +65,7 @@
             btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnEliminar.ForeColor = Color.Gainsboro;
-            btnEliminar.Location = new Point(518, 352);
+            btnEliminar.Location = new Point(585, 431);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(142, 56);
             btnEliminar.TabIndex = 12;
@@ -80,7 +80,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(273, 352);
+            btnCancelar.Location = new Point(340, 431);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 11;
@@ -119,7 +119,7 @@
             dtgv_BajaUsuario.DefaultCellStyle = dataGridViewCellStyle2;
             dtgv_BajaUsuario.EnableHeadersVisualStyles = false;
             dtgv_BajaUsuario.GridColor = Color.Gainsboro;
-            dtgv_BajaUsuario.Location = new Point(235, 80);
+            dtgv_BajaUsuario.Location = new Point(302, 159);
             dtgv_BajaUsuario.MultiSelect = false;
             dtgv_BajaUsuario.Name = "dtgv_BajaUsuario";
             dtgv_BajaUsuario.ReadOnly = true;
@@ -173,7 +173,7 @@
             lbl_IdDelete.Anchor = AnchorStyles.None;
             lbl_IdDelete.AutoSize = true;
             lbl_IdDelete.ForeColor = Color.Gainsboro;
-            lbl_IdDelete.Location = new Point(304, 309);
+            lbl_IdDelete.Location = new Point(371, 388);
             lbl_IdDelete.Name = "lbl_IdDelete";
             lbl_IdDelete.Size = new Size(197, 15);
             lbl_IdDelete.TabIndex = 23;
@@ -182,7 +182,7 @@
             // txt_IdDelete
             // 
             txt_IdDelete.Anchor = AnchorStyles.None;
-            txt_IdDelete.Location = new Point(528, 306);
+            txt_IdDelete.Location = new Point(595, 385);
             txt_IdDelete.Name = "txt_IdDelete";
             txt_IdDelete.Size = new Size(103, 23);
             txt_IdDelete.TabIndex = 24;
@@ -193,7 +193,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(928, 450);
+            ClientSize = new Size(1063, 608);
             Controls.Add(txt_IdDelete);
             Controls.Add(lbl_IdDelete);
             Controls.Add(dtgv_BajaUsuario);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sc0xx0BLQNVDMvIznF/rSgnHRGXaGRGiU1WHiRZS2i+0flX25l6aEa0GuYcFP0+2V9e++CoeCB5+MrhxnEaNcA==",
+  "dgSpecHash": "8jfV+4T4kNSu4LAvnXCY7DEWzPelDjrCC3If+Jrnx9cqgZq0wf2aRvPOq/53wmA1My0CGWaUYb6iXTIP0CBAlQ==",
   "success": true,
-  "projectFilePath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lotar\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lotar\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -44,7 +44,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(276, 350);
+            btnCancelar.Location = new Point(343, 429);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 0;
@@ -59,7 +59,7 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(520, 350);
+            btnAceptar.Location = new Point(587, 429);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 1;
@@ -73,7 +73,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(138, 181);
+            label1.Location = new Point(205, 260);
             label1.Name = "label1";
             label1.Size = new Size(200, 17);
             label1.TabIndex = 2;
@@ -83,7 +83,7 @@
             // txt_descEspecialidad
             // 
             txt_descEspecialidad.Anchor = AnchorStyles.None;
-            txt_descEspecialidad.Location = new Point(344, 179);
+            txt_descEspecialidad.Location = new Point(411, 258);
             txt_descEspecialidad.Name = "txt_descEspecialidad";
             txt_descEspecialidad.Size = new Size(312, 23);
             txt_descEspecialidad.TabIndex = 3;
@@ -94,7 +94,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(122, 32);
+            label5.Location = new Point(189, 111);
             label5.Name = "label5";
             label5.Size = new Size(233, 29);
             label5.TabIndex = 10;
@@ -108,7 +108,7 @@
             lblMensajeError.ForeColor = Color.DarkGray;
             lblMensajeError.Image = (Image)resources.GetObject("lblMensajeError.Image");
             lblMensajeError.ImageAlign = ContentAlignment.MiddleLeft;
-            lblMensajeError.Location = new Point(427, 252);
+            lblMensajeError.Location = new Point(494, 331);
             lblMensajeError.Name = "lblMensajeError";
             lblMensajeError.Size = new Size(88, 15);
             lblMensajeError.TabIndex = 15;
@@ -120,7 +120,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(928, 450);
+            ClientSize = new Size(1063, 608);
             Controls.Add(lblMensajeError);
             Controls.Add(label5);
             Controls.Add(txt_descEspecialidad);

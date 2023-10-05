@@ -79,7 +79,7 @@ namespace UIDesktop
                     lbl_Habilitado.Visible = true;
                     lbl_IdPersona.Visible = true;
                 }
-                
+
             }
         }
     }

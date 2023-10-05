@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj",
+      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\Entities.csproj",
+      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\Academia\\Entities\\obj\\",
+      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -206,5 +206,20 @@ namespace Academia
         {
             openChildForm(new FormAltaEspecialidad());
         }
+
+        private void menuItemBajaEspecialidades_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new FormBajaEspecialidad());
+        }
+
+        private void menuItemModificacionEspecialidades_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new FormModificacionEspecialidades());
+        }
+
+        private void menuItemConsultaEspecialidades_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new FormConsultaEspecialidades());
+        }
     }
 }

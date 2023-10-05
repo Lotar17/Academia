@@ -46,10 +46,9 @@
             btnImprimir.FlatStyle = FlatStyle.Flat;
             btnImprimir.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Gainsboro;
-            btnImprimir.Location = new Point(422, 401);
-            btnImprimir.Margin = new Padding(3, 4, 3, 4);
+            btnImprimir.Location = new Point(436, 380);
             btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new Size(162, 75);
+            btnImprimir.Size = new Size(142, 56);
             btnImprimir.TabIndex = 12;
             btnImprimir.Text = "Cancelar";
             btnImprimir.UseVisualStyleBackColor = false;
@@ -87,8 +86,7 @@
             dtgvCursos.DefaultCellStyle = dataGridViewCellStyle2;
             dtgvCursos.EnableHeadersVisualStyles = false;
             dtgvCursos.GridColor = Color.Gainsboro;
-            dtgvCursos.Location = new Point(236, 77);
-            dtgvCursos.Margin = new Padding(3, 4, 3, 4);
+            dtgvCursos.Location = new Point(273, 137);
             dtgvCursos.MultiSelect = false;
             dtgvCursos.Name = "dtgvCursos";
             dtgvCursos.ReadOnly = true;
@@ -107,7 +105,7 @@
             dtgvCursos.ShowCellToolTips = false;
             dtgvCursos.ShowEditingIcon = false;
             dtgvCursos.ShowRowErrors = false;
-            dtgvCursos.Size = new Size(547, 273);
+            dtgvCursos.Size = new Size(479, 205);
             dtgvCursos.TabIndex = 23;
             // 
             // ID
@@ -133,12 +131,13 @@
             // 
             // FormReporteCursos
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1061, 600);
+            ClientSize = new Size(1063, 608);
             Controls.Add(dtgvCursos);
             Controls.Add(btnImprimir);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormReporteCursos";
             Text = "Reporte de Cursos";
             ((System.ComponentModel.ISupportInitialize)dtgvCursos).EndInit();
