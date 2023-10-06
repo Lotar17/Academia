@@ -34,7 +34,7 @@ namespace DataAccess
                             UsuarioLoginCache._Nombre = reader.GetString(7);
                             UsuarioLoginCache._Apellido = reader.GetString(8);
                             UsuarioLoginCache._Email = reader.GetString(10);
-                            UsuarioLoginCache._TipoUsuario = reader.GetInt32(14);
+                            UsuarioLoginCache._TipoUsuario = reader.GetString(14);
                         }
                         return true;
                     }

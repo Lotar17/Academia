@@ -40,7 +40,7 @@ namespace EntitiesEF
 
         public int? legajo { get; set; }
 
-        public int tipo_persona { get; set; }
+        public string tipo_persona { get; set; }
 
         public int id_plan { get; set; }
 

@@ -1,5 +1,6 @@
 using Entities;
 using FontAwesome.Sharp;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using UIDesktop;
 
 namespace Academia
@@ -95,22 +96,22 @@ namespace Academia
 
         private void menuItemAltaAlumnos_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormAltaAlumno());
         }
 
         private void menuItemBajaAlumnos_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormBajaAlumno());
         }
 
         private void menuItemModificacionAlumnos_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormModificacionAlumnos());
         }
 
         private void menuItemConsultaAlumnos_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormConsultaAlumnos());
         }
 
         private void btnMenuEspecialidades_Click(object sender, EventArgs e)
@@ -121,22 +122,22 @@ namespace Academia
 
         private void menuItemAltaEspecialidades_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormAltaEspecialidad());
         }
 
         private void menuItemBajaEspecialidades_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormBajaEspecialidad());
         }
 
         private void menuItemModificacionEspecialidades_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormModificacionEspecialidades());
         }
 
         private void menuItemConsultaEspecialidades_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FormConsultaEspecialidades());
         }
 
         private void btnMenuProfesores_Click(object sender, EventArgs e)
@@ -200,26 +201,6 @@ namespace Academia
             lblNombreApellido.Text = UsuarioLoginCache._Apellido + ", " + UsuarioLoginCache._Nombre;
             lblEmail.Text = UsuarioLoginCache._Email;
             lblTipoUsuario.Text = "Tipo de usuario: " + UsuarioLoginCache._TipoUsuario;
-        }
-
-        private void menuItemAltaEspecialidades_Click_1(object sender, EventArgs e)
-        {
-            openChildForm(new FormAltaEspecialidad());
-        }
-
-        private void menuItemBajaEspecialidades_Click_1(object sender, EventArgs e)
-        {
-            openChildForm(new FormBajaEspecialidad());
-        }
-
-        private void menuItemModificacionEspecialidades_Click_1(object sender, EventArgs e)
-        {
-            openChildForm(new FormModificacionEspecialidades());
-        }
-
-        private void menuItemConsultaEspecialidades_Click_1(object sender, EventArgs e)
-        {
-            openChildForm(new FormConsultaEspecialidades());
         }
     }
 }

@@ -44,9 +44,10 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(343, 429);
+            btnCancelar.Location = new Point(315, 467);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(142, 56);
+            btnCancelar.Size = new Size(162, 75);
             btnCancelar.TabIndex = 0;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -59,9 +60,10 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(587, 429);
+            btnAceptar.Location = new Point(594, 467);
+            btnAceptar.Margin = new Padding(3, 4, 3, 4);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(142, 56);
+            btnAceptar.Size = new Size(162, 75);
             btnAceptar.TabIndex = 1;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -73,19 +75,19 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(205, 260);
+            label1.Location = new Point(157, 242);
             label1.Name = "label1";
-            label1.Size = new Size(200, 17);
+            label1.Size = new Size(238, 20);
             label1.TabIndex = 2;
             label1.Text = "Descripcion de la especialidad";
-            label1.Click += label1_Click;
             // 
             // txt_descEspecialidad
             // 
             txt_descEspecialidad.Anchor = AnchorStyles.None;
-            txt_descEspecialidad.Location = new Point(411, 258);
+            txt_descEspecialidad.Location = new Point(393, 239);
+            txt_descEspecialidad.Margin = new Padding(3, 4, 3, 4);
             txt_descEspecialidad.Name = "txt_descEspecialidad";
-            txt_descEspecialidad.Size = new Size(312, 23);
+            txt_descEspecialidad.Size = new Size(356, 27);
             txt_descEspecialidad.TabIndex = 3;
             // 
             // label5
@@ -94,9 +96,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(189, 111);
+            label5.Location = new Point(139, 43);
             label5.Name = "label5";
-            label5.Size = new Size(233, 29);
+            label5.Size = new Size(286, 36);
             label5.TabIndex = 10;
             label5.Text = "Alta de Especialidad";
             // 
@@ -108,25 +110,26 @@
             lblMensajeError.ForeColor = Color.DarkGray;
             lblMensajeError.Image = (Image)resources.GetObject("lblMensajeError.Image");
             lblMensajeError.ImageAlign = ContentAlignment.MiddleLeft;
-            lblMensajeError.Location = new Point(494, 331);
+            lblMensajeError.Location = new Point(488, 336);
             lblMensajeError.Name = "lblMensajeError";
-            lblMensajeError.Size = new Size(88, 15);
+            lblMensajeError.Size = new Size(107, 18);
             lblMensajeError.TabIndex = 15;
             lblMensajeError.Text = "Error Message";
             lblMensajeError.Visible = false;
             // 
             // FormAltaEspecialidad
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1063, 608);
+            ClientSize = new Size(1061, 600);
             Controls.Add(lblMensajeError);
             Controls.Add(label5);
             Controls.Add(txt_descEspecialidad);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormAltaEspecialidad";
             Text = "Alta de Usuario";
             ResumeLayout(false);

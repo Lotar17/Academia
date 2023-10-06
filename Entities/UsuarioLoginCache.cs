@@ -13,7 +13,7 @@ namespace Entities
         public static string _Nombre { get; set; }   
         public static string _Apellido { get; set; }
         public static string _Email { get; set;}
-        public static int _TipoUsuario { get; set; }
+        public static string _TipoUsuario { get; set; }
 
     }
 }

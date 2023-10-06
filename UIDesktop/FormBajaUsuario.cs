@@ -14,7 +14,6 @@ namespace Academia
 {
     public partial class FormBajaUsuario : Form
     {
-        private int rowIndexToDelete;
 
         public FormBajaUsuario()
         {
@@ -37,33 +36,20 @@ namespace Academia
             }
         }
 
-        private void dtgv_BajaUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            rowIndexToDelete = e.RowIndex;
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (rowIndexToDelete >= 0)
+            // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
+            int idToDelete = int.Parse(txt_IdDelete.Text);
+            Controller controller = new Controller();
+            if (controller.borrarUsuario(idToDelete))
             {
-                // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
-                int idToDelete = int.Parse(txt_IdDelete.Text);
-                Controller controller = new Controller();
-                if (controller.borrarUsuario(idToDelete))
-                {
-                    MessageBox.Show("Usuario borrado con exito");
-                }
-                else
-                {
-                    MessageBox.Show("El ID ingresado no existe");
-                }
-                retrieveUsuarios();
+                MessageBox.Show("Usuario borrado con exito");
             }
-        }
-
-        private void dtgv_BajaUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            else
+            {
+                MessageBox.Show("El ID ingresado no existe");
+            }
+            retrieveUsuarios();
         }
 
         private void txt_IdDelete_KeyPress(object sender, KeyPressEventArgs e)
@@ -74,6 +60,11 @@ namespace Academia
                 // Si no es un número ni una tecla de control, ignora la tecla presionada.
                 e.Handled = true;
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

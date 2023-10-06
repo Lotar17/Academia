@@ -617,3 +617,11 @@ L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\ref\U
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormBajaEspecialidad.resources
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaEspecialidades.resources
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionEspecialidades.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\Academia.FormAltaEspecialidad.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormBajaEspecialidad.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaEspecialidades.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionEspecialidades.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormAltaAlumno.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormBajaAlumno.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaAlumnos.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionAlumnos.resources

@@ -21,7 +21,7 @@ public partial class Persona
 
     public int? Legajo { get; set; }
 
-    public int? TipoPersona { get; set; }
+    public string? TipoPersona { get; set; }
 
     public int? IdPlan { get; set; }
 

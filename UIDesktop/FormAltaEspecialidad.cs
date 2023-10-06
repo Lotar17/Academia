@@ -55,10 +55,5 @@ namespace Academia
             lblMensajeError.Text = "     " + mensaje;
             lblMensajeError.Visible = true;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -44,9 +44,7 @@ namespace DataAccess
                     else
                     {
                         return false;
-                    }
-                    
-                    
+                    }        
                 }
             }catch (DbUpdateException ex)
             {

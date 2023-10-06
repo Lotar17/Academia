@@ -40,11 +40,6 @@ namespace Dominio
             return usuarioDAO.getUsuario_Persona(idPersona);
         }
 
-        public bool verificarPersona(int idPersona)
-        {
-            return personaDAO.getOne(idPersona);
-        }
-
         public bool modificarUsuario(int idUsuario, string nombreUsuario, int habilitado)
         {
             return usuarioDAO.modificarUsuario(idUsuario, nombreUsuario, habilitado);
@@ -55,9 +50,29 @@ namespace Dominio
             return usuarioDAO.getOne(idUsuario);
         }
 
-        public bool crearEspecialidad(Especialidade e)
+        public bool verificarPersona(int idPersona)
         {
-            return especialidadDAO.altaEspecialidad(e);
+            return personaDAO.getOne(idPersona);
+        }
+        
+        public bool crearAlumno(Persona a)
+        {
+            return personaDAO.altaAlumno(a);
+        }
+
+        public bool borrarAlumno(int idAlumno)
+        {
+            return personaDAO.bajaAlumno(idAlumno);
+        }
+
+        public LinkedList<Persona> getAlumnos()
+        {
+            return personaDAO.getAll();
+        }
+
+        public bool crearEspecialidad(Especialidade especialidad)
+        {
+            return especialidadDAO.altaEspecialidad(especialidad);
         } 
 
         public bool borrarEspecialidad(int idEspecialidad)

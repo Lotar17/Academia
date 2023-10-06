@@ -14,9 +14,6 @@ namespace UIDesktop
 {
     public partial class FormBajaEspecialidad : Form
     {
-
-        private int rowIndexToDelete;
-
         public FormBajaEspecialidad()
         {
             InitializeComponent();
@@ -37,28 +34,20 @@ namespace UIDesktop
             }
         }
 
-        private void dtgv_BajaEspecialidad_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            rowIndexToDelete = e.RowIndex;
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (rowIndexToDelete >= 0)
+            // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
+            int idToDelete = int.Parse(txt_IdDelete.Text);
+            Controller controller = new Controller();
+            if (controller.borrarEspecialidad(idToDelete))
             {
-                // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
-                int idToDelete = int.Parse(txt_IdDelete.Text);
-                Controller controller = new Controller();
-                if (controller.borrarEspecialidad(idToDelete))
-                {
-                    MessageBox.Show("Especialidad borrada con exito");
-                }
-                else
-                {
-                    MessageBox.Show("El ID ingresado no existe");
-                }
-                retrieveEspecialidades();
+                MessageBox.Show("Especialidad borrada con exito");
             }
+            else
+            {
+                MessageBox.Show("El ID ingresado no existe");
+            }
+            retrieveEspecialidades();
         }
 
         private void txt_IdDelete_KeyPress(object sender, KeyPressEventArgs e)
@@ -71,5 +60,9 @@ namespace UIDesktop
             }
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
