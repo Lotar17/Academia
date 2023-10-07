@@ -49,20 +49,20 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(208, 114);
+            label5.Location = new Point(238, 152);
             label5.Name = "label5";
-            label5.Size = new Size(230, 29);
+            label5.Size = new Size(286, 36);
             label5.TabIndex = 21;
             label5.Text = "Consulta de Usuario";
             // 
             // txt_Id
             // 
             txt_Id.Anchor = AnchorStyles.None;
-            txt_Id.Location = new Point(236, 263);
+            txt_Id.Location = new Point(270, 351);
+            txt_Id.Margin = new Padding(3, 4, 3, 4);
             txt_Id.Name = "txt_Id";
-            txt_Id.Size = new Size(220, 23);
+            txt_Id.Size = new Size(251, 27);
             txt_Id.TabIndex = 14;
-            txt_Id.KeyPress += txt_Id_KeyPress;
             // 
             // label1
             // 
@@ -70,9 +70,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(236, 234);
+            label1.Location = new Point(270, 312);
             label1.Name = "label1";
-            label1.Size = new Size(220, 17);
+            label1.Size = new Size(261, 20);
             label1.TabIndex = 13;
             label1.Text = "Ingrese el ID del usuario a buscar";
             // 
@@ -83,9 +83,10 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(607, 431);
+            btnAceptar.Location = new Point(694, 575);
+            btnAceptar.Margin = new Padding(3, 4, 3, 4);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(142, 56);
+            btnAceptar.Size = new Size(162, 75);
             btnAceptar.TabIndex = 12;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -98,9 +99,10 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(362, 431);
+            btnCancelar.Location = new Point(414, 575);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(142, 56);
+            btnCancelar.Size = new Size(162, 75);
             btnCancelar.TabIndex = 11;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -114,9 +116,10 @@
             panel1.Controls.Add(lbl_Habilitado);
             panel1.Controls.Add(lbl_NombreUsuario);
             panel1.Controls.Add(lbl_Id);
-            panel1.Location = new Point(563, 154);
+            panel1.Location = new Point(643, 205);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(318, 223);
+            panel1.Size = new Size(363, 296);
             panel1.TabIndex = 22;
             panel1.Visible = false;
             // 
@@ -128,10 +131,11 @@
             ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             ipb_Usuario.IconColor = Color.Gainsboro;
             ipb_Usuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            ipb_Usuario.IconSize = 100;
-            ipb_Usuario.Location = new Point(197, 12);
+            ipb_Usuario.IconSize = 114;
+            ipb_Usuario.Location = new Point(225, 16);
+            ipb_Usuario.Margin = new Padding(3, 4, 3, 4);
             ipb_Usuario.Name = "ipb_Usuario";
-            ipb_Usuario.Size = new Size(100, 100);
+            ipb_Usuario.Size = new Size(114, 133);
             ipb_Usuario.TabIndex = 23;
             ipb_Usuario.TabStop = false;
             ipb_Usuario.Visible = false;
@@ -141,9 +145,9 @@
             lbl_IdPersona.Anchor = AnchorStyles.None;
             lbl_IdPersona.AutoSize = true;
             lbl_IdPersona.ForeColor = Color.Gainsboro;
-            lbl_IdPersona.Location = new Point(16, 180);
+            lbl_IdPersona.Location = new Point(18, 240);
             lbl_IdPersona.Name = "lbl_IdPersona";
-            lbl_IdPersona.Size = new Size(82, 15);
+            lbl_IdPersona.Size = new Size(103, 20);
             lbl_IdPersona.TabIndex = 3;
             lbl_IdPersona.Text = "ID de Persona:";
             lbl_IdPersona.Visible = false;
@@ -153,11 +157,11 @@
             lbl_Habilitado.Anchor = AnchorStyles.None;
             lbl_Habilitado.AutoSize = true;
             lbl_Habilitado.ForeColor = Color.Gainsboro;
-            lbl_Habilitado.Location = new Point(16, 151);
+            lbl_Habilitado.Location = new Point(18, 201);
             lbl_Habilitado.Name = "lbl_Habilitado";
-            lbl_Habilitado.Size = new Size(38, 15);
+            lbl_Habilitado.Size = new Size(83, 20);
             lbl_Habilitado.TabIndex = 2;
-            lbl_Habilitado.Text = "label2";
+            lbl_Habilitado.Text = "Habilitado:";
             lbl_Habilitado.Visible = false;
             // 
             // lbl_NombreUsuario
@@ -165,42 +169,39 @@
             lbl_NombreUsuario.Anchor = AnchorStyles.None;
             lbl_NombreUsuario.AutoSize = true;
             lbl_NombreUsuario.ForeColor = Color.Gainsboro;
-            lbl_NombreUsuario.Location = new Point(16, 125);
+            lbl_NombreUsuario.Location = new Point(18, 167);
             lbl_NombreUsuario.Name = "lbl_NombreUsuario";
-            lbl_NombreUsuario.Size = new Size(38, 15);
+            lbl_NombreUsuario.Size = new Size(142, 20);
             lbl_NombreUsuario.TabIndex = 1;
-            lbl_NombreUsuario.Text = "label2";
+            lbl_NombreUsuario.Text = "Nombre de Usuario:";
             lbl_NombreUsuario.Visible = false;
-            lbl_NombreUsuario.Click += lbl_NombreUsuario_Click;
             // 
             // lbl_Id
             // 
             lbl_Id.Anchor = AnchorStyles.None;
             lbl_Id.AutoSize = true;
             lbl_Id.ForeColor = Color.Gainsboro;
-            lbl_Id.Location = new Point(16, 97);
+            lbl_Id.Location = new Point(18, 129);
             lbl_Id.Name = "lbl_Id";
-            lbl_Id.Size = new Size(21, 15);
+            lbl_Id.Size = new Size(27, 20);
             lbl_Id.TabIndex = 0;
             lbl_Id.Text = "ID:";
             lbl_Id.Visible = false;
             // 
             // frm_ConsultaUsuario
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1063, 608);
+            ClientSize = new Size(1215, 811);
             Controls.Add(panel1);
             Controls.Add(label5);
             Controls.Add(txt_Id);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frm_ConsultaUsuario";
             Text = "FormConsultaUsuarios";
-            Load += frm_ConsultaUsuario_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ipb_Usuario).EndInit();

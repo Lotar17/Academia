@@ -77,6 +77,16 @@ namespace DataAccess
             }
         }
 
+        public Persona retrieveAlumno(int idAlumno)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var alumno = context.Personas.Include(p => p.IdPlan).SingleOrDefault(p => p.IdPersona == idAlumno);
+
+                return alumno;
+            }
+        }
+
         public LinkedList<Persona> getAll()
         {
             LinkedList<Persona> alumnos = new LinkedList<Persona>();

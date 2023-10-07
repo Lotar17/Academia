@@ -19,33 +19,13 @@ namespace UIDesktop
             InitializeComponent();
         }
 
-        private void txt_Id_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceso).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si no es un número ni una tecla de control, ignora la tecla presionada.
-                e.Handled = true;
-            }
-        }
-
-        private void lbl_NombreUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frm_ConsultaUsuario_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             Controller controller = new Controller();
             lbl_Id.Text = "ID:";
             lbl_IdPersona.Text = "ID de Persona:";
-            lbl_NombreUsuario.Text = string.Empty;
-            lbl_Habilitado.Text = string.Empty;
+            lbl_NombreUsuario.Text = "Nombre de Usuario:";
+            lbl_Habilitado.Text = "Estado:";
             if (txt_Id != null)
             {
                 UsuarioADO usuario = controller.usuarioGetOne(int.Parse(txt_Id.Text));
@@ -62,14 +42,14 @@ namespace UIDesktop
                 else
                 {
                     lbl_Id.Text += " " + usuario.Id;
-                    lbl_NombreUsuario.Text = usuario.NombreUsuario;
+                    lbl_NombreUsuario.Text += " " + usuario.NombreUsuario;
                     if (usuario.Habilitado)
                     {
-                        lbl_Habilitado.Text = "Habilitado";
+                        lbl_Habilitado.Text += " " + "Habilitado";
                     }
                     else
                     {
-                        lbl_Habilitado.Text = "No habilitado";
+                        lbl_Habilitado.Text += " " + "No habilitado";
                     }
                     lbl_IdPersona.Text += " " + usuario.IdPersona;
                     ipb_Usuario.Visible = true;
@@ -79,7 +59,6 @@ namespace UIDesktop
                     lbl_Habilitado.Visible = true;
                     lbl_IdPersona.Visible = true;
                 }
-
             }
         }
     }

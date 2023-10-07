@@ -19,21 +19,12 @@ namespace UIDesktop
             InitializeComponent();
         }
 
-        private void txt_Id_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceso).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si no es un número ni una tecla de control, ignora la tecla presionada.
-                e.Handled = true;
-            }
-        }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             Controller controller = new Controller();
             lbl_Id.Text = "ID:";
-            lbl_DescEspecialidad.Text = "Descripción de la especialidad";
+            lbl_DescEspecialidad.Text = "Descripción de la especialidad:";
             if (txt_Id != null)
             {
                 Especialidade especialidad = controller.especialidadGetOne(int.Parse(txt_Id.Text));
@@ -48,7 +39,7 @@ namespace UIDesktop
                 else
                 {
                     lbl_Id.Text += " " + especialidad.IdEspecialidad;
-                    lbl_DescEspecialidad.Text = especialidad.DescEspecialidad;
+                    lbl_DescEspecialidad.Text += " " + especialidad.DescEspecialidad;
                     ipb_Usuario.Visible = true;
                     panel1.Visible = true;
                     lbl_Id.Visible = true;
@@ -56,11 +47,6 @@ namespace UIDesktop
                 }
 
             }
-        }
-
-        private void lbl_DescEspecialidad_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

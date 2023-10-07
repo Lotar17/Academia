@@ -70,6 +70,11 @@ namespace Dominio
             return personaDAO.getAll();
         }
 
+        public Persona alumnoGetOne(int idAlumno)
+        {
+            return personaDAO.retrieveAlumno(idAlumno);
+        }
+
         public bool crearEspecialidad(Especialidade especialidad)
         {
             return especialidadDAO.altaEspecialidad(especialidad);
