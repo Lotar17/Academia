@@ -4401,19 +4401,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matia\\.nuget\\packages\\": {}
+    "C:\\Users\\lotar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matia\\Source\\Repos\\Academia\\UIDesktop\\UIDesktop.csproj",
+      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
       "projectName": "UIDesktop",
-      "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\UIDesktop\\UIDesktop.csproj",
-      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\UIDesktop\\obj\\",
+      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\UIDesktop\\UIDesktop.csproj",
+      "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
+      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\UIDesktop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4427,8 +4427,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\Dominio.csproj"
+            "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\Dominio.csproj": {
+              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Negocio\\Dominio.csproj"
             }
           }
         }
@@ -4489,7 +4489,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

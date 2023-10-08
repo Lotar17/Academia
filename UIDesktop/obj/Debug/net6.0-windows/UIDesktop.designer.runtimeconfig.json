@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\matia\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\matia\\.nuget\\packages"
+      "C:\\Users\\lotar\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lotar\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

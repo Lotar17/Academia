@@ -99,5 +99,38 @@ namespace DataAccess
             }
             return alumnos;
         }
+
+        public bool modificarAlumno(int idAlumno, string nombre, string apellido, string direccion, string email, string telefono, DateTime fecha_nac, int legajo)
+        {
+            try
+            {
+                using (AcademiaDbContext context = new AcademiaDbContext())
+                {
+                    Persona persona = context.Personas.Find(idAlumno);
+
+                    if (persona != null)
+                    {
+                        persona.Nombre = nombre;
+                        persona.Apellido = apellido;
+                        persona.Direccion = direccion;
+                        persona.Email = email;
+                        persona.Telefono = telefono;
+                        persona.FechaNac = fecha_nac;
+                        persona.Legajo = legajo;
+                        context.SaveChanges();
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                System.Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
     }
 }

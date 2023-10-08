@@ -75,6 +75,11 @@ namespace Dominio
             return personaDAO.retrieveAlumno(idAlumno);
         }
 
+        public bool modificarAlumno(int idAlumno, string nombre, string apellido, string direccion, string email, string telefono, DateTime fecha_nac, int legajo)
+        {
+            return personaDAO.modificarAlumno(idAlumno,nombre, apellido, direccion, email,telefono, fecha_nac,legajo);
+        }
+
         public bool crearEspecialidad(Especialidade especialidad)
         {
             return especialidadDAO.altaEspecialidad(especialidad);
