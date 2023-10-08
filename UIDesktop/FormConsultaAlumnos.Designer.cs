@@ -189,7 +189,6 @@
             label5.Size = new Size(240, 29);
             label5.TabIndex = 33;
             label5.Text = "Consulta de Alumnos";
-            label5.Click += label5_Click;
             // 
             // txt_Id
             // 
@@ -198,6 +197,7 @@
             txt_Id.Name = "txt_Id";
             txt_Id.Size = new Size(220, 23);
             txt_Id.TabIndex = 32;
+            txt_Id.KeyPress += txt_Id_KeyPress;
             // 
             // label1
             // 
@@ -239,6 +239,7 @@
             btnCancelar.TabIndex = 29;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // FormConsultaAlumnos
             // 

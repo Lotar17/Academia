@@ -216,6 +216,7 @@
             btnCancelar.TabIndex = 24;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txt_apellido
             // 
@@ -284,6 +285,7 @@
             txt_telefono.Name = "txt_telefono";
             txt_telefono.Size = new Size(279, 23);
             txt_telefono.TabIndex = 38;
+            txt_telefono.KeyPress += txt_telefono_KeyPress;
             // 
             // label4
             // 
@@ -316,6 +318,7 @@
             txt_legajo.Name = "txt_legajo";
             txt_legajo.Size = new Size(279, 23);
             txt_legajo.TabIndex = 42;
+            txt_legajo.KeyPress += txt_legajo_KeyPress;
             // 
             // label7
             // 

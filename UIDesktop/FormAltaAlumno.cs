@@ -60,7 +60,7 @@ namespace UIDesktop
             }
             else
             {
-                mensajeError("Debe llenar todos los campos para ingresar una nueva especialidad");
+                mensajeError("Debe llenar todos los campos para ingresar un nuevo alumno");
             }
         }
 

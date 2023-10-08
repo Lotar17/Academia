@@ -15,6 +15,10 @@ namespace Dominio
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         PersonaDAO personaDAO = new PersonaDAO();
         EspecialidadDAO especialidadDAO = new EspecialidadDAO();
+
+
+        //INICIO METODOS USUARIO//
+
         public bool LoginUsuario(string nombre_usuario, string clave)
         {
             return usuarioDAO.Login(nombre_usuario, clave);
@@ -54,6 +58,11 @@ namespace Dominio
         {
             return personaDAO.getOne(idPersona);
         }
+
+        //FIN METODOS USUARIO//
+
+
+        //INICIO METODOS ALUMNO
         
         public bool crearAlumno(Persona a)
         {
@@ -67,12 +76,12 @@ namespace Dominio
 
         public LinkedList<Persona> getAlumnos()
         {
-            return personaDAO.getAll();
+            return personaDAO.getAllAlumnos();
         }
 
         public Persona alumnoGetOne(int idAlumno)
         {
-            return personaDAO.retrieveAlumno(idAlumno);
+            return personaDAO.alumnoGetOne(idAlumno);
         }
 
         public bool modificarAlumno(int idAlumno, string nombre, string apellido, string direccion, string email, string telefono, DateTime fecha_nac, int legajo)
@@ -80,6 +89,42 @@ namespace Dominio
             return personaDAO.modificarAlumno(idAlumno,nombre, apellido, direccion, email,telefono, fecha_nac,legajo);
         }
 
+        //FIN METODOS ALUMNO//
+
+
+
+        //INICIO METODOS PROFESOR
+        public bool crearProfesor(Persona p)
+        {
+            return personaDAO.altaProfesor(p);
+        }
+
+        public LinkedList<Persona> getProfesores()
+        {
+            return personaDAO.getAllProfesores();
+        }
+
+        public bool borrarProfesor(int idProfesor)
+        {
+            return personaDAO.bajaProfesor(idProfesor);
+        }
+
+        public bool modificarProfesor(int idProfesor, string nombre, string apellido, string direccion, string email, string telefono, DateTime fecha_nac, int legajo)
+        {
+            return personaDAO.modificarAlumno(idProfesor, nombre, apellido, direccion, email, telefono, fecha_nac, legajo);
+        }
+
+        public Persona profesorGetOne(int idProfesor)
+        {
+            return personaDAO.profesorGetOne(idProfesor);
+        }
+
+
+        //FIN METODOS PROFESOR//
+
+
+
+        //INICIO METODOS ESPECIALIADES//
         public bool crearEspecialidad(Especialidade especialidad)
         {
             return especialidadDAO.altaEspecialidad(especialidad);
@@ -104,6 +149,8 @@ namespace Dominio
         {
             return especialidadDAO.getAll();
         }
+
+        //FIN METODOS ESPECIALIDADES//
 
     }
 }

@@ -45,8 +45,6 @@ namespace UIDesktop
 
             }
             txt_nombre.Text = txt_apellido.Text = txt_direccion.Text = txt_email.Text = txt_legajo.Text = txt_telefono.Text = dtp_fechaNac.Text = null;
-            dtp_fechaNac.Value = DateTime.MinValue;
-            dtgv_ModificacionAlumnos.SelectedRows.Clear();
         }
 
         private void dtgv_ModificacionAlumnnos_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -84,5 +82,29 @@ namespace UIDesktop
 
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txt_telefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Si la tecla no es un número ni una tecla de control, se ignora.
+                e.Handled = true;
+            }
+        }
+
+        private void txt_legajo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Si la tecla no es un número ni una tecla de control, se ignora.
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -202,5 +202,25 @@ namespace Academia
             lblEmail.Text = UsuarioLoginCache._Email;
             lblTipoUsuario.Text = "Tipo de usuario: " + UsuarioLoginCache._TipoUsuario;
         }
+
+        private void menuItemAltaProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormAltaProfesor());
+        }
+
+        private void menuItemBajaProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormBajaProfesor());
+        }
+
+        private void menuItemModificacionProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormModificacionProfesor());
+        }
+
+        private void menuItemConsultaProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormConsultaProfesor());
+        }
     }
 }

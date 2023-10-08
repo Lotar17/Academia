@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace UIDesktop
 {
-    public partial class FormConsultaAlumnos : Form
+    public partial class FormConsultaProfesor : Form
     {
-        public FormConsultaAlumnos()
+        public FormConsultaProfesor()
         {
             InitializeComponent();
         }
@@ -25,8 +25,8 @@ namespace UIDesktop
             lbl_Id.Text = "ID:";
             if (txt_Id != null)
             {
-                Persona alumno = controller.alumnoGetOne(int.Parse(txt_Id.Text));
-                if (alumno is null)
+                Persona profesor = controller.profesorGetOne(int.Parse(txt_Id.Text));
+                if (profesor is null)
                 {
                     ipb_Usuario.Visible = false;
                     panel1.Visible = false;
@@ -37,19 +37,17 @@ namespace UIDesktop
                     lbl_fechaNac.Visible = false;
                     lbl_legajo.Visible = false;
                     lbl_telefono.Visible = false;
-                    lbl_plan.Visible = false;
-                    MessageBox.Show("El alumno ingresado no existe");
+                    MessageBox.Show("El profesor ingresado no existe");
                 }
                 else
                 {
-                    lbl_Id.Text += " " + alumno.IdPersona;
-                    lbl_nombreapellido.Text += " " + alumno.Nombre + " " + alumno.Apellido;
-                    lbl_direccion.Text += " " + alumno.Direccion;
-                    lbl_email.Text += " " + alumno.Email;
-                    lbl_telefono.Text += " " + alumno.Telefono;
-                    lbl_fechaNac.Text += " " + alumno.FechaNac;
-                    lbl_legajo.Text += " " + alumno.Legajo;
-                    lbl_plan.Text += " " + alumno.IdPlan;
+                    lbl_Id.Text += " " + profesor.IdPersona;
+                    lbl_nombreapellido.Text += " " + profesor.Nombre + " " + profesor.Apellido;
+                    lbl_direccion.Text += " " + profesor.Direccion;
+                    lbl_email.Text += " " + profesor.Email;
+                    lbl_telefono.Text += " " + profesor.Telefono;
+                    lbl_fechaNac.Text += " " + profesor.FechaNac;
+                    lbl_legajo.Text += " " + profesor.Legajo;
                     ipb_Usuario.Visible = true;
                     panel1.Visible = true;
                     lbl_Id.Visible = true;
@@ -59,7 +57,6 @@ namespace UIDesktop
                     lbl_telefono.Visible = true;
                     lbl_fechaNac.Visible = true;
                     lbl_legajo.Visible = true;
-                    lbl_plan.Visible = true;
                 }
 
             }

@@ -629,3 +629,7 @@ L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDes
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormBajaAlumno.resources
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaAlumnos.resources
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionAlumnos.resources
+L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormAltaProfesor.resources
+L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormBajaProfesor.resources
+L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionProfesor.resources
+L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaProfesor.resources
