@@ -24,7 +24,7 @@ namespace UIDesktop
         {
             dtgv_BajaEspecialidad.Rows.Clear();
             Controller ctrlBaja = new Controller();
-            LinkedList<Especialidade> especialidades = ctrlBaja.GetEspecialidades();
+            LinkedList<Especialidade> especialidades = ctrlBaja.getEspecialidades();
             foreach (Especialidade e in especialidades)
             {
                 // Agrega una nueva fila al DataGridView y obtiene su índice
@@ -63,16 +63,6 @@ namespace UIDesktop
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txt_IdDelete_KeyPress_1(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si la tecla no es un número ni una tecla de control, se ignora.
-                e.Handled = true;
-            }
         }
     }
 }

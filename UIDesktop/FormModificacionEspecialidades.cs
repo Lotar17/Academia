@@ -24,7 +24,7 @@ namespace UIDesktop
         {
             dtgv_ModificacionEspecialidad.Rows.Clear();
             Controller ctrlModificacion = new Controller();
-            LinkedList<Especialidade> especialidades = ctrlModificacion.GetEspecialidades();
+            LinkedList<Especialidade> especialidades = ctrlModificacion.getEspecialidades();
             foreach (Especialidade e in especialidades)
             {
                 // Agrega una nueva fila al DataGridView y obtiene su índice

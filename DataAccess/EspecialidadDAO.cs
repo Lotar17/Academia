@@ -10,13 +10,13 @@ namespace DataAccess
 {
     public class EspecialidadDAO
     {
-        public bool altaEspecialidad(Especialidade especialidade)
+        public bool altaEspecialidad(Especialidade especialidad)
         {
             try
             {
                 using (AcademiaDbContext context = new AcademiaDbContext())
                 {
-                    context.Especialidades.Add(especialidade);
+                    context.Especialidades.Add(especialidad);
                     context.SaveChanges();
                     return true;
                 }

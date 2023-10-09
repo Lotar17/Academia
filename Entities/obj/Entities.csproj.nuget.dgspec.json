@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj": {}
+    "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj": {
+    "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
-        "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
