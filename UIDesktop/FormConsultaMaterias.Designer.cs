@@ -193,6 +193,7 @@
             // 
             // nud_Id
             // 
+            nud_Id.Anchor = AnchorStyles.None;
             nud_Id.Location = new Point(237, 247);
             nud_Id.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             nud_Id.Name = "nud_Id";

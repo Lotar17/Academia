@@ -26,7 +26,7 @@ namespace UIDesktop
         {
             dtgv_ModificacionUsuario.Rows.Clear();
             Controller ctrlBaja = new Controller();
-            LinkedList<UsuarioADO> usuarios = ctrlBaja.GetUsuarios();
+            LinkedList<UsuarioADO> usuarios = ctrlBaja.getUsuarios();
             foreach (UsuarioADO u in usuarios)
             {
                 // Agrega una nueva fila al DataGridView y obtiene su índice

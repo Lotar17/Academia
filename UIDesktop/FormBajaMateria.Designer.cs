@@ -188,6 +188,7 @@
             // 
             // nud_IdToDelete
             // 
+            nud_IdToDelete.Anchor = AnchorStyles.None;
             nud_IdToDelete.Location = new Point(436, 320);
             nud_IdToDelete.Name = "nud_IdToDelete";
             nud_IdToDelete.Size = new Size(120, 23);

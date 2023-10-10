@@ -262,3 +262,11 @@ C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\
 C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.pdb
 C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.genruntimeconfig.cache
 C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\ref\UIDesktop.dll
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormAltaComision.resources
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormAltaCurso.resources
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormBajaComision.resources
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormBajaCurso.resources
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaComisiones.resources
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormConsultaCursos.resources
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionComisiones.resources
+C:\Users\Administrador\source\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormModificacionCursos.resources

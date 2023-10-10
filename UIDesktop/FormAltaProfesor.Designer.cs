@@ -52,7 +52,7 @@
             // dtp_fechaNac
             // 
             dtp_fechaNac.Anchor = AnchorStyles.None;
-            dtp_fechaNac.Location = new Point(375, 241);
+            dtp_fechaNac.Location = new Point(347, 239);
             dtp_fechaNac.Margin = new Padding(3, 2, 3, 2);
             dtp_fechaNac.Name = "dtp_fechaNac";
             dtp_fechaNac.Size = new Size(219, 23);
@@ -62,7 +62,7 @@
             // txt_legajo
             // 
             txt_legajo.Anchor = AnchorStyles.None;
-            txt_legajo.Location = new Point(375, 266);
+            txt_legajo.Location = new Point(347, 264);
             txt_legajo.Name = "txt_legajo";
             txt_legajo.Size = new Size(312, 23);
             txt_legajo.TabIndex = 57;
@@ -74,7 +74,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.Gainsboro;
-            label8.Location = new Point(226, 266);
+            label8.Location = new Point(198, 264);
             label8.Name = "label8";
             label8.Size = new Size(51, 17);
             label8.TabIndex = 56;
@@ -86,7 +86,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Gainsboro;
-            label6.Location = new Point(226, 240);
+            label6.Location = new Point(198, 238);
             label6.Name = "label6";
             label6.Size = new Size(139, 17);
             label6.TabIndex = 55;
@@ -95,7 +95,7 @@
             // txt_telefono
             // 
             txt_telefono.Anchor = AnchorStyles.None;
-            txt_telefono.Location = new Point(375, 214);
+            txt_telefono.Location = new Point(347, 212);
             txt_telefono.Name = "txt_telefono";
             txt_telefono.Size = new Size(312, 23);
             txt_telefono.TabIndex = 54;
@@ -107,7 +107,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gainsboro;
-            label4.Location = new Point(226, 216);
+            label4.Location = new Point(198, 214);
             label4.Name = "label4";
             label4.Size = new Size(64, 17);
             label4.TabIndex = 53;
@@ -116,7 +116,7 @@
             // txt_apellido
             // 
             txt_apellido.Anchor = AnchorStyles.None;
-            txt_apellido.Location = new Point(375, 135);
+            txt_apellido.Location = new Point(347, 133);
             txt_apellido.Name = "txt_apellido";
             txt_apellido.Size = new Size(312, 23);
             txt_apellido.TabIndex = 52;
@@ -127,7 +127,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gainsboro;
-            label3.Location = new Point(226, 135);
+            label3.Location = new Point(198, 133);
             label3.Name = "label3";
             label3.Size = new Size(58, 17);
             label3.TabIndex = 51;
@@ -141,7 +141,7 @@
             lblMensajeError.ForeColor = Color.DarkGray;
             lblMensajeError.Image = (Image)resources.GetObject("lblMensajeError.Image");
             lblMensajeError.ImageAlign = ContentAlignment.MiddleLeft;
-            lblMensajeError.Location = new Point(450, 316);
+            lblMensajeError.Location = new Point(422, 314);
             lblMensajeError.Name = "lblMensajeError";
             lblMensajeError.Size = new Size(88, 15);
             lblMensajeError.TabIndex = 50;
@@ -151,7 +151,7 @@
             // txt_email
             // 
             txt_email.Anchor = AnchorStyles.None;
-            txt_email.Location = new Point(375, 188);
+            txt_email.Location = new Point(347, 186);
             txt_email.Name = "txt_email";
             txt_email.Size = new Size(312, 23);
             txt_email.TabIndex = 49;
@@ -162,7 +162,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(226, 188);
+            label7.Location = new Point(198, 186);
             label7.Name = "label7";
             label7.Size = new Size(42, 17);
             label7.TabIndex = 48;
@@ -174,7 +174,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(147, 56);
+            label5.Location = new Point(119, 54);
             label5.Name = "label5";
             label5.Size = new Size(185, 29);
             label5.TabIndex = 47;
@@ -186,7 +186,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gainsboro;
-            label2.Location = new Point(226, 162);
+            label2.Location = new Point(198, 160);
             label2.Name = "label2";
             label2.Size = new Size(67, 17);
             label2.TabIndex = 46;
@@ -195,7 +195,7 @@
             // txt_direccion
             // 
             txt_direccion.Anchor = AnchorStyles.None;
-            txt_direccion.Location = new Point(375, 162);
+            txt_direccion.Location = new Point(347, 160);
             txt_direccion.Name = "txt_direccion";
             txt_direccion.Size = new Size(312, 23);
             txt_direccion.TabIndex = 45;
@@ -203,7 +203,7 @@
             // txt_nombre
             // 
             txt_nombre.Anchor = AnchorStyles.None;
-            txt_nombre.Location = new Point(375, 109);
+            txt_nombre.Location = new Point(347, 107);
             txt_nombre.Name = "txt_nombre";
             txt_nombre.Size = new Size(312, 23);
             txt_nombre.TabIndex = 44;
@@ -214,7 +214,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(226, 109);
+            label1.Location = new Point(198, 107);
             label1.Name = "label1";
             label1.Size = new Size(58, 17);
             label1.TabIndex = 43;
@@ -227,7 +227,7 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(545, 374);
+            btnAceptar.Location = new Point(517, 372);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 42;
@@ -242,7 +242,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(301, 374);
+            btnCancelar.Location = new Point(273, 372);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 41;

@@ -17,6 +17,8 @@ namespace Dominio
         EspecialidadDAO especialidadDAO = new EspecialidadDAO();
         PlanDAO planDAO = new PlanDAO();
         MateriaDAO materiaDAO = new MateriaDAO();
+        ComisionDAO comisionDAO = new ComisionDAO();
+        CursoDAO cursoDAO = new CursoDAO();
 
 
         //INICIO METODOS USUARIO//
@@ -36,7 +38,7 @@ namespace Dominio
             return usuarioDAO.deleteUser(idUsuario);
         }
 
-        public LinkedList<UsuarioADO> GetUsuarios()
+        public LinkedList<UsuarioADO> getUsuarios()
         {
             return usuarioDAO.getAll();
         }
@@ -209,5 +211,65 @@ namespace Dominio
         {
             return materiaDAO.getAll();
         }
+
+        //FIN METODOS MATERIAS//
+
+        //INICIO METODOS COMISIONES//
+
+        public bool crearComision(Comisione c)
+        {
+            return comisionDAO.altaComision(c);
+        }
+
+        public bool borrarComision(int idComision)
+        {
+            return comisionDAO.bajaComision(idComision);
+        }
+
+        public bool modificarComision(int idComision, string descComision, int anioEspecialidad, int idPlan)
+        {
+            return comisionDAO.modificarComision(idComision, descComision, anioEspecialidad, idPlan);
+        }
+
+        public Comisione comisionGetOne(int idComision)
+        {
+            return comisionDAO.getOne(idComision);
+        }
+
+        public LinkedList<Comisione> getComisiones()
+        {
+            return comisionDAO.getAll();
+        }
+
+        //FIN METODOS COMISIONES//
+
+        //INICIO METODOS CURSOS//
+
+        public bool crearCurso(Curso c)
+        {
+            return cursoDAO.altaCurso(c);
+        }
+
+        public bool borrarCurso(int idCurso)
+        {
+            return cursoDAO.bajaCurso(idCurso);
+        }
+
+        public bool modificarCurso(int idCurso, int id_materia, int id_comision, int anio_calendario, int cupo)
+        {
+            return cursoDAO.modificarComision(idCurso, id_materia, id_comision, anio_calendario, cupo);
+        }
+
+        public Curso cursoGetOne(int idCurso)
+        {
+            return cursoDAO.getOne(idCurso);
+        }
+
+        public LinkedList<Curso> getCursos()
+        {
+            return cursoDAO.getAll();
+        }
+
+        //FIN METODOS CURSOS//
     }
 }

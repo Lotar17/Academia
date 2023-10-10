@@ -530,28 +530,28 @@
             // menuItemAltaPlanes
             // 
             menuItemAltaPlanes.Name = "menuItemAltaPlanes";
-            menuItemAltaPlanes.Size = new Size(180, 22);
+            menuItemAltaPlanes.Size = new Size(144, 22);
             menuItemAltaPlanes.Text = "Alta";
             menuItemAltaPlanes.Click += menuItemAltaPlanes_Click;
             // 
             // menuItemBajaPlanes
             // 
             menuItemBajaPlanes.Name = "menuItemBajaPlanes";
-            menuItemBajaPlanes.Size = new Size(180, 22);
+            menuItemBajaPlanes.Size = new Size(144, 22);
             menuItemBajaPlanes.Text = "Baja";
             menuItemBajaPlanes.Click += menuItemBajaPlanes_Click;
             // 
             // menuItemModificacionPlanes
             // 
             menuItemModificacionPlanes.Name = "menuItemModificacionPlanes";
-            menuItemModificacionPlanes.Size = new Size(180, 22);
+            menuItemModificacionPlanes.Size = new Size(144, 22);
             menuItemModificacionPlanes.Text = "Modificacion";
             menuItemModificacionPlanes.Click += menuItemModificacionPlanes_Click;
             // 
             // menuItemConsultaPlanes
             // 
             menuItemConsultaPlanes.Name = "menuItemConsultaPlanes";
-            menuItemConsultaPlanes.Size = new Size(180, 22);
+            menuItemConsultaPlanes.Size = new Size(144, 22);
             menuItemConsultaPlanes.Text = "Consulta";
             menuItemConsultaPlanes.Click += menuItemConsultaPlanes_Click;
             // 
@@ -565,28 +565,28 @@
             // menuItemAltaMaterias
             // 
             menuItemAltaMaterias.Name = "menuItemAltaMaterias";
-            menuItemAltaMaterias.Size = new Size(180, 22);
+            menuItemAltaMaterias.Size = new Size(144, 22);
             menuItemAltaMaterias.Text = "Alta";
             menuItemAltaMaterias.Click += menuItemAltaMaterias_Click;
             // 
             // menuItemBajaMaterias
             // 
             menuItemBajaMaterias.Name = "menuItemBajaMaterias";
-            menuItemBajaMaterias.Size = new Size(180, 22);
+            menuItemBajaMaterias.Size = new Size(144, 22);
             menuItemBajaMaterias.Text = "Baja";
             menuItemBajaMaterias.Click += menuItemBajaMaterias_Click;
             // 
             // menuItemModificacionMaterias
             // 
             menuItemModificacionMaterias.Name = "menuItemModificacionMaterias";
-            menuItemModificacionMaterias.Size = new Size(180, 22);
+            menuItemModificacionMaterias.Size = new Size(144, 22);
             menuItemModificacionMaterias.Text = "Modificacion";
             menuItemModificacionMaterias.Click += menuItemModificacionMaterias_Click;
             // 
             // menuItemConsultaMaterias
             // 
             menuItemConsultaMaterias.Name = "menuItemConsultaMaterias";
-            menuItemConsultaMaterias.Size = new Size(180, 22);
+            menuItemConsultaMaterias.Size = new Size(144, 22);
             menuItemConsultaMaterias.Text = "Consulta";
             menuItemConsultaMaterias.Click += menuItemConsultaMaterias_Click;
             // 
@@ -641,24 +641,28 @@
             menuItemAltaCursos.Name = "menuItemAltaCursos";
             menuItemAltaCursos.Size = new Size(144, 22);
             menuItemAltaCursos.Text = "Alta";
+            menuItemAltaCursos.Click += menuItemAltaCursos_Click;
             // 
             // menuItemBajaCursos
             // 
             menuItemBajaCursos.Name = "menuItemBajaCursos";
             menuItemBajaCursos.Size = new Size(144, 22);
             menuItemBajaCursos.Text = "Baja";
+            menuItemBajaCursos.Click += menuItemBajaCursos_Click;
             // 
             // menuItemModificacionCursos
             // 
             menuItemModificacionCursos.Name = "menuItemModificacionCursos";
             menuItemModificacionCursos.Size = new Size(144, 22);
             menuItemModificacionCursos.Text = "Modificacion";
+            menuItemModificacionCursos.Click += menuItemModificacionCursos_Click;
             // 
             // menuItemConsultaCursos
             // 
             menuItemConsultaCursos.Name = "menuItemConsultaCursos";
             menuItemConsultaCursos.Size = new Size(144, 22);
             menuItemConsultaCursos.Text = "Consulta";
+            menuItemConsultaCursos.Click += menuItemConsultaCursos_Click;
             // 
             // panel1
             // 

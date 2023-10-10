@@ -241,6 +241,7 @@
             // 
             // nud_hsSemanales
             // 
+            nud_hsSemanales.Anchor = AnchorStyles.None;
             nud_hsSemanales.Location = new Point(209, 255);
             nud_hsSemanales.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             nud_hsSemanales.Name = "nud_hsSemanales";
@@ -249,6 +250,7 @@
             // 
             // nud_hsTotales
             // 
+            nud_hsTotales.Anchor = AnchorStyles.None;
             nud_hsTotales.Location = new Point(209, 294);
             nud_hsTotales.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             nud_hsTotales.Name = "nud_hsTotales";
@@ -257,6 +259,7 @@
             // 
             // nud_idPlan
             // 
+            nud_idPlan.Anchor = AnchorStyles.None;
             nud_idPlan.Location = new Point(209, 330);
             nud_idPlan.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             nud_idPlan.Name = "nud_idPlan";

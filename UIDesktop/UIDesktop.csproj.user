@@ -1,7 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="FormAltaCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBajaComision.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormAltaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAltaComision.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormAltaMateria.cs">
@@ -14,6 +23,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormBajaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBajaCurso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormBajaEspecialidad.cs">
@@ -31,6 +43,12 @@
     <Compile Update="FormConsultaAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormConsultaComisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormConsultaCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormConsultaEspecialidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -44,6 +62,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormModificacionAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormModificacionComisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormModificacionCursos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormModificacionEspecialidades.cs">

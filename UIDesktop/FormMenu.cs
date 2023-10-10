@@ -230,6 +230,26 @@ namespace Academia
             openChildForm(new FormReporteCursos());
         }
 
+        private void menuItemAltaCursos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormAltaCurso());
+        }
+
+        private void menuItemBajaCursos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormBajaCurso());
+        }
+
+        private void menuItemModificacionCursos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormModificacionCursos());
+        }
+
+        private void menuItemConsultaCursos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormConsultaCursos());
+        }
+
         private void btnLogout_Click(object Sender, EventArgs e)
         {
             if (MessageBox.Show("¿Estas seguro de que quieres cerrar sesion?", "ATENCION", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -262,7 +282,5 @@ namespace Academia
             lblEmail.Text = UsuarioLoginCache._Email;
             lblTipoUsuario.Text = "Tipo de usuario: " + UsuarioLoginCache._TipoUsuario;
         }
-
-        
     }
 }
