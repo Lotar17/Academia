@@ -32,7 +32,8 @@ namespace UIDesktop
                 Plane plan = new Plane();
                 plan.DescPlan = txt_descPlan.Text;
                 plan.IdPlan = int.Parse(txt_idEspecialidad.Text);
-                if (controller.especialidadGetOne(plan.IdPlan) != null)
+                plan.IdEspecialidad = int.Parse(txt_idEspecialidad.Text);
+                if (controller.especialidadGetOne((int)plan.IdEspecialidad) != null)
                 {
                     if (controller.crearPlan(plan))
                     {

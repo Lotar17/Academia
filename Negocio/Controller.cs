@@ -16,6 +16,7 @@ namespace Dominio
         PersonaDAO personaDAO = new PersonaDAO();
         EspecialidadDAO especialidadDAO = new EspecialidadDAO();
         PlanDAO planDAO = new PlanDAO();
+        MateriaDAO materiaDAO = new MateriaDAO();
 
 
         //INICIO METODOS USUARIO//
@@ -153,6 +154,8 @@ namespace Dominio
 
         //FIN METODOS ESPECIALIDADES//
 
+        //INICIO METODOS PLANES//
+
         public bool crearPlan(Plane p)
         {
             return planDAO.altaPlan(p);
@@ -176,6 +179,35 @@ namespace Dominio
         public LinkedList<Plane> getPlanes()
         {
             return planDAO.getAll();
+        }
+
+        //FIN METODOS PLANES//
+
+        //INICIO METODOS MATERIAS//
+
+        public bool crearMateria(Materia m)
+        {
+            return materiaDAO.altaMateria(m);
+        }
+
+        public bool borrarMateria(int idMateria)
+        {
+            return materiaDAO.bajaMateria(idMateria);
+        }
+
+        public bool modificarMateria(int idMateria, string desc_materia, int hs_semanales, int hs_totales, int idPlan)
+        {
+            return materiaDAO.modificarMateria(idMateria, desc_materia, hs_semanales, hs_totales, idPlan);
+        }
+
+        public Materia materiaGetOne(int idMateria)
+        {
+            return materiaDAO.getOne(idMateria);
+        }
+
+        public LinkedList<Materia> getMaterias()
+        {
+            return materiaDAO.getAll();
         }
     }
 }

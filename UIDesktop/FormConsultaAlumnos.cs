@@ -26,6 +26,7 @@ namespace UIDesktop
             if (txt_Id != null)
             {
                 Persona alumno = controller.alumnoGetOne(int.Parse(txt_Id.Text));
+                Plane plan = controller.planGetOne((int)alumno.IdPlan);
                 if (alumno is null)
                 {
                     ipb_Usuario.Visible = false;
@@ -49,7 +50,7 @@ namespace UIDesktop
                     lbl_telefono.Text += " " + alumno.Telefono;
                     lbl_fechaNac.Text += " " + alumno.FechaNac;
                     lbl_legajo.Text += " " + alumno.Legajo;
-                    lbl_plan.Text += " " + alumno.IdPlan;
+                    lbl_plan.Text += " " + plan.DescPlan;
                     ipb_Usuario.Visible = true;
                     panel1.Visible = true;
                     lbl_Id.Visible = true;

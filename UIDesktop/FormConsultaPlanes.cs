@@ -28,7 +28,7 @@ namespace UIDesktop
             if (txt_Id != null)
             {
                 Plane plan = controller.planGetOne(int.Parse(txt_Id.Text));
-                if (plan.IdEspecialidad == 0)
+                if (plan is null)
                 {
                     ipb_Usuario.Visible = false;
                     panel1.Visible = false;
@@ -60,6 +60,11 @@ namespace UIDesktop
                 // Si la tecla no es un número ni una tecla de control, se ignora.
                 e.Handled = true;
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -48,19 +48,18 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(240, 133);
+            label5.Location = new Point(210, 100);
             label5.Name = "label5";
-            label5.Size = new Size(273, 36);
+            label5.Size = new Size(221, 29);
             label5.TabIndex = 32;
             label5.Text = "Consulta de Planes";
             // 
             // txt_Id
             // 
             txt_Id.Anchor = AnchorStyles.None;
-            txt_Id.Location = new Point(253, 332);
-            txt_Id.Margin = new Padding(3, 4, 3, 4);
+            txt_Id.Location = new Point(221, 249);
             txt_Id.Name = "txt_Id";
-            txt_Id.Size = new Size(251, 27);
+            txt_Id.Size = new Size(220, 23);
             txt_Id.TabIndex = 31;
             txt_Id.KeyPress += txt_Id_KeyPress;
             // 
@@ -70,9 +69,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(253, 289);
+            label1.Location = new Point(221, 217);
             label1.Name = "label1";
-            label1.Size = new Size(237, 20);
+            label1.Size = new Size(200, 17);
             label1.TabIndex = 30;
             label1.Text = "Ingrese el ID del plan a buscar";
             // 
@@ -83,13 +82,13 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(677, 556);
-            btnAceptar.Margin = new Padding(3, 4, 3, 4);
+            btnAceptar.Location = new Point(592, 417);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(162, 75);
+            btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 29;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCancelar
             // 
@@ -98,13 +97,13 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(397, 556);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(347, 417);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(162, 75);
+            btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 28;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // panel1
             // 
@@ -114,10 +113,9 @@
             panel1.Controls.Add(ipb_Usuario);
             panel1.Controls.Add(lbl_descPlan);
             panel1.Controls.Add(lbl_Id);
-            panel1.Location = new Point(648, 133);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(567, 100);
             panel1.Name = "panel1";
-            panel1.Size = new Size(476, 340);
+            panel1.Size = new Size(417, 256);
             panel1.TabIndex = 33;
             panel1.Visible = false;
             // 
@@ -126,9 +124,9 @@
             lbl_especialidad.Anchor = AnchorStyles.None;
             lbl_especialidad.AutoSize = true;
             lbl_especialidad.ForeColor = Color.Gainsboro;
-            lbl_especialidad.Location = new Point(27, 279);
+            lbl_especialidad.Location = new Point(24, 209);
             lbl_especialidad.Name = "lbl_especialidad";
-            lbl_especialidad.Size = new Size(96, 20);
+            lbl_especialidad.Size = new Size(75, 15);
             lbl_especialidad.TabIndex = 24;
             lbl_especialidad.Text = "Especialidad:";
             lbl_especialidad.Visible = false;
@@ -141,11 +139,10 @@
             ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             ipb_Usuario.IconColor = Color.Gainsboro;
             ipb_Usuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            ipb_Usuario.IconSize = 114;
-            ipb_Usuario.Location = new Point(313, 26);
-            ipb_Usuario.Margin = new Padding(3, 4, 3, 4);
+            ipb_Usuario.IconSize = 100;
+            ipb_Usuario.Location = new Point(274, 20);
             ipb_Usuario.Name = "ipb_Usuario";
-            ipb_Usuario.Size = new Size(114, 133);
+            ipb_Usuario.Size = new Size(100, 100);
             ipb_Usuario.TabIndex = 23;
             ipb_Usuario.TabStop = false;
             ipb_Usuario.Visible = false;
@@ -155,9 +152,9 @@
             lbl_descPlan.Anchor = AnchorStyles.None;
             lbl_descPlan.AutoSize = true;
             lbl_descPlan.ForeColor = Color.Gainsboro;
-            lbl_descPlan.Location = new Point(27, 239);
+            lbl_descPlan.Location = new Point(24, 179);
             lbl_descPlan.Name = "lbl_descPlan";
-            lbl_descPlan.Size = new Size(148, 20);
+            lbl_descPlan.Size = new Size(117, 15);
             lbl_descPlan.TabIndex = 3;
             lbl_descPlan.Text = "Descripcion del plan:";
             lbl_descPlan.Visible = false;
@@ -167,25 +164,26 @@
             lbl_Id.Anchor = AnchorStyles.None;
             lbl_Id.AutoSize = true;
             lbl_Id.ForeColor = Color.Gainsboro;
-            lbl_Id.Location = new Point(27, 197);
+            lbl_Id.Location = new Point(24, 148);
             lbl_Id.Name = "lbl_Id";
-            lbl_Id.Size = new Size(27, 20);
+            lbl_Id.Size = new Size(21, 15);
             lbl_Id.TabIndex = 0;
             lbl_Id.Text = "ID:";
             lbl_Id.Visible = false;
             // 
             // FormConsultaPlanes
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1215, 749);
+            ClientSize = new Size(1063, 562);
             Controls.Add(panel1);
             Controls.Add(label5);
             Controls.Add(txt_Id);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormConsultaPlanes";
             Text = "FormConsultaPlanes";
             panel1.ResumeLayout(false);

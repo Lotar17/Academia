@@ -479,33 +479,33 @@
             DropdownProfesores.MenuItemTextColor = Color.Empty;
             DropdownProfesores.Name = "rjDropdownProfesores";
             DropdownProfesores.PrimaryColor = Color.Empty;
-            DropdownProfesores.Size = new Size(181, 114);
+            DropdownProfesores.Size = new Size(145, 92);
             // 
             // menuItemAltaProfesores
             // 
             menuItemAltaProfesores.Name = "menuItemAltaProfesores";
-            menuItemAltaProfesores.Size = new Size(180, 22);
+            menuItemAltaProfesores.Size = new Size(144, 22);
             menuItemAltaProfesores.Text = "Alta";
             menuItemAltaProfesores.Click += menuItemAltaProfesores_Click;
             // 
             // menuItemBajaProfesores
             // 
             menuItemBajaProfesores.Name = "menuItemBajaProfesores";
-            menuItemBajaProfesores.Size = new Size(180, 22);
+            menuItemBajaProfesores.Size = new Size(144, 22);
             menuItemBajaProfesores.Text = "Baja";
             menuItemBajaProfesores.Click += menuItemBajaProfesores_Click;
             // 
             // menuItemModificacionProfesores
             // 
             menuItemModificacionProfesores.Name = "menuItemModificacionProfesores";
-            menuItemModificacionProfesores.Size = new Size(180, 22);
+            menuItemModificacionProfesores.Size = new Size(144, 22);
             menuItemModificacionProfesores.Text = "Modificacion";
             menuItemModificacionProfesores.Click += menuItemModificacionProfesores_Click;
             // 
             // menuItemConsultaProfesores
             // 
             menuItemConsultaProfesores.Name = "menuItemConsultaProfesores";
-            menuItemConsultaProfesores.Size = new Size(180, 22);
+            menuItemConsultaProfesores.Size = new Size(144, 22);
             menuItemConsultaProfesores.Text = "Consulta";
             menuItemConsultaProfesores.Click += menuItemConsultaProfesores_Click;
             // 
@@ -530,26 +530,30 @@
             // menuItemAltaPlanes
             // 
             menuItemAltaPlanes.Name = "menuItemAltaPlanes";
-            menuItemAltaPlanes.Size = new Size(144, 22);
+            menuItemAltaPlanes.Size = new Size(180, 22);
             menuItemAltaPlanes.Text = "Alta";
+            menuItemAltaPlanes.Click += menuItemAltaPlanes_Click;
             // 
             // menuItemBajaPlanes
             // 
             menuItemBajaPlanes.Name = "menuItemBajaPlanes";
-            menuItemBajaPlanes.Size = new Size(144, 22);
+            menuItemBajaPlanes.Size = new Size(180, 22);
             menuItemBajaPlanes.Text = "Baja";
+            menuItemBajaPlanes.Click += menuItemBajaPlanes_Click;
             // 
             // menuItemModificacionPlanes
             // 
             menuItemModificacionPlanes.Name = "menuItemModificacionPlanes";
-            menuItemModificacionPlanes.Size = new Size(144, 22);
+            menuItemModificacionPlanes.Size = new Size(180, 22);
             menuItemModificacionPlanes.Text = "Modificacion";
+            menuItemModificacionPlanes.Click += menuItemModificacionPlanes_Click;
             // 
             // menuItemConsultaPlanes
             // 
             menuItemConsultaPlanes.Name = "menuItemConsultaPlanes";
-            menuItemConsultaPlanes.Size = new Size(144, 22);
+            menuItemConsultaPlanes.Size = new Size(180, 22);
             menuItemConsultaPlanes.Text = "Consulta";
+            menuItemConsultaPlanes.Click += menuItemConsultaPlanes_Click;
             // 
             // materiasToolStripMenuItem
             // 
@@ -561,26 +565,30 @@
             // menuItemAltaMaterias
             // 
             menuItemAltaMaterias.Name = "menuItemAltaMaterias";
-            menuItemAltaMaterias.Size = new Size(144, 22);
+            menuItemAltaMaterias.Size = new Size(180, 22);
             menuItemAltaMaterias.Text = "Alta";
+            menuItemAltaMaterias.Click += menuItemAltaMaterias_Click;
             // 
             // menuItemBajaMaterias
             // 
             menuItemBajaMaterias.Name = "menuItemBajaMaterias";
-            menuItemBajaMaterias.Size = new Size(144, 22);
+            menuItemBajaMaterias.Size = new Size(180, 22);
             menuItemBajaMaterias.Text = "Baja";
+            menuItemBajaMaterias.Click += menuItemBajaMaterias_Click;
             // 
             // menuItemModificacionMaterias
             // 
             menuItemModificacionMaterias.Name = "menuItemModificacionMaterias";
-            menuItemModificacionMaterias.Size = new Size(144, 22);
+            menuItemModificacionMaterias.Size = new Size(180, 22);
             menuItemModificacionMaterias.Text = "Modificacion";
+            menuItemModificacionMaterias.Click += menuItemModificacionMaterias_Click;
             // 
             // menuItemConsultaMaterias
             // 
             menuItemConsultaMaterias.Name = "menuItemConsultaMaterias";
-            menuItemConsultaMaterias.Size = new Size(144, 22);
+            menuItemConsultaMaterias.Size = new Size(180, 22);
             menuItemConsultaMaterias.Text = "Consulta";
+            menuItemConsultaMaterias.Click += menuItemConsultaMaterias_Click;
             // 
             // DropdownComisiones
             // 

@@ -4,6 +4,9 @@
     <Compile Update="FormAltaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormAltaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormAltaPlan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +17,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormBajaEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBajaMateria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormBajaPlan.cs">
@@ -28,6 +34,9 @@
     <Compile Update="FormConsultaEspecialidades.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormConsultaMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormConsultaPlanes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +47,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormModificacionEspecialidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormModificacionMaterias.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormModificacionPlanes.cs">

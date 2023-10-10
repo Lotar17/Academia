@@ -146,10 +146,70 @@ namespace Academia
             DropdownProfesores.Show(btnMenuProfesores, btnMenuProfesores.Width, 0);
         }
 
+        private void menuItemAltaProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormAltaProfesor());
+        }
+
+        private void menuItemBajaProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormBajaProfesor());
+        }
+
+        private void menuItemModificacionProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormModificacionProfesor());
+        }
+
+        private void menuItemConsultaProfesores_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormConsultaProfesor());
+        }
+
         private void btnMenuPlanesYMaterias_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.Gainsboro);
             DropdownPlanesYMaterias.Show(btnMenuPlanesYMaterias, btnMenuPlanesYMaterias.Width, 0);
+        }
+
+        private void menuItemAltaPlanes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormAltaPlan());
+        }
+
+        private void menuItemBajaPlanes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormBajaPlan());
+        }
+
+        private void menuItemModificacionPlanes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormModificacionPlanes());
+        }
+
+        private void menuItemConsultaPlanes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormConsultaPlanes());
+        }
+
+        private void menuItemAltaMaterias_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormAltaMateria());
+        }
+
+        private void menuItemBajaMaterias_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormBajaMateria());
+        }
+
+        private void menuItemModificacionMaterias_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormModificacionMaterias());
+        }
+
+        private void menuItemConsultaMaterias_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormConsultaMaterias());
         }
 
         private void btnMenuComisiones_Click(object sender, EventArgs e)
@@ -203,24 +263,6 @@ namespace Academia
             lblTipoUsuario.Text = "Tipo de usuario: " + UsuarioLoginCache._TipoUsuario;
         }
 
-        private void menuItemAltaProfesores_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormAltaProfesor());
-        }
-
-        private void menuItemBajaProfesores_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormBajaProfesor());
-        }
-
-        private void menuItemModificacionProfesores_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormModificacionProfesor());
-        }
-
-        private void menuItemConsultaProfesores_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormConsultaProfesor());
-        }
+        
     }
 }

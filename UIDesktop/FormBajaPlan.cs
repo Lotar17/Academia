@@ -31,7 +31,7 @@ namespace UIDesktop
                 int rowIndex = dtgv_BajaPlan.Rows.Add();
                 dtgv_BajaPlan.Rows[rowIndex].Cells["ID"].Value = p.IdPlan;
                 dtgv_BajaPlan.Rows[rowIndex].Cells["desc_plan"].Value = p.DescPlan;
-                dtgv_BajaPlan.Rows[rowIndex].Cells["idPlan"].Value = p.IdEspecialidad;
+                dtgv_BajaPlan.Rows[rowIndex].Cells["idEspecialidad"].Value = p.IdEspecialidad;
             }
         }
 
@@ -40,7 +40,7 @@ namespace UIDesktop
             // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
             int idToDelete = int.Parse(txt_IdDelete.Text);
             Controller controller = new Controller();
-            if (controller.borrarEspecialidad(idToDelete))
+            if (controller.borrarPlan(idToDelete))
             {
                 MessageBox.Show("Plan borrado con exito");
             }
