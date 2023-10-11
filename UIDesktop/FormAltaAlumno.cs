@@ -26,9 +26,10 @@ namespace UIDesktop
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txt_nombre.Text != "" && txt_apellido.Text != "" && txt_direccion.Text != "" && txt_email.Text != "" && txt_telefono.Text != "" && txt_legajo.Text != "" && txt_idPlan.Text != "")
+            if (txt_nombre.Text != "" && txt_apellido.Text != "" && txt_direccion.Text != "" && txt_email.Text != "" && txt_telefono.Text != "" && nud_legajo.Text != "" && nud_idPlan.Text != "")
             {
-                Controller altaAlumno = new Controller();
+                string mensaje = "";
+                Controller controller = new Controller();
                 Persona alumno = new Persona();
                 alumno.Nombre = txt_nombre.Text;
                 alumno.Apellido = txt_apellido.Text;
@@ -36,27 +37,41 @@ namespace UIDesktop
                 alumno.Email = txt_email.Text;
                 alumno.Telefono = txt_telefono.Text;
                 alumno.FechaNac = dtp_fechaNac.Value;
-                alumno.Legajo = int.Parse(txt_legajo.Text);
-                alumno.IdPlan = int.Parse(txt_idPlan.Text);
+                alumno.Legajo = (int)nud_legajo.Value;
+                alumno.IdPlan = (int)nud_idPlan.Value;
                 alumno.TipoPersona = "Alumno";
-                if (altaAlumno.crearAlumno(alumno))
+                if (controller.planGetOne((int)alumno.IdPlan) == null || controller.alumnoGetOne((int)nud_legajo.Value) != null) //ver legajo
                 {
-                    MessageBox.Show("Alumno cargado con éxito");
-                    txt_nombre.Text = null;
-                    txt_apellido.Text = null;
-                    txt_direccion.Text = null;
-                    txt_email.Text = null;
-                    txt_telefono.Text = null;
-                    dtp_fechaNac.Value = default;
-                    txt_legajo.Text = null;
-                    txt_idPlan.Text = null;
-                    this.Close();
+                    if (controller.planGetOne((int)alumno.IdPlan) == null)
+                    {
+                        mensaje += "         El ID ingresado no corresponde a ningun plan.\n";
+                    }
+                    if (controller.alumnoGetOne((int)nud_legajo.Value) != null)
+                    {
+                        mensaje += "         El legajo ingresado ya existe para otro alumno.\n";
+                    }
+                    mensajeError(mensaje);
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo cargar el nuevo alumno");
+                    if (controller.crearAlumno(alumno))
+                    {
+                        MessageBox.Show("Alumno cargado con éxito");
+                        txt_nombre.Text = null;
+                        txt_apellido.Text = null;
+                        txt_direccion.Text = null;
+                        txt_email.Text = null;
+                        txt_telefono.Text = null;
+                        dtp_fechaNac.Value = default;
+                        nud_legajo.Text = null;
+                        nud_idPlan.Text = null;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo cargar el nuevo alumno");
+                    }
                 }
-
             }
             else
             {
@@ -66,7 +81,7 @@ namespace UIDesktop
 
         private void mensajeError(string mensaje)
         {
-            lblMensajeError.Text = "     " + mensaje;
+            lblMensajeError.Text = mensaje;
             lblMensajeError.Visible = true;
         }
     }

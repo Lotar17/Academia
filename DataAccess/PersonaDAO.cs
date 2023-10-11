@@ -79,17 +79,7 @@ namespace DataAccess
             }
         }
 
-        public Persona retrieveAlumno(int idAlumno)
-        {
-            using (AcademiaDbContext context = new AcademiaDbContext())
-            {
-                var alumno = context.Personas.Include(p => p.IdPlan).SingleOrDefault(p => p.IdPersona == idAlumno);
-
-                return alumno;
-            }
-        }
-
-        public LinkedList<Persona> getAllAlumnos()
+        public LinkedList<Persona> alumnosGetAll()
         {
             LinkedList<Persona> alumnos = new LinkedList<Persona>();
             using (AcademiaDbContext context = new AcademiaDbContext())
@@ -168,7 +158,7 @@ namespace DataAccess
             }
         }
 
-        public LinkedList<Persona> getAllProfesores()
+        public LinkedList<Persona> profesoresGetAll()
         {
             LinkedList<Persona> profesores = new LinkedList<Persona>();
             using (AcademiaDbContext context = new AcademiaDbContext())

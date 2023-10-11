@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             label5 = new Label();
             txt_descPlan = new TextBox();
             lbl_DescEspecialidad = new Label();
@@ -40,7 +40,7 @@
             lbl_idPlan = new Label();
             dtgv_modificacionPlan = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
-            desc_especialidad = new DataGridViewTextBoxColumn();
+            desc_plan = new DataGridViewTextBoxColumn();
             idPlan = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgv_modificacionPlan).BeginInit();
             SuspendLayout();
@@ -135,56 +135,50 @@
             // 
             dtgv_modificacionPlan.AllowUserToAddRows = false;
             dtgv_modificacionPlan.AllowUserToDeleteRows = false;
-            dtgv_modificacionPlan.AllowUserToOrderColumns = true;
             dtgv_modificacionPlan.AllowUserToResizeColumns = false;
             dtgv_modificacionPlan.AllowUserToResizeRows = false;
             dtgv_modificacionPlan.Anchor = AnchorStyles.None;
             dtgv_modificacionPlan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgv_modificacionPlan.BackgroundColor = Color.FromArgb(32, 30, 45);
-            dtgv_modificacionPlan.BorderStyle = BorderStyle.Fixed3D;
-            dtgv_modificacionPlan.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.Transparent;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dtgv_modificacionPlan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dtgv_modificacionPlan.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(32, 30, 45);
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgv_modificacionPlan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgv_modificacionPlan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgv_modificacionPlan.Columns.AddRange(new DataGridViewColumn[] { ID, desc_especialidad, idPlan });
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.Transparent;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle5.SelectionBackColor = Color.Transparent;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            dtgv_modificacionPlan.DefaultCellStyle = dataGridViewCellStyle5;
-            dtgv_modificacionPlan.EnableHeadersVisualStyles = false;
+            dtgv_modificacionPlan.Columns.AddRange(new DataGridViewColumn[] { ID, desc_plan, idPlan });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(32, 30, 45);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dtgv_modificacionPlan.DefaultCellStyle = dataGridViewCellStyle2;
             dtgv_modificacionPlan.GridColor = Color.Gainsboro;
-            dtgv_modificacionPlan.Location = new Point(625, 213);
+            dtgv_modificacionPlan.Location = new Point(633, 195);
             dtgv_modificacionPlan.Margin = new Padding(3, 4, 3, 4);
             dtgv_modificacionPlan.MultiSelect = false;
             dtgv_modificacionPlan.Name = "dtgv_modificacionPlan";
             dtgv_modificacionPlan.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.Transparent;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dtgv_modificacionPlan.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(32, 30, 45);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dtgv_modificacionPlan.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dtgv_modificacionPlan.RowHeadersVisible = false;
             dtgv_modificacionPlan.RowHeadersWidth = 51;
             dtgv_modificacionPlan.RowTemplate.Height = 25;
-            dtgv_modificacionPlan.ShowCellErrors = false;
-            dtgv_modificacionPlan.ShowCellToolTips = false;
-            dtgv_modificacionPlan.ShowEditingIcon = false;
-            dtgv_modificacionPlan.ShowRowErrors = false;
-            dtgv_modificacionPlan.Size = new Size(547, 273);
-            dtgv_modificacionPlan.TabIndex = 39;
+            dtgv_modificacionPlan.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dtgv_modificacionPlan.Size = new Size(536, 257);
+            dtgv_modificacionPlan.TabIndex = 88;
             dtgv_modificacionPlan.CellClick += dtgv_modificacionPlan_CellClick;
             // 
             // ID
@@ -194,12 +188,12 @@
             ID.Name = "ID";
             ID.ReadOnly = true;
             // 
-            // desc_especialidad
+            // desc_plan
             // 
-            desc_especialidad.HeaderText = "Descripción de la especialidad";
-            desc_especialidad.MinimumWidth = 6;
-            desc_especialidad.Name = "desc_especialidad";
-            desc_especialidad.ReadOnly = true;
+            desc_plan.HeaderText = "Descripcion del Plan";
+            desc_plan.MinimumWidth = 6;
+            desc_plan.Name = "desc_plan";
+            desc_plan.ReadOnly = true;
             // 
             // idPlan
             // 
@@ -239,7 +233,7 @@
         private Label lbl_idPlan;
         private DataGridView dtgv_modificacionPlan;
         private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn desc_especialidad;
+        private DataGridViewTextBoxColumn desc_plan;
         private DataGridViewTextBoxColumn idPlan;
     }
 }

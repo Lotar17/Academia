@@ -80,7 +80,7 @@ namespace Dominio
 
         public LinkedList<Persona> getAlumnos()
         {
-            return personaDAO.getAllAlumnos();
+            return personaDAO.alumnosGetAll();
         }
 
         public Persona alumnoGetOne(int idAlumno)
@@ -105,7 +105,7 @@ namespace Dominio
 
         public LinkedList<Persona> getProfesores()
         {
-            return personaDAO.getAllProfesores();
+            return personaDAO.profesoresGetAll();
         }
 
         public bool borrarProfesor(int idProfesor)

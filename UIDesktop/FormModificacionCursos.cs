@@ -37,7 +37,7 @@ namespace UIDesktop
             }
         }
 
-        private void dtgv_modificacionPlan_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgv_modificacionCurso_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             nud_idMateria.Value = int.Parse(dtgv_modificacionCursos.SelectedRows[0].Cells["idMateria"].Value.ToString());
             nud_idComision.Value = int.Parse(dtgv_modificacionCursos.SelectedRows[0].Cells["idComision"].Value.ToString());

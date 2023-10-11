@@ -18,7 +18,7 @@
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
     <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
@@ -117,6 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblMensajeError.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAABGdBTUEAALGPC/xhBQAAAMdJREFUOE+l
+        kt0NwjAQg4ENugCZgAeUbNS1OlMekOgY3YAGH3LhQo42JZY+qbkfp5F8qNHdhavAY7tG5x8Cj22C0QAS
+        GVj+T7fzpVNmL6TG9n7BYKLRTOR7YnufRhd6GiSW5AL+aehZqhMcTp9ly9AnmWF5W1iIepnlzBBEltcl
+        efta/GWYqrKJQclctshWYQjWs4kBnbk3cDwKVg/Y2bQyp9CxKTCzicaSuQKOWE9eyLOpM2ex8WTCbGIw
+        y1wL4iXPyDLXho9PVjVLsH39ZhYAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="ID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -132,14 +142,4 @@
   <metadata name="cupo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblMensajeError.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAABGdBTUEAALGPC/xhBQAAAMdJREFUOE+l
-        kt0NwjAQg4ENugCZgAeUbNS1OlMekOgY3YAGH3LhQo42JZY+qbkfp5F8qNHdhavAY7tG5x8Cj22C0QAS
-        GVj+T7fzpVNmL6TG9n7BYKLRTOR7YnufRhd6GiSW5AL+aehZqhMcTp9ly9AnmWF5W1iIepnlzBBEltcl
-        efta/GWYqrKJQclctshWYQjWs4kBnbk3cDwKVg/Y2bQyp9CxKTCzicaSuQKOWE9eyLOpM2ex8WTCbGIw
-        y1wL4iXPyDLXho9PVjVLsH39ZhYAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>

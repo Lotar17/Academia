@@ -218,6 +218,26 @@ namespace Academia
             DropdownComisiones.Show(btnMenuComisiones, btnMenuComisiones.Width, 0);
         }
 
+        private void menuItemAltaComisiones_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormAltaComision());
+        }
+
+        private void menuItemBajaComisiones_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormBajaComision());
+        }
+
+        private void menuItemModificacionComisiones_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormModificacionComisiones());
+        }
+
+        private void menuItemConsultaComisiones_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormConsultaComisiones());
+        }
+
         private void btnMenuCursos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.Gainsboro);

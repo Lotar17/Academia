@@ -30,7 +30,7 @@ namespace UIDesktop
                 // Agrega una nueva fila al DataGridView y obtiene su índice
                 int rowIndex = dtgv_BajaMateria.Rows.Add();
                 dtgv_BajaMateria.Rows[rowIndex].Cells["ID"].Value = m.IdMateria;
-                dtgv_BajaMateria.Rows[rowIndex].Cells["desc_plan"].Value = m.DescMateria;
+                dtgv_BajaMateria.Rows[rowIndex].Cells["desc_materia"].Value = m.DescMateria;
                 dtgv_BajaMateria.Rows[rowIndex].Cells["hsSemanales"].Value = m.HsSemanales;
                 dtgv_BajaMateria.Rows[rowIndex].Cells["hsTotales"].Value = m.HsTotales;
                 dtgv_BajaMateria.Rows[rowIndex].Cells["idPlan"].Value = m.IdPlan;

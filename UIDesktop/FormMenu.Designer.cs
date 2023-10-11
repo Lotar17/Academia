@@ -362,33 +362,33 @@
             DropdownUsuarios.MenuItemTextColor = Color.Empty;
             DropdownUsuarios.Name = "rjDropdownUsuarios";
             DropdownUsuarios.PrimaryColor = Color.Empty;
-            DropdownUsuarios.Size = new Size(145, 92);
+            DropdownUsuarios.Size = new Size(166, 100);
             // 
             // menuItemAltaUsuarios
             // 
             menuItemAltaUsuarios.Name = "menuItemAltaUsuarios";
-            menuItemAltaUsuarios.Size = new Size(144, 22);
+            menuItemAltaUsuarios.Size = new Size(165, 24);
             menuItemAltaUsuarios.Text = "Alta";
             menuItemAltaUsuarios.Click += menuItemAltaUsuarios_Click;
             // 
             // menuItemBajaUsuarios
             // 
             menuItemBajaUsuarios.Name = "menuItemBajaUsuarios";
-            menuItemBajaUsuarios.Size = new Size(144, 22);
+            menuItemBajaUsuarios.Size = new Size(165, 24);
             menuItemBajaUsuarios.Text = "Baja";
             menuItemBajaUsuarios.Click += menuItemBajaUsuarios_Click;
             // 
             // menuItemModificacionUsuarios
             // 
             menuItemModificacionUsuarios.Name = "menuItemModificacionUsuarios";
-            menuItemModificacionUsuarios.Size = new Size(144, 22);
+            menuItemModificacionUsuarios.Size = new Size(165, 24);
             menuItemModificacionUsuarios.Text = "Modificacion";
             menuItemModificacionUsuarios.Click += menuItemModificacionUsuarios_Click;
             // 
             // menuItemConsultaUsuarios
             // 
             menuItemConsultaUsuarios.Name = "menuItemConsultaUsuarios";
-            menuItemConsultaUsuarios.Size = new Size(144, 22);
+            menuItemConsultaUsuarios.Size = new Size(165, 24);
             menuItemConsultaUsuarios.Text = "Consulta";
             menuItemConsultaUsuarios.Click += menuItemConsultaUsuarios_Click;
             // 
@@ -401,33 +401,33 @@
             DropdownAlumnos.MenuItemTextColor = Color.Empty;
             DropdownAlumnos.Name = "rjDropdownAlumnos";
             DropdownAlumnos.PrimaryColor = Color.Empty;
-            DropdownAlumnos.Size = new Size(145, 92);
+            DropdownAlumnos.Size = new Size(166, 100);
             // 
             // menuItemAltaAlumnos
             // 
             menuItemAltaAlumnos.Name = "menuItemAltaAlumnos";
-            menuItemAltaAlumnos.Size = new Size(144, 22);
+            menuItemAltaAlumnos.Size = new Size(165, 24);
             menuItemAltaAlumnos.Text = "Alta";
             menuItemAltaAlumnos.Click += menuItemAltaAlumnos_Click;
             // 
             // menuItemBajaAlumnos
             // 
             menuItemBajaAlumnos.Name = "menuItemBajaAlumnos";
-            menuItemBajaAlumnos.Size = new Size(144, 22);
+            menuItemBajaAlumnos.Size = new Size(165, 24);
             menuItemBajaAlumnos.Text = "Baja";
             menuItemBajaAlumnos.Click += menuItemBajaAlumnos_Click;
             // 
             // menuItemModificacionAlumnos
             // 
             menuItemModificacionAlumnos.Name = "menuItemModificacionAlumnos";
-            menuItemModificacionAlumnos.Size = new Size(144, 22);
+            menuItemModificacionAlumnos.Size = new Size(165, 24);
             menuItemModificacionAlumnos.Text = "Modificacion";
             menuItemModificacionAlumnos.Click += menuItemModificacionAlumnos_Click;
             // 
             // menuItemConsultaAlumnos
             // 
             menuItemConsultaAlumnos.Name = "menuItemConsultaAlumnos";
-            menuItemConsultaAlumnos.Size = new Size(144, 22);
+            menuItemConsultaAlumnos.Size = new Size(165, 24);
             menuItemConsultaAlumnos.Text = "Consulta";
             menuItemConsultaAlumnos.Click += menuItemConsultaAlumnos_Click;
             // 
@@ -440,33 +440,33 @@
             DropdownEspecialidades.MenuItemTextColor = Color.Empty;
             DropdownEspecialidades.Name = "rjDropdownEspecialidades";
             DropdownEspecialidades.PrimaryColor = Color.Empty;
-            DropdownEspecialidades.Size = new Size(145, 92);
+            DropdownEspecialidades.Size = new Size(166, 100);
             // 
             // menuItemAltaEspecialidades
             // 
             menuItemAltaEspecialidades.Name = "menuItemAltaEspecialidades";
-            menuItemAltaEspecialidades.Size = new Size(144, 22);
+            menuItemAltaEspecialidades.Size = new Size(165, 24);
             menuItemAltaEspecialidades.Text = "Alta";
             menuItemAltaEspecialidades.Click += menuItemAltaEspecialidades_Click;
             // 
             // menuItemBajaEspecialidades
             // 
             menuItemBajaEspecialidades.Name = "menuItemBajaEspecialidades";
-            menuItemBajaEspecialidades.Size = new Size(144, 22);
+            menuItemBajaEspecialidades.Size = new Size(165, 24);
             menuItemBajaEspecialidades.Text = "Baja";
             menuItemBajaEspecialidades.Click += menuItemBajaEspecialidades_Click;
             // 
             // menuItemModificacionEspecialidades
             // 
             menuItemModificacionEspecialidades.Name = "menuItemModificacionEspecialidades";
-            menuItemModificacionEspecialidades.Size = new Size(144, 22);
+            menuItemModificacionEspecialidades.Size = new Size(165, 24);
             menuItemModificacionEspecialidades.Text = "Modificacion";
             menuItemModificacionEspecialidades.Click += menuItemModificacionEspecialidades_Click;
             // 
             // menuItemConsultaEspecialidades
             // 
             menuItemConsultaEspecialidades.Name = "menuItemConsultaEspecialidades";
-            menuItemConsultaEspecialidades.Size = new Size(144, 22);
+            menuItemConsultaEspecialidades.Size = new Size(165, 24);
             menuItemConsultaEspecialidades.Text = "Consulta";
             menuItemConsultaEspecialidades.Click += menuItemConsultaEspecialidades_Click;
             // 
@@ -479,33 +479,33 @@
             DropdownProfesores.MenuItemTextColor = Color.Empty;
             DropdownProfesores.Name = "rjDropdownProfesores";
             DropdownProfesores.PrimaryColor = Color.Empty;
-            DropdownProfesores.Size = new Size(145, 92);
+            DropdownProfesores.Size = new Size(166, 100);
             // 
             // menuItemAltaProfesores
             // 
             menuItemAltaProfesores.Name = "menuItemAltaProfesores";
-            menuItemAltaProfesores.Size = new Size(144, 22);
+            menuItemAltaProfesores.Size = new Size(165, 24);
             menuItemAltaProfesores.Text = "Alta";
             menuItemAltaProfesores.Click += menuItemAltaProfesores_Click;
             // 
             // menuItemBajaProfesores
             // 
             menuItemBajaProfesores.Name = "menuItemBajaProfesores";
-            menuItemBajaProfesores.Size = new Size(144, 22);
+            menuItemBajaProfesores.Size = new Size(165, 24);
             menuItemBajaProfesores.Text = "Baja";
             menuItemBajaProfesores.Click += menuItemBajaProfesores_Click;
             // 
             // menuItemModificacionProfesores
             // 
             menuItemModificacionProfesores.Name = "menuItemModificacionProfesores";
-            menuItemModificacionProfesores.Size = new Size(144, 22);
+            menuItemModificacionProfesores.Size = new Size(165, 24);
             menuItemModificacionProfesores.Text = "Modificacion";
             menuItemModificacionProfesores.Click += menuItemModificacionProfesores_Click;
             // 
             // menuItemConsultaProfesores
             // 
             menuItemConsultaProfesores.Name = "menuItemConsultaProfesores";
-            menuItemConsultaProfesores.Size = new Size(144, 22);
+            menuItemConsultaProfesores.Size = new Size(165, 24);
             menuItemConsultaProfesores.Text = "Consulta";
             menuItemConsultaProfesores.Click += menuItemConsultaProfesores_Click;
             // 
@@ -518,40 +518,40 @@
             DropdownPlanesYMaterias.MenuItemTextColor = Color.Empty;
             DropdownPlanesYMaterias.Name = "rjDropdownPlanesYMaterias";
             DropdownPlanesYMaterias.PrimaryColor = Color.Empty;
-            DropdownPlanesYMaterias.Size = new Size(120, 48);
+            DropdownPlanesYMaterias.Size = new Size(136, 52);
             // 
             // planesToolStripMenuItem
             // 
             planesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuItemAltaPlanes, menuItemBajaPlanes, menuItemModificacionPlanes, menuItemConsultaPlanes });
             planesToolStripMenuItem.Name = "planesToolStripMenuItem";
-            planesToolStripMenuItem.Size = new Size(119, 22);
+            planesToolStripMenuItem.Size = new Size(135, 24);
             planesToolStripMenuItem.Text = "Planes";
             // 
             // menuItemAltaPlanes
             // 
             menuItemAltaPlanes.Name = "menuItemAltaPlanes";
-            menuItemAltaPlanes.Size = new Size(144, 22);
+            menuItemAltaPlanes.Size = new Size(179, 26);
             menuItemAltaPlanes.Text = "Alta";
             menuItemAltaPlanes.Click += menuItemAltaPlanes_Click;
             // 
             // menuItemBajaPlanes
             // 
             menuItemBajaPlanes.Name = "menuItemBajaPlanes";
-            menuItemBajaPlanes.Size = new Size(144, 22);
+            menuItemBajaPlanes.Size = new Size(179, 26);
             menuItemBajaPlanes.Text = "Baja";
             menuItemBajaPlanes.Click += menuItemBajaPlanes_Click;
             // 
             // menuItemModificacionPlanes
             // 
             menuItemModificacionPlanes.Name = "menuItemModificacionPlanes";
-            menuItemModificacionPlanes.Size = new Size(144, 22);
+            menuItemModificacionPlanes.Size = new Size(179, 26);
             menuItemModificacionPlanes.Text = "Modificacion";
             menuItemModificacionPlanes.Click += menuItemModificacionPlanes_Click;
             // 
             // menuItemConsultaPlanes
             // 
             menuItemConsultaPlanes.Name = "menuItemConsultaPlanes";
-            menuItemConsultaPlanes.Size = new Size(144, 22);
+            menuItemConsultaPlanes.Size = new Size(179, 26);
             menuItemConsultaPlanes.Text = "Consulta";
             menuItemConsultaPlanes.Click += menuItemConsultaPlanes_Click;
             // 
@@ -559,34 +559,34 @@
             // 
             materiasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuItemAltaMaterias, menuItemBajaMaterias, menuItemModificacionMaterias, menuItemConsultaMaterias });
             materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            materiasToolStripMenuItem.Size = new Size(119, 22);
+            materiasToolStripMenuItem.Size = new Size(135, 24);
             materiasToolStripMenuItem.Text = "Materias";
             // 
             // menuItemAltaMaterias
             // 
             menuItemAltaMaterias.Name = "menuItemAltaMaterias";
-            menuItemAltaMaterias.Size = new Size(144, 22);
+            menuItemAltaMaterias.Size = new Size(179, 26);
             menuItemAltaMaterias.Text = "Alta";
             menuItemAltaMaterias.Click += menuItemAltaMaterias_Click;
             // 
             // menuItemBajaMaterias
             // 
             menuItemBajaMaterias.Name = "menuItemBajaMaterias";
-            menuItemBajaMaterias.Size = new Size(144, 22);
+            menuItemBajaMaterias.Size = new Size(179, 26);
             menuItemBajaMaterias.Text = "Baja";
             menuItemBajaMaterias.Click += menuItemBajaMaterias_Click;
             // 
             // menuItemModificacionMaterias
             // 
             menuItemModificacionMaterias.Name = "menuItemModificacionMaterias";
-            menuItemModificacionMaterias.Size = new Size(144, 22);
+            menuItemModificacionMaterias.Size = new Size(179, 26);
             menuItemModificacionMaterias.Text = "Modificacion";
             menuItemModificacionMaterias.Click += menuItemModificacionMaterias_Click;
             // 
             // menuItemConsultaMaterias
             // 
             menuItemConsultaMaterias.Name = "menuItemConsultaMaterias";
-            menuItemConsultaMaterias.Size = new Size(144, 22);
+            menuItemConsultaMaterias.Size = new Size(179, 26);
             menuItemConsultaMaterias.Text = "Consulta";
             menuItemConsultaMaterias.Click += menuItemConsultaMaterias_Click;
             // 
@@ -599,31 +599,35 @@
             DropdownComisiones.MenuItemTextColor = Color.Empty;
             DropdownComisiones.Name = "rjDropdownComisiones";
             DropdownComisiones.PrimaryColor = Color.Empty;
-            DropdownComisiones.Size = new Size(145, 92);
+            DropdownComisiones.Size = new Size(211, 128);
             // 
             // menuItemAltaComisiones
             // 
             menuItemAltaComisiones.Name = "menuItemAltaComisiones";
-            menuItemAltaComisiones.Size = new Size(144, 22);
+            menuItemAltaComisiones.Size = new Size(210, 24);
             menuItemAltaComisiones.Text = "Alta";
+            menuItemAltaComisiones.Click += menuItemAltaComisiones_Click;
             // 
             // menuItemBajaComisiones
             // 
             menuItemBajaComisiones.Name = "menuItemBajaComisiones";
-            menuItemBajaComisiones.Size = new Size(144, 22);
+            menuItemBajaComisiones.Size = new Size(210, 24);
             menuItemBajaComisiones.Text = "Baja";
+            menuItemBajaComisiones.Click += menuItemBajaComisiones_Click;
             // 
             // menuItemModificacionComisiones
             // 
             menuItemModificacionComisiones.Name = "menuItemModificacionComisiones";
-            menuItemModificacionComisiones.Size = new Size(144, 22);
+            menuItemModificacionComisiones.Size = new Size(210, 24);
             menuItemModificacionComisiones.Text = "Modificacion";
+            menuItemModificacionComisiones.Click += menuItemModificacionComisiones_Click;
             // 
             // menuItemConsultaComisiones
             // 
             menuItemConsultaComisiones.Name = "menuItemConsultaComisiones";
-            menuItemConsultaComisiones.Size = new Size(144, 22);
+            menuItemConsultaComisiones.Size = new Size(210, 24);
             menuItemConsultaComisiones.Text = "Consulta";
+            menuItemConsultaComisiones.Click += menuItemConsultaComisiones_Click;
             // 
             // DropdownCursos
             // 
@@ -634,33 +638,33 @@
             DropdownCursos.MenuItemTextColor = Color.Empty;
             DropdownCursos.Name = "rjDropdownCursos";
             DropdownCursos.PrimaryColor = Color.Empty;
-            DropdownCursos.Size = new Size(145, 92);
+            DropdownCursos.Size = new Size(166, 100);
             // 
             // menuItemAltaCursos
             // 
             menuItemAltaCursos.Name = "menuItemAltaCursos";
-            menuItemAltaCursos.Size = new Size(144, 22);
+            menuItemAltaCursos.Size = new Size(165, 24);
             menuItemAltaCursos.Text = "Alta";
             menuItemAltaCursos.Click += menuItemAltaCursos_Click;
             // 
             // menuItemBajaCursos
             // 
             menuItemBajaCursos.Name = "menuItemBajaCursos";
-            menuItemBajaCursos.Size = new Size(144, 22);
+            menuItemBajaCursos.Size = new Size(165, 24);
             menuItemBajaCursos.Text = "Baja";
             menuItemBajaCursos.Click += menuItemBajaCursos_Click;
             // 
             // menuItemModificacionCursos
             // 
             menuItemModificacionCursos.Name = "menuItemModificacionCursos";
-            menuItemModificacionCursos.Size = new Size(144, 22);
+            menuItemModificacionCursos.Size = new Size(165, 24);
             menuItemModificacionCursos.Text = "Modificacion";
             menuItemModificacionCursos.Click += menuItemModificacionCursos_Click;
             // 
             // menuItemConsultaCursos
             // 
             menuItemConsultaCursos.Name = "menuItemConsultaCursos";
-            menuItemConsultaCursos.Size = new Size(144, 22);
+            menuItemConsultaCursos.Size = new Size(165, 24);
             menuItemConsultaCursos.Text = "Consulta";
             menuItemConsultaCursos.Click += menuItemConsultaCursos_Click;
             // 
@@ -684,7 +688,7 @@
             lblTipoUsuario.ForeColor = Color.Gainsboro;
             lblTipoUsuario.Location = new Point(335, 60);
             lblTipoUsuario.Name = "lblTipoUsuario";
-            lblTipoUsuario.Size = new Size(89, 17);
+            lblTipoUsuario.Size = new Size(104, 20);
             lblTipoUsuario.TabIndex = 4;
             lblTipoUsuario.Text = "Tipo Usuario";
             // 
@@ -694,7 +698,7 @@
             lblEmail.ForeColor = Color.Gainsboro;
             lblEmail.Location = new Point(335, 40);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(42, 17);
+            lblEmail.Size = new Size(51, 20);
             lblEmail.TabIndex = 3;
             lblEmail.Text = "Email";
             // 
@@ -704,7 +708,7 @@
             lblNombreApellido.ForeColor = Color.Gainsboro;
             lblNombreApellido.Location = new Point(335, 20);
             lblNombreApellido.Name = "lblNombreApellido";
-            lblNombreApellido.Size = new Size(123, 17);
+            lblNombreApellido.Size = new Size(145, 20);
             lblNombreApellido.TabIndex = 2;
             lblNombreApellido.Text = "Nombre y Apellido";
             // 
@@ -724,7 +728,7 @@
             // 
             // FormMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1329, 747);
             Controls.Add(panelChildForm);

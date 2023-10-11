@@ -44,11 +44,13 @@
             txt_telefono = new TextBox();
             label4 = new Label();
             label6 = new Label();
-            txt_legajo = new TextBox();
             label8 = new Label();
             dtp_fechaNac = new DateTimePicker();
             label9 = new Label();
-            txt_idPlan = new TextBox();
+            nud_idPlan = new NumericUpDown();
+            nud_legajo = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)nud_idPlan).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_legajo).BeginInit();
             SuspendLayout();
             // 
             // lblMensajeError
@@ -59,9 +61,9 @@
             lblMensajeError.ForeColor = Color.DarkGray;
             lblMensajeError.Image = (Image)resources.GetObject("lblMensajeError.Image");
             lblMensajeError.ImageAlign = ContentAlignment.MiddleLeft;
-            lblMensajeError.Location = new Point(432, 319);
+            lblMensajeError.Location = new Point(494, 425);
             lblMensajeError.Name = "lblMensajeError";
-            lblMensajeError.Size = new Size(88, 15);
+            lblMensajeError.Size = new Size(107, 18);
             lblMensajeError.TabIndex = 27;
             lblMensajeError.Text = "Error Message";
             lblMensajeError.Visible = false;
@@ -69,9 +71,10 @@
             // txt_email
             // 
             txt_email.Anchor = AnchorStyles.None;
-            txt_email.Location = new Point(358, 172);
+            txt_email.Location = new Point(409, 229);
+            txt_email.Margin = new Padding(3, 4, 3, 4);
             txt_email.Name = "txt_email";
-            txt_email.Size = new Size(312, 23);
+            txt_email.Size = new Size(356, 27);
             txt_email.TabIndex = 26;
             // 
             // label7
@@ -80,9 +83,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.Gainsboro;
-            label7.Location = new Point(209, 172);
+            label7.Location = new Point(239, 229);
             label7.Name = "label7";
-            label7.Size = new Size(42, 17);
+            label7.Size = new Size(51, 20);
             label7.TabIndex = 25;
             label7.Text = "Email";
             // 
@@ -92,9 +95,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(130, 40);
+            label5.Location = new Point(149, 53);
             label5.Name = "label5";
-            label5.Size = new Size(174, 29);
+            label5.Size = new Size(218, 36);
             label5.TabIndex = 24;
             label5.Text = "Alta de Alumno";
             // 
@@ -104,27 +107,29 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Gainsboro;
-            label2.Location = new Point(209, 146);
+            label2.Location = new Point(239, 195);
             label2.Name = "label2";
-            label2.Size = new Size(67, 17);
+            label2.Size = new Size(81, 20);
             label2.TabIndex = 23;
             label2.Text = "Direccion";
             // 
             // txt_direccion
             // 
             txt_direccion.Anchor = AnchorStyles.None;
-            txt_direccion.Location = new Point(358, 146);
+            txt_direccion.Location = new Point(409, 195);
+            txt_direccion.Margin = new Padding(3, 4, 3, 4);
             txt_direccion.Name = "txt_direccion";
-            txt_direccion.Size = new Size(312, 23);
+            txt_direccion.Size = new Size(356, 27);
             txt_direccion.TabIndex = 22;
             txt_direccion.UseSystemPasswordChar = true;
             // 
             // txt_nombre
             // 
             txt_nombre.Anchor = AnchorStyles.None;
-            txt_nombre.Location = new Point(358, 93);
+            txt_nombre.Location = new Point(409, 124);
+            txt_nombre.Margin = new Padding(3, 4, 3, 4);
             txt_nombre.Name = "txt_nombre";
-            txt_nombre.Size = new Size(312, 23);
+            txt_nombre.Size = new Size(356, 27);
             txt_nombre.TabIndex = 21;
             // 
             // label1
@@ -133,9 +138,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(209, 93);
+            label1.Location = new Point(239, 124);
             label1.Name = "label1";
-            label1.Size = new Size(58, 17);
+            label1.Size = new Size(68, 20);
             label1.TabIndex = 20;
             label1.Text = "Nombre";
             // 
@@ -146,9 +151,10 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(528, 358);
+            btnAceptar.Location = new Point(603, 477);
+            btnAceptar.Margin = new Padding(3, 4, 3, 4);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(142, 56);
+            btnAceptar.Size = new Size(162, 75);
             btnAceptar.TabIndex = 19;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -161,9 +167,10 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(284, 358);
+            btnCancelar.Location = new Point(325, 477);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(142, 56);
+            btnCancelar.Size = new Size(162, 75);
             btnCancelar.TabIndex = 18;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -172,9 +179,10 @@
             // txt_apellido
             // 
             txt_apellido.Anchor = AnchorStyles.None;
-            txt_apellido.Location = new Point(358, 119);
+            txt_apellido.Location = new Point(409, 159);
+            txt_apellido.Margin = new Padding(3, 4, 3, 4);
             txt_apellido.Name = "txt_apellido";
-            txt_apellido.Size = new Size(312, 23);
+            txt_apellido.Size = new Size(356, 27);
             txt_apellido.TabIndex = 31;
             // 
             // label3
@@ -183,18 +191,19 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Gainsboro;
-            label3.Location = new Point(209, 119);
+            label3.Location = new Point(239, 159);
             label3.Name = "label3";
-            label3.Size = new Size(58, 17);
+            label3.Size = new Size(68, 20);
             label3.TabIndex = 30;
             label3.Text = "Apellido";
             // 
             // txt_telefono
             // 
             txt_telefono.Anchor = AnchorStyles.None;
-            txt_telefono.Location = new Point(358, 198);
+            txt_telefono.Location = new Point(409, 264);
+            txt_telefono.Margin = new Padding(3, 4, 3, 4);
             txt_telefono.Name = "txt_telefono";
-            txt_telefono.Size = new Size(312, 23);
+            txt_telefono.Size = new Size(356, 27);
             txt_telefono.TabIndex = 33;
             // 
             // label4
@@ -203,9 +212,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Gainsboro;
-            label4.Location = new Point(209, 200);
+            label4.Location = new Point(239, 267);
             label4.Name = "label4";
-            label4.Size = new Size(64, 17);
+            label4.Size = new Size(73, 20);
             label4.TabIndex = 32;
             label4.Text = "Telefono";
             // 
@@ -215,19 +224,11 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Gainsboro;
-            label6.Location = new Point(209, 224);
+            label6.Location = new Point(239, 299);
             label6.Name = "label6";
-            label6.Size = new Size(139, 17);
+            label6.Size = new Size(164, 20);
             label6.TabIndex = 34;
             label6.Text = "Fecha de nacimiento";
-            // 
-            // txt_legajo
-            // 
-            txt_legajo.Anchor = AnchorStyles.None;
-            txt_legajo.Location = new Point(358, 250);
-            txt_legajo.Name = "txt_legajo";
-            txt_legajo.Size = new Size(312, 23);
-            txt_legajo.TabIndex = 37;
             // 
             // label8
             // 
@@ -235,19 +236,18 @@
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.Gainsboro;
-            label8.Location = new Point(209, 250);
+            label8.Location = new Point(239, 333);
             label8.Name = "label8";
-            label8.Size = new Size(51, 17);
+            label8.Size = new Size(59, 20);
             label8.TabIndex = 36;
             label8.Text = "Legajo";
             // 
             // dtp_fechaNac
             // 
             dtp_fechaNac.Anchor = AnchorStyles.None;
-            dtp_fechaNac.Location = new Point(358, 225);
-            dtp_fechaNac.Margin = new Padding(3, 2, 3, 2);
+            dtp_fechaNac.Location = new Point(409, 300);
             dtp_fechaNac.Name = "dtp_fechaNac";
-            dtp_fechaNac.Size = new Size(219, 23);
+            dtp_fechaNac.Size = new Size(250, 27);
             dtp_fechaNac.TabIndex = 40;
             dtp_fechaNac.Value = new DateTime(2023, 10, 5, 19, 16, 51, 0);
             // 
@@ -257,30 +257,40 @@
             label9.AutoSize = true;
             label9.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.Gainsboro;
-            label9.Location = new Point(209, 277);
+            label9.Location = new Point(239, 369);
             label9.Name = "label9";
-            label9.Size = new Size(53, 17);
+            label9.Size = new Size(64, 20);
             label9.TabIndex = 38;
             label9.Text = "ID Plan";
             // 
-            // txt_idPlan
+            // nud_idPlan
             // 
-            txt_idPlan.Anchor = AnchorStyles.None;
-            txt_idPlan.Location = new Point(358, 277);
-            txt_idPlan.Name = "txt_idPlan";
-            txt_idPlan.Size = new Size(312, 23);
-            txt_idPlan.TabIndex = 39;
+            nud_idPlan.Anchor = AnchorStyles.None;
+            nud_idPlan.Location = new Point(408, 365);
+            nud_idPlan.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nud_idPlan.Name = "nud_idPlan";
+            nud_idPlan.Size = new Size(150, 27);
+            nud_idPlan.TabIndex = 41;
+            // 
+            // nud_legajo
+            // 
+            nud_legajo.Anchor = AnchorStyles.None;
+            nud_legajo.Location = new Point(408, 333);
+            nud_legajo.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nud_legajo.Name = "nud_legajo";
+            nud_legajo.Size = new Size(150, 27);
+            nud_legajo.TabIndex = 42;
             // 
             // FormAltaAlumno
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(928, 450);
+            ClientSize = new Size(1061, 600);
+            Controls.Add(nud_legajo);
+            Controls.Add(nud_idPlan);
             Controls.Add(dtp_fechaNac);
-            Controls.Add(txt_idPlan);
             Controls.Add(label9);
-            Controls.Add(txt_legajo);
             Controls.Add(label8);
             Controls.Add(label6);
             Controls.Add(txt_telefono);
@@ -297,9 +307,10 @@
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FormAltaAlumno";
             Text = "FormAltaAlumno";
+            ((System.ComponentModel.ISupportInitialize)nud_idPlan).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_legajo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -320,10 +331,10 @@
         private TextBox txt_telefono;
         private Label label4;
         private Label label6;
-        private TextBox txt_legajo;
         private Label label8;
         private DateTimePicker dtp_fechaNac;
         private Label label9;
-        private TextBox txt_idPlan;
+        private NumericUpDown nud_idPlan;
+        private NumericUpDown nud_legajo;
     }
 }

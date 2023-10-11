@@ -32,15 +32,15 @@ namespace UIDesktop
                 dtgv_modificacionComision.Rows[rowIndex].Cells["ID"].Value = c.IdComision;
                 dtgv_modificacionComision.Rows[rowIndex].Cells["desc_comision"].Value = c.DescComision;
                 dtgv_modificacionComision.Rows[rowIndex].Cells["anioEspecialidad"].Value = c.AnioEspecialidad;
-                dtgv_modificacionComision.Rows[rowIndex].Cells["id_plan"].Value = c.IdPlan;
+                dtgv_modificacionComision.Rows[rowIndex].Cells["idPlan"].Value = c.IdPlan;
             }
         }
 
-        private void dtgv_modificacionPlan_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgv_modificacionComision_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_descComision.Text = dtgv_modificacionComision.SelectedRows[0].Cells["desc_materia"].Value.ToString();
-            nud_anioEspecialidad.Value = int.Parse(dtgv_modificacionComision.SelectedRows[0].Cells["hsSemanales"].Value.ToString());
-            nud_idPlan.Value = int.Parse(dtgv_modificacionComision.SelectedRows[0].Cells["id_plan"].Value.ToString());
+            txt_descComision.Text = dtgv_modificacionComision.SelectedRows[0].Cells["desc_comision"].Value.ToString();
+            nud_anioEspecialidad.Value = int.Parse(dtgv_modificacionComision.SelectedRows[0].Cells["anioEspecialidad"].Value.ToString());
+            nud_idPlan.Value = int.Parse(dtgv_modificacionComision.SelectedRows[0].Cells["idPlan"].Value.ToString());
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

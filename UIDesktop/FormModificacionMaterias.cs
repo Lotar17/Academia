@@ -30,18 +30,19 @@ namespace UIDesktop
                 // Agrega una nueva fila al DataGridView y obtiene su índice
                 int rowIndex = dtgv_modificacionMateria.Rows.Add();
                 dtgv_modificacionMateria.Rows[rowIndex].Cells["ID"].Value = m.IdMateria;
+                dtgv_modificacionMateria.Rows[rowIndex].Cells["desc_materia"].Value = m.DescMateria;
                 dtgv_modificacionMateria.Rows[rowIndex].Cells["hsSemanales"].Value = m.HsSemanales;
                 dtgv_modificacionMateria.Rows[rowIndex].Cells["hsTotales"].Value = m.HsTotales;
-                dtgv_modificacionMateria.Rows[rowIndex].Cells["id_plan"].Value = m.IdPlan;
+                dtgv_modificacionMateria.Rows[rowIndex].Cells["idPlan"].Value = m.IdPlan;
             }
         }
 
-        private void dtgv_modificacionPlan_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgv_modificacionMateria_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_descMateria.Text = dtgv_modificacionMateria.SelectedRows[0].Cells["desc_materia"].Value.ToString();
             nud_hsSemanales.Value = int.Parse(dtgv_modificacionMateria.SelectedRows[0].Cells["hsSemanales"].Value.ToString());
             nud_hsTotales.Value = int.Parse(dtgv_modificacionMateria.SelectedRows[0].Cells["hsTotales"].Value.ToString());
-            nud_idPlan.Value = int.Parse(dtgv_modificacionMateria.SelectedRows[0].Cells["id_plan"].Value.ToString());
+            nud_idPlan.Value = int.Parse(dtgv_modificacionMateria.SelectedRows[0].Cells["idPlan"].Value.ToString());
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
