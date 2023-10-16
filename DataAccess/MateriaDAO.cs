@@ -28,29 +28,13 @@ namespace DataAccess
             }
         }
 
-        public bool bajaMateria(int idMateria)
+        public void bajaMateria(int idMateria)
         {
-            try
+            using (AcademiaDbContext context = new AcademiaDbContext())
             {
-                using (AcademiaDbContext context = new AcademiaDbContext())
-                {
-                    var materia = context.Materias.SingleOrDefault(p => p.IdMateria == idMateria);
-                    if (materia != null)
-                    {
-                        context.Materias.Remove(materia);
-                        context.SaveChanges();
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-            catch (DbUpdateException ex)
-            {
-                System.Console.WriteLine("Error al eliminar la materia: " + ex.Message);
-                return false;
+                var materia = context.Materias.SingleOrDefault(p => p.IdMateria == idMateria);
+                    context.Materias.Remove(materia);
+                    context.SaveChanges();
             }
         }
 
@@ -105,6 +89,19 @@ namespace DataAccess
                 }
             }
             return materias;
+        }
+
+        public bool getMateriaXCurso(int idMateria)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.Cursos.Count(c => c.IdMateria == idMateria);
+                if (count > 0)
+                {
+                    return false;
+                }
+                return true;
+            }
         }
     }
 }

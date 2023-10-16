@@ -53,29 +53,13 @@ namespace DataAccess
             }
         }
 
-        public bool bajaAlumno(int idAlumno)
+        public void bajaAlumno(int idAlumno)
         {
-            try
+            using (AcademiaDbContext context = new AcademiaDbContext())
             {
-                using (AcademiaDbContext context = new AcademiaDbContext())
-                {
-                    var alumno = context.Personas.SingleOrDefault(e => e.IdPersona == idAlumno);
-                    if (alumno != null)
-                    {
-                        context.Personas.Remove(alumno);
-                        context.SaveChanges();
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-            catch (DbUpdateException ex)
-            {
-                System.Console.WriteLine("Error al eliminar el alumno: " + ex.Message);
-                return false;
+                var alumno = context.Personas.SingleOrDefault(e => e.IdPersona == idAlumno);
+                context.Personas.Remove(alumno);
+                context.SaveChanges();
             }
         }
 
@@ -171,29 +155,13 @@ namespace DataAccess
             return profesores;
         }
 
-        public bool bajaProfesor(int idProfesor)
+        public void bajaProfesor(int idProfesor)
         {
-            try
+            using (AcademiaDbContext context = new AcademiaDbContext())
             {
-                using (AcademiaDbContext context = new AcademiaDbContext())
-                {
-                    var profesor = context.Personas.SingleOrDefault(e => e.IdPersona == idProfesor);
-                    if (profesor != null)
-                    {
-                        context.Personas.Remove(profesor);
-                        context.SaveChanges();
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-            catch (DbUpdateException ex)
-            {
-                System.Console.WriteLine("Error al eliminar el profesor: " + ex.Message);
-                return false;
+                var profesor = context.Personas.SingleOrDefault(e => e.IdPersona == idProfesor);
+                context.Personas.Remove(profesor);
+                context.SaveChanges();
             }
         }
 
@@ -210,5 +178,43 @@ namespace DataAccess
 
         //FIN METODOS PROFESOR//
 
+        public bool getAlumnoXInscripciones(int idAlumno)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.AlumnosInscripciones.Count(a => a.IdAlumno == idAlumno);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool getProfesorXCurso(int idProfesor)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.DocentesCursos.Count(d => d.IdDocente == idProfesor);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool getPersonaXUsuario(int idPersona)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.Usuarios.Count(u => u.IdPersona == idPersona);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
     }
 }

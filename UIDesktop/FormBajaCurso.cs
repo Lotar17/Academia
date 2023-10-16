@@ -41,8 +41,18 @@ namespace UIDesktop
         {
             int idToDelete = (int)nud_IdToDelete.Value;
             Controller controller = new Controller();
-            if (controller.borrarCurso(idToDelete))
+            if (controller.getCursoXDocente(idToDelete))
             {
+                MessageBox.Show("Existen DOCENTES asignados al ID del CURSO a borrar.\n Por favor reasigne los docentes de esas instancias para poder borrar el curso.");
+
+            }
+            else if (controller.getCursoXInscripciones(idToDelete))
+            {
+                MessageBox.Show("Existen INSCRIPCIONES de alumnos asignadas al ID del CURSO a borrar.\n Por favor modifique esas instancias para poder borrar el curso.");
+            }
+            else if (controller.cursoGetOne(idToDelete) != null)
+            {
+                controller.borrarCurso(idToDelete);
                 MessageBox.Show("Curso borrado con exito");
             }
             else

@@ -40,7 +40,8 @@ namespace UIDesktop
                 dtgv_ModificacionProfesores.Rows[rowIndex].Cells["legajo"].Value = p.Legajo;
 
             }
-            txt_nombre.Text = txt_apellido.Text = txt_direccion.Text = txt_email.Text = txt_legajo.Text = txt_telefono.Text = dtp_fechaNac.Text = null;
+            txt_nombre.Text = txt_apellido.Text = txt_direccion.Text = txt_email.Text = txt_telefono.Text = dtp_fechaNac.Text = null;
+            nud_legajo.Value = 0;
         }
 
         private void dtgv_ModificacionProfesores_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -51,7 +52,7 @@ namespace UIDesktop
             txt_email.Text = dtgv_ModificacionProfesores.SelectedRows[0].Cells["email"].Value.ToString();
             txt_telefono.Text = dtgv_ModificacionProfesores.SelectedRows[0].Cells["telefono"].Value.ToString();
             dtp_fechaNac.Text = dtgv_ModificacionProfesores.SelectedRows[0].Cells["fecha_nac"].Value.ToString();
-            txt_legajo.Text = dtgv_ModificacionProfesores.SelectedRows[0].Cells["legajo"].Value.ToString();
+            nud_legajo.Value = int.Parse(dtgv_ModificacionProfesores.SelectedRows[0].Cells["legajo"].Value.ToString());
         }
 
 
@@ -65,7 +66,7 @@ namespace UIDesktop
             string email = txt_email.Text;
             string telefono = txt_telefono.Text;
             DateTime fecha_nac = dtp_fechaNac.Value;
-            int legajo = int.Parse(txt_legajo.Text);
+            int legajo = (int)nud_legajo.Value;
             if (controller.modificarProfesor(idProfesor, nombre, apellido, direccion, email, telefono, fecha_nac, legajo))
             {
                 MessageBox.Show("Profesor modificado con éxito");
@@ -81,26 +82,6 @@ namespace UIDesktop
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txt_legajo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si la tecla no es un número ni una tecla de control, se ignora.
-                e.Handled = true;
-            }
-        }
-
-        private void txt_telefono_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si la tecla no es un número ni una tecla de control, se ignora.
-                e.Handled = true;
-            }
         }
     }
 }

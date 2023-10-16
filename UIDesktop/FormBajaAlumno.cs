@@ -44,10 +44,19 @@ namespace UIDesktop
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
-            int idToDelete = int.Parse(txt_IdDelete.Text);
+            int idToDelete = (int)nud_IdToDelete.Value;
             Controller controller = new Controller();
-            if (controller.borrarAlumno(idToDelete))
+            if (controller.getAlumnoXInscripciones(idToDelete))
             {
+                MessageBox.Show("Existen INSCRIPCIONES asignadas con el ID de ALUMNO a borrar.\nPor favor elimine las inscripciones para poder borrar al alumno.");
+            }
+            else if (controller.getPersonaXUsuario(idToDelete))
+            {
+                MessageBox.Show("Existe un USUARIO asignado al ID de ALUMNO a borrar.\nPor favor elimine el usuario relacionado a la persona para continuar.");
+            }
+            else if (controller.alumnoGetOne(idToDelete) != null)
+            {
+                controller.borrarAlumno(idToDelete);
                 MessageBox.Show("Alumno borrado con exito");
             }
             else

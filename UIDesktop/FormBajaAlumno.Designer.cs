@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            txt_IdDelete = new TextBox();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             lbl_IdDelete = new Label();
             dtgv_BajaAlumno = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
@@ -46,17 +45,10 @@
             label5 = new Label();
             btnEliminar = new Button();
             btnCancelar = new Button();
+            nud_IdToDelete = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaAlumno).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).BeginInit();
             SuspendLayout();
-            // 
-            // txt_IdDelete
-            // 
-            txt_IdDelete.Anchor = AnchorStyles.None;
-            txt_IdDelete.Location = new Point(668, 543);
-            txt_IdDelete.Margin = new Padding(3, 4, 3, 4);
-            txt_IdDelete.Name = "txt_IdDelete";
-            txt_IdDelete.Size = new Size(117, 27);
-            txt_IdDelete.TabIndex = 30;
             // 
             // lbl_IdDelete
             // 
@@ -81,24 +73,24 @@
             dtgv_BajaAlumno.BackgroundColor = Color.FromArgb(32, 30, 45);
             dtgv_BajaAlumno.BorderStyle = BorderStyle.Fixed3D;
             dtgv_BajaAlumno.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.Transparent;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dtgv_BajaAlumno.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgv_BajaAlumno.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgv_BajaAlumno.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgv_BajaAlumno.Columns.AddRange(new DataGridViewColumn[] { ID, nombre, apellido, direccion, email, telefono, fechaNac, legajo, idPlan });
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.Transparent;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle5.SelectionBackColor = Color.Transparent;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            dtgv_BajaAlumno.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.Transparent;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = Color.Transparent;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dtgv_BajaAlumno.DefaultCellStyle = dataGridViewCellStyle2;
             dtgv_BajaAlumno.EnableHeadersVisualStyles = false;
             dtgv_BajaAlumno.GridColor = Color.Gainsboro;
             dtgv_BajaAlumno.Location = new Point(46, 219);
@@ -106,14 +98,14 @@
             dtgv_BajaAlumno.MultiSelect = false;
             dtgv_BajaAlumno.Name = "dtgv_BajaAlumno";
             dtgv_BajaAlumno.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.Transparent;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dtgv_BajaAlumno.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.Transparent;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dtgv_BajaAlumno.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dtgv_BajaAlumno.RowHeadersVisible = false;
             dtgv_BajaAlumno.RowHeadersWidth = 51;
             dtgv_BajaAlumno.RowTemplate.Height = 25;
@@ -229,13 +221,22 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // nud_IdToDelete
+            // 
+            nud_IdToDelete.Anchor = AnchorStyles.None;
+            nud_IdToDelete.Location = new Point(671, 545);
+            nud_IdToDelete.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nud_IdToDelete.Name = "nud_IdToDelete";
+            nud_IdToDelete.Size = new Size(150, 27);
+            nud_IdToDelete.TabIndex = 30;
+            // 
             // FormBajaAlumno
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
             ClientSize = new Size(1215, 811);
-            Controls.Add(txt_IdDelete);
+            Controls.Add(nud_IdToDelete);
             Controls.Add(lbl_IdDelete);
             Controls.Add(dtgv_BajaAlumno);
             Controls.Add(label5);
@@ -244,13 +245,12 @@
             Name = "FormBajaAlumno";
             Text = "FormBajaAlumno";
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaAlumno).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox txt_IdDelete;
         private Label lbl_IdDelete;
         private DataGridView dtgv_BajaAlumno;
         private DataGridViewTextBoxColumn ID;
@@ -265,5 +265,6 @@
         private Label label5;
         private Button btnEliminar;
         private Button btnCancelar;
+        private NumericUpDown nud_IdToDelete;
     }
 }

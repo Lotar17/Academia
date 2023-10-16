@@ -27,10 +27,10 @@ namespace UIDesktop
             LinkedList<Plane> planes = ctrlBaja.getPlanes();
             foreach (Plane p in planes)
             {
-                // Agrega una nueva fila al DataGridView y obtiene su índice
+                // Agrega una nueva fila al DataGridView y obtiene su índiceS
                 int rowIndex = dtgv_BajaPlan.Rows.Add();
                 dtgv_BajaPlan.Rows[rowIndex].Cells["ID"].Value = p.IdPlan;
-                dtgv_BajaPlan.Rows[rowIndex].Cells["desc_plan"].Value = p.DescPlan;
+                dtgv_BajaPlan.Rows[rowIndex].Cells["desc_especialidad"].Value = p.DescPlan;
                 dtgv_BajaPlan.Rows[rowIndex].Cells["idEspecialidad"].Value = p.IdEspecialidad;
             }
         }
@@ -38,10 +38,23 @@ namespace UIDesktop
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
-            int idToDelete = int.Parse(txt_IdDelete.Text);
+            int idToDelete = (int)nud_IdToDelete.Value;
             Controller controller = new Controller();
-            if (controller.borrarPlan(idToDelete))
+            if (controller.getPlanxPersona(idToDelete))
             {
+                MessageBox.Show("Existen instancias de PERSONAS con el ID de PLAN a borrar.\nPor favor modifique esas instancias para poder borrar el plan.");
+            }
+            else if (controller.getPlanxMateria(idToDelete))
+            {
+                MessageBox.Show("Existen instancias de MATERIAS con el ID de PLAN a borrar.\nPor favor modifique esas instancias para poder borrar el plan.");
+            }
+            else if (controller.getPlanxComision(idToDelete))
+            {
+                MessageBox.Show("Existen instancias de COMISIONES con el ID de PLAN a borrar.\nPor favor modifique esas instancias para poder borrar el plan.");
+            }
+            else if (controller.planGetOne(idToDelete) != null)
+            {
+                controller.borrarPlan(idToDelete);
                 MessageBox.Show("Plan borrado con exito");
             }
             else
@@ -49,16 +62,6 @@ namespace UIDesktop
                 MessageBox.Show("El ID ingresado no existe");
             }
             retrievePlanes();
-        }
-
-        private void txt_IdDelete_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceso).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si no es un número ni una tecla de control, ignora la tecla presionada.
-                e.Handled = true;
-            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

@@ -28,28 +28,13 @@ namespace DataAccess
             
         }
 
-        public bool bajaEspecialidad(int idEspecialidad)
+        public void bajaEspecialidad(int idEspecialidad)
         {
-            try
+            using (AcademiaDbContext context = new AcademiaDbContext())
             {
-                using(AcademiaDbContext context = new AcademiaDbContext())
-                {
-                    var especialidad = context.Especialidades.SingleOrDefault(e => e.IdEspecialidad == idEspecialidad);
-                    if (especialidad != null)
-                    {
-                        context.Especialidades.Remove(especialidad);
-                        context.SaveChanges();
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }        
-                }
-            }catch (DbUpdateException ex)
-            {
-                System.Console.WriteLine("Error al eliminar la especialidad: " +ex.Message);
-                return false;
+                var especialidad = context.Especialidades.SingleOrDefault(e => e.IdEspecialidad == idEspecialidad);
+                context.Especialidades.Remove(especialidad);
+                context.SaveChanges();
             }
         }
 
@@ -100,10 +85,19 @@ namespace DataAccess
                 }
             }
             return especialidades;
-
         }
 
-
-
+        public bool getEspecialidadxPlan(int idEspecialidad)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.Planes.Count(e => e.IdEspecialidad == idEspecialidad);
+                if (count > 0)
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
     }
 }

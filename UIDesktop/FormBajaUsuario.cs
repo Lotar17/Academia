@@ -39,7 +39,7 @@ namespace Academia
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
-            int idToDelete = int.Parse(txt_IdDelete.Text);
+            int idToDelete = (int)nud_IdToDelete.Value;
             Controller controller = new Controller();
             if (controller.borrarUsuario(idToDelete))
             {
@@ -50,16 +50,6 @@ namespace Academia
                 MessageBox.Show("El ID ingresado no existe");
             }
             retrieveUsuarios();
-        }
-
-        private void txt_IdDelete_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceso).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si no es un número ni una tecla de control, ignora la tecla presionada.
-                e.Handled = true;
-            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

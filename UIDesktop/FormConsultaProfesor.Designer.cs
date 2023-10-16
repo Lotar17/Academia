@@ -38,12 +38,13 @@
             ipb_Usuario = new FontAwesome.Sharp.IconPictureBox();
             lbl_Id = new Label();
             label5 = new Label();
-            txt_Id = new TextBox();
             label1 = new Label();
             btnAceptar = new Button();
             btnCancelar = new Button();
+            nud_IdToDelete = new NumericUpDown();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ipb_Usuario).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -58,9 +59,10 @@
             panel1.Controls.Add(lbl_nombreapellido);
             panel1.Controls.Add(ipb_Usuario);
             panel1.Controls.Add(lbl_Id);
-            panel1.Location = new Point(513, 91);
+            panel1.Location = new Point(586, 121);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(417, 255);
+            panel1.Size = new Size(476, 339);
             panel1.TabIndex = 40;
             panel1.Visible = false;
             // 
@@ -69,9 +71,9 @@
             lbl_legajo.Anchor = AnchorStyles.None;
             lbl_legajo.AutoSize = true;
             lbl_legajo.ForeColor = Color.Gainsboro;
-            lbl_legajo.Location = new Point(20, 205);
+            lbl_legajo.Location = new Point(23, 273);
             lbl_legajo.Name = "lbl_legajo";
-            lbl_legajo.Size = new Size(45, 15);
+            lbl_legajo.Size = new Size(57, 20);
             lbl_legajo.TabIndex = 30;
             lbl_legajo.Text = "Legajo:";
             lbl_legajo.Visible = false;
@@ -81,9 +83,9 @@
             lbl_fechaNac.Anchor = AnchorStyles.None;
             lbl_fechaNac.AutoSize = true;
             lbl_fechaNac.ForeColor = Color.Gainsboro;
-            lbl_fechaNac.Location = new Point(20, 178);
+            lbl_fechaNac.Location = new Point(23, 237);
             lbl_fechaNac.Name = "lbl_fechaNac";
-            lbl_fechaNac.Size = new Size(122, 15);
+            lbl_fechaNac.Size = new Size(152, 20);
             lbl_fechaNac.TabIndex = 29;
             lbl_fechaNac.Text = "Fecha de Nacimiento:";
             lbl_fechaNac.Visible = false;
@@ -93,9 +95,9 @@
             lbl_email.Anchor = AnchorStyles.None;
             lbl_email.AutoSize = true;
             lbl_email.ForeColor = Color.Gainsboro;
-            lbl_email.Location = new Point(20, 126);
+            lbl_email.Location = new Point(23, 168);
             lbl_email.Name = "lbl_email";
-            lbl_email.Size = new Size(39, 15);
+            lbl_email.Size = new Size(49, 20);
             lbl_email.TabIndex = 28;
             lbl_email.Text = "Email:";
             lbl_email.Visible = false;
@@ -105,9 +107,9 @@
             lbl_telefono.Anchor = AnchorStyles.None;
             lbl_telefono.AutoSize = true;
             lbl_telefono.ForeColor = Color.Gainsboro;
-            lbl_telefono.Location = new Point(20, 151);
+            lbl_telefono.Location = new Point(23, 201);
             lbl_telefono.Name = "lbl_telefono";
-            lbl_telefono.Size = new Size(55, 15);
+            lbl_telefono.Size = new Size(70, 20);
             lbl_telefono.TabIndex = 27;
             lbl_telefono.Text = "Telefono:";
             lbl_telefono.Visible = false;
@@ -117,9 +119,9 @@
             lbl_direccion.Anchor = AnchorStyles.None;
             lbl_direccion.AutoSize = true;
             lbl_direccion.ForeColor = Color.Gainsboro;
-            lbl_direccion.Location = new Point(20, 100);
+            lbl_direccion.Location = new Point(23, 133);
             lbl_direccion.Name = "lbl_direccion";
-            lbl_direccion.Size = new Size(60, 15);
+            lbl_direccion.Size = new Size(75, 20);
             lbl_direccion.TabIndex = 26;
             lbl_direccion.Text = "Direccion:";
             lbl_direccion.Visible = false;
@@ -129,9 +131,9 @@
             lbl_nombreapellido.Anchor = AnchorStyles.None;
             lbl_nombreapellido.AutoSize = true;
             lbl_nombreapellido.ForeColor = Color.Gainsboro;
-            lbl_nombreapellido.Location = new Point(20, 76);
+            lbl_nombreapellido.Location = new Point(23, 101);
             lbl_nombreapellido.Name = "lbl_nombreapellido";
-            lbl_nombreapellido.Size = new Size(110, 15);
+            lbl_nombreapellido.Size = new Size(139, 20);
             lbl_nombreapellido.TabIndex = 25;
             lbl_nombreapellido.Text = "Nombre y Apellido:";
             lbl_nombreapellido.Visible = false;
@@ -144,10 +146,11 @@
             ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             ipb_Usuario.IconColor = Color.Gainsboro;
             ipb_Usuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            ipb_Usuario.IconSize = 100;
-            ipb_Usuario.Location = new Point(302, 27);
+            ipb_Usuario.IconSize = 114;
+            ipb_Usuario.Location = new Point(345, 36);
+            ipb_Usuario.Margin = new Padding(3, 4, 3, 4);
             ipb_Usuario.Name = "ipb_Usuario";
-            ipb_Usuario.Size = new Size(100, 100);
+            ipb_Usuario.Size = new Size(114, 133);
             ipb_Usuario.TabIndex = 23;
             ipb_Usuario.TabStop = false;
             ipb_Usuario.Visible = false;
@@ -157,9 +160,9 @@
             lbl_Id.Anchor = AnchorStyles.None;
             lbl_Id.AutoSize = true;
             lbl_Id.ForeColor = Color.Gainsboro;
-            lbl_Id.Location = new Point(20, 52);
+            lbl_Id.Location = new Point(23, 69);
             lbl_Id.Name = "lbl_Id";
-            lbl_Id.Size = new Size(21, 15);
+            lbl_Id.Size = new Size(27, 20);
             lbl_Id.TabIndex = 0;
             lbl_Id.Text = "ID:";
             lbl_Id.Visible = false;
@@ -170,20 +173,11 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(132, 91);
+            label5.Location = new Point(151, 121);
             label5.Name = "label5";
-            label5.Size = new Size(265, 29);
+            label5.Size = new Size(326, 36);
             label5.TabIndex = 39;
             label5.Text = "Consulta de Profesores";
-            // 
-            // txt_Id
-            // 
-            txt_Id.Anchor = AnchorStyles.None;
-            txt_Id.Location = new Point(160, 241);
-            txt_Id.Name = "txt_Id";
-            txt_Id.Size = new Size(220, 23);
-            txt_Id.TabIndex = 38;
-            txt_Id.KeyPress += txt_Id_KeyPress;
             // 
             // label1
             // 
@@ -191,9 +185,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(160, 205);
+            label1.Location = new Point(183, 273);
             label1.Name = "label1";
-            label1.Size = new Size(230, 17);
+            label1.Size = new Size(273, 20);
             label1.TabIndex = 37;
             label1.Text = "Ingrese el ID del profesor a buscar:";
             // 
@@ -204,9 +198,10 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(561, 415);
+            btnAceptar.Location = new Point(641, 553);
+            btnAceptar.Margin = new Padding(3, 4, 3, 4);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(142, 56);
+            btnAceptar.Size = new Size(162, 75);
             btnAceptar.TabIndex = 36;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -219,31 +214,43 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(316, 415);
+            btnCancelar.Location = new Point(361, 553);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(142, 56);
+            btnCancelar.Size = new Size(162, 75);
             btnCancelar.TabIndex = 35;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
+            // nud_IdToDelete
+            // 
+            nud_IdToDelete.Anchor = AnchorStyles.None;
+            nud_IdToDelete.Location = new Point(245, 308);
+            nud_IdToDelete.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nud_IdToDelete.Name = "nud_IdToDelete";
+            nud_IdToDelete.Size = new Size(150, 27);
+            nud_IdToDelete.TabIndex = 41;
+            // 
             // FormConsultaProfesor
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1063, 562);
+            ClientSize = new Size(1215, 749);
+            Controls.Add(nud_IdToDelete);
             Controls.Add(panel1);
             Controls.Add(label5);
-            Controls.Add(txt_Id);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormConsultaProfesor";
             Text = "FormConsultaProfesor";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ipb_Usuario).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,9 +267,9 @@
         private FontAwesome.Sharp.IconPictureBox ipb_Usuario;
         private Label lbl_Id;
         private Label label5;
-        private TextBox txt_Id;
         private Label label1;
         private Button btnAceptar;
         private Button btnCancelar;
+        private NumericUpDown nud_IdToDelete;
     }
 }

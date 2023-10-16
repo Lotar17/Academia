@@ -41,9 +41,17 @@ namespace UIDesktop
         {
             int idToDelete = (int)nud_IdToDelete.Value;
             Controller controller = new Controller();
-            if (controller.borrarMateria(idToDelete))
+            if (controller.materiaGetOne(idToDelete) != null)
             {
-                MessageBox.Show("Materia borrada con exito");
+                if (controller.getMateriaxCurso(idToDelete))
+                {
+                    controller.borrarEspecialidad(idToDelete);
+                    MessageBox.Show("Materia borrada con exito");
+                }
+                else
+                {
+                    MessageBox.Show("Existen instancias de CURSOS con el ID de MATERIAS a borrar.\n Por favor modifique esas instancias para poder borrar la materia.");
+                }
             }
             else
             {

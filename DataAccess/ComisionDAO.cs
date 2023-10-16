@@ -28,29 +28,13 @@ namespace DataAccess
             }
         }
 
-        public bool bajaComision(int idComision)
+        public void bajaComision(int idComision)
         {
-            try
+            using (AcademiaDbContext context = new AcademiaDbContext())
             {
-                using (AcademiaDbContext context = new AcademiaDbContext())
-                {
-                    var comision = context.Comisiones.SingleOrDefault(c => c.IdComision == idComision);
-                    if (comision != null)
-                    {
-                        context.Comisiones.Remove(comision);
-                        context.SaveChanges();
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-            catch (DbUpdateException ex)
-            {
-                System.Console.WriteLine("Error al eliminar la comision: " + ex.Message);
-                return false;
+                var comision = context.Comisiones.SingleOrDefault(c => c.IdComision == idComision);
+                    context.Comisiones.Remove(comision);
+                    context.SaveChanges();
             }
         }
 
@@ -104,6 +88,19 @@ namespace DataAccess
                 }
             }
             return comisiones;
+        }
+
+        public bool getComisionXCurso(int idComision)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.Cursos.Count(c => c.IdComision == idComision);
+                if (count > 0)
+                {
+                    return false;
+                }
+                return true;
+            }
         }
     }
 }

@@ -73,9 +73,9 @@ namespace Dominio
             return personaDAO.altaAlumno(a);
         }
 
-        public bool borrarAlumno(int idAlumno)
+        public void borrarAlumno(int idAlumno)
         {
-            return personaDAO.bajaAlumno(idAlumno);
+            personaDAO.bajaAlumno(idAlumno);
         }
 
         public LinkedList<Persona> getAlumnos()
@@ -93,9 +93,16 @@ namespace Dominio
             return personaDAO.modificarAlumno(idAlumno,nombre, apellido, direccion, email,telefono, fecha_nac,legajo);
         }
 
+        public bool getAlumnoXInscripciones(int idAlumno)
+        {
+            return personaDAO.getAlumnoXInscripciones(idAlumno);
+        }
+
+        public bool getPersonaXUsuario(int idPersona)
+        {
+            return personaDAO.getPersonaXUsuario(idPersona);
+        }
         //FIN METODOS ALUMNO//
-
-
 
         //INICIO METODOS PROFESOR
         public bool crearProfesor(Persona p)
@@ -108,9 +115,9 @@ namespace Dominio
             return personaDAO.profesoresGetAll();
         }
 
-        public bool borrarProfesor(int idProfesor)
+        public void borrarProfesor(int idProfesor)
         {
-            return personaDAO.bajaProfesor(idProfesor);
+            personaDAO.bajaProfesor(idProfesor);
         }
 
         public bool modificarProfesor(int idProfesor, string nombre, string apellido, string direccion, string email, string telefono, DateTime fecha_nac, int legajo)
@@ -123,7 +130,10 @@ namespace Dominio
             return personaDAO.profesorGetOne(idProfesor);
         }
 
-
+        public bool getProfesorXCurso(int idProfesor)
+        {
+            return personaDAO.getProfesorXCurso(idProfesor);
+        }
         //FIN METODOS PROFESOR//
 
 
@@ -134,9 +144,9 @@ namespace Dominio
             return especialidadDAO.altaEspecialidad(e);
         } 
 
-        public bool borrarEspecialidad(int idEspecialidad)
+        public void borrarEspecialidad(int idEspecialidad)
         {
-            return especialidadDAO.bajaEspecialidad(idEspecialidad);
+            especialidadDAO.bajaEspecialidad(idEspecialidad);
         }
 
         public bool modificarEspecialidad(int idEspecialidad, string descEspecialidad)
@@ -154,6 +164,11 @@ namespace Dominio
             return especialidadDAO.getAll();
         }
 
+        public bool getEspecialidadxPlan(int idPlan)
+        {
+            return especialidadDAO.getEspecialidadxPlan(idPlan);
+        }
+
         //FIN METODOS ESPECIALIDADES//
 
         //INICIO METODOS PLANES//
@@ -163,9 +178,9 @@ namespace Dominio
             return planDAO.altaPlan(p);
         }
 
-        public bool borrarPlan(int idPlan)
+        public void borrarPlan(int idPlan)
         {
-            return planDAO.bajaPlan(idPlan);
+            planDAO.bajaPlan(idPlan);
         }
 
         public bool modificarPlan(int idPlan, string descPlan, int idEspecialidad)
@@ -183,6 +198,21 @@ namespace Dominio
             return planDAO.getAll();
         }
 
+        public bool getPlanxPersona(int idPlan)
+        {
+            return planDAO.getPlanxPersona(idPlan);
+        }
+
+        public bool getPlanxMateria(int idPlan)
+        {
+            return planDAO.getPlanxMateria(idPlan);
+        }
+
+        public bool getPlanxComision(int idPlan)
+        {
+            return planDAO.getPlanxComision(idPlan);
+        }
+
         //FIN METODOS PLANES//
 
         //INICIO METODOS MATERIAS//
@@ -192,9 +222,9 @@ namespace Dominio
             return materiaDAO.altaMateria(m);
         }
 
-        public bool borrarMateria(int idMateria)
+        public void borrarMateria(int idMateria)
         {
-            return materiaDAO.bajaMateria(idMateria);
+            materiaDAO.bajaMateria(idMateria);
         }
 
         public bool modificarMateria(int idMateria, string desc_materia, int hs_semanales, int hs_totales, int idPlan)
@@ -212,6 +242,11 @@ namespace Dominio
             return materiaDAO.getAll();
         }
 
+        public bool getMateriaxCurso(int idMateria)
+        {
+            return materiaDAO.getMateriaXCurso(idMateria);
+        }
+
         //FIN METODOS MATERIAS//
 
         //INICIO METODOS COMISIONES//
@@ -221,9 +256,9 @@ namespace Dominio
             return comisionDAO.altaComision(c);
         }
 
-        public bool borrarComision(int idComision)
+        public void borrarComision(int idComision)
         {
-            return comisionDAO.bajaComision(idComision);
+            comisionDAO.bajaComision(idComision);
         }
 
         public bool modificarComision(int idComision, string descComision, int anioEspecialidad, int idPlan)
@@ -241,6 +276,11 @@ namespace Dominio
             return comisionDAO.getAll();
         }
 
+        public bool getComisionXCurso (int idComision)
+        {
+            return comisionDAO.getComisionXCurso(idComision);
+        }
+
         //FIN METODOS COMISIONES//
 
         //INICIO METODOS CURSOS//
@@ -250,9 +290,9 @@ namespace Dominio
             return cursoDAO.altaCurso(c);
         }
 
-        public bool borrarCurso(int idCurso)
+        public void borrarCurso(int idCurso)
         {
-            return cursoDAO.bajaCurso(idCurso);
+            cursoDAO.bajaCurso(idCurso);
         }
 
         public bool modificarCurso(int idCurso, int id_materia, int id_comision, int anio_calendario, int cupo)
@@ -268,6 +308,16 @@ namespace Dominio
         public LinkedList<Curso> getCursos()
         {
             return cursoDAO.getAll();
+        }
+
+        public bool getCursoXDocente(int idCurso)
+        {
+            return cursoDAO.getCursoXDocente(idCurso);
+        }
+
+        public bool getCursoXInscripciones(int idCurso)
+        {
+            return cursoDAO.getCursoXInscripciones(idCurso);
         }
 
         //FIN METODOS CURSOS//

@@ -40,9 +40,17 @@ namespace UIDesktop
         {
             int idToDelete = (int)nud_IdToDelete.Value;
             Controller controller = new Controller();
-            if (controller.borrarComision(idToDelete))
+            if (controller.comisionGetOne(idToDelete) != null)
             {
-                MessageBox.Show("Comision borrada con exito");
+                if (controller.getComisionXCurso(idToDelete))
+                {
+                    controller.borrarComision(idToDelete);
+                    MessageBox.Show("Comision borrada con exito");
+                }
+                else
+                {
+                    MessageBox.Show("Existen instancias de CURSOS con el ID de COMISION a borrar.\n Por favor modifique esas instancias para poder borrar la comision.");
+                }
             }
             else
             {

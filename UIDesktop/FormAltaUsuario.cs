@@ -28,33 +28,34 @@ namespace Academia
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             var nuevo = false;
-            if (txt_userName.Text != "" && txt_idPersona.Text != "" && txt_pass.Text != "" && cbx_Habilitado.Text != "")
+            if (txt_userName.Text != "" && txt_pass.Text != "" && cbx_Habilitado.Text != "")
             {
                 Controller controller = new Controller();
-                if (controller.verificarUsuarioPersona(int.Parse(txt_idPersona.Text)))
+                if (controller.verificarUsuarioPersona((int)nud_idPersona.Value))
                 {
                     mensajeError("Ya hay un usuario que tiene esa persona asignada");
                 }
-                else if (controller.verificarPersona(int.Parse(txt_idPersona.Text)) is false)
+                else if (controller.verificarPersona((int)nud_idPersona.Value) is false)
                 {
-                    mensajeError("El id de persona ingresado no corresponde a ninguna persona");
+                    mensajeError("El ID de persona ingresado no corresponde a ninguna persona");
                 }
                 else
                 {
                     if (cbx_Habilitado.Text == "Si")
                     {
                         UsuarioADO usuario = new UsuarioADO(txt_pass.Text, true, txt_userName.Text);
-                        nuevo = controller.crearUsuario(usuario, int.Parse(txt_idPersona.Text));
+                        nuevo = controller.crearUsuario(usuario, int.Parse(nud_idPersona.Text));
                     }
                     else
                     {
                         UsuarioADO usuario = new UsuarioADO(txt_pass.Text, false, txt_userName.Text);
-                        nuevo = controller.crearUsuario(usuario, int.Parse(txt_idPersona.Text));
+                        nuevo = controller.crearUsuario(usuario, int.Parse(nud_idPersona.Text));
                     }
                     if (nuevo)
                     {
                         MessageBox.Show("Usuario cargado con exito");
-                        txt_pass.Text = txt_userName.Text = cbx_Habilitado.Text = txt_idPersona.Text = null;
+                        txt_pass.Text = txt_userName.Text = cbx_Habilitado.Text = null;
+                        nud_idPersona.Value = 0;
                         this.Close();
                     }
                 }

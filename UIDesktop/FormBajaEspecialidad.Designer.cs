@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            txt_IdDelete = new TextBox();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             lbl_IdDelete = new Label();
             dtgv_BajaEspecialidad = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
@@ -39,18 +38,10 @@
             label5 = new Label();
             btnEliminar = new Button();
             btnCancelar = new Button();
+            nud_IdToDelete = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaEspecialidad).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).BeginInit();
             SuspendLayout();
-            // 
-            // txt_IdDelete
-            // 
-            txt_IdDelete.Anchor = AnchorStyles.None;
-            txt_IdDelete.Location = new Point(667, 512);
-            txt_IdDelete.Margin = new Padding(3, 4, 3, 4);
-            txt_IdDelete.Name = "txt_IdDelete";
-            txt_IdDelete.Size = new Size(117, 27);
-            txt_IdDelete.TabIndex = 30;
-            txt_IdDelete.KeyPress += txt_IdDelete_KeyPress;
             // 
             // lbl_IdDelete
             // 
@@ -75,24 +66,24 @@
             dtgv_BajaEspecialidad.BackgroundColor = Color.FromArgb(32, 30, 45);
             dtgv_BajaEspecialidad.BorderStyle = BorderStyle.Fixed3D;
             dtgv_BajaEspecialidad.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.Transparent;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dtgv_BajaEspecialidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgv_BajaEspecialidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgv_BajaEspecialidad.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgv_BajaEspecialidad.Columns.AddRange(new DataGridViewColumn[] { ID, desc_especialidad });
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.Transparent;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle5.SelectionBackColor = Color.Transparent;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            dtgv_BajaEspecialidad.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.Transparent;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = Color.Transparent;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dtgv_BajaEspecialidad.DefaultCellStyle = dataGridViewCellStyle2;
             dtgv_BajaEspecialidad.EnableHeadersVisualStyles = false;
             dtgv_BajaEspecialidad.GridColor = Color.Gainsboro;
             dtgv_BajaEspecialidad.Location = new Point(319, 203);
@@ -100,14 +91,14 @@
             dtgv_BajaEspecialidad.MultiSelect = false;
             dtgv_BajaEspecialidad.Name = "dtgv_BajaEspecialidad";
             dtgv_BajaEspecialidad.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.Transparent;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dtgv_BajaEspecialidad.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.Transparent;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dtgv_BajaEspecialidad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dtgv_BajaEspecialidad.RowHeadersVisible = false;
             dtgv_BajaEspecialidad.RowHeadersWidth = 51;
             dtgv_BajaEspecialidad.RowTemplate.Height = 25;
@@ -176,13 +167,22 @@
             btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
+            // nud_IdToDelete
+            // 
+            nud_IdToDelete.Anchor = AnchorStyles.None;
+            nud_IdToDelete.Location = new Point(667, 513);
+            nud_IdToDelete.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nud_IdToDelete.Name = "nud_IdToDelete";
+            nud_IdToDelete.Size = new Size(150, 27);
+            nud_IdToDelete.TabIndex = 30;
+            // 
             // FormBajaEspecialidad
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
             ClientSize = new Size(1215, 749);
-            Controls.Add(txt_IdDelete);
+            Controls.Add(nud_IdToDelete);
             Controls.Add(lbl_IdDelete);
             Controls.Add(dtgv_BajaEspecialidad);
             Controls.Add(label5);
@@ -192,13 +192,12 @@
             Name = "FormBajaEspecialidad";
             Text = "FormBajaEspecialidad";
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaEspecialidad).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox txt_IdDelete;
         private Label lbl_IdDelete;
         private DataGridView dtgv_BajaEspecialidad;
         private Label label5;
@@ -206,5 +205,6 @@
         private Button btnCancelar;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn desc_especialidad;
+        private NumericUpDown nud_IdToDelete;
     }
 }

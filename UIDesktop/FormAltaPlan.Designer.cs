@@ -35,8 +35,9 @@
             label1 = new Label();
             btnAceptar = new Button();
             btnCancelar = new Button();
-            txt_idEspecialidad = new TextBox();
             label2 = new Label();
+            nud_idEspecialidad = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)nud_idEspecialidad).BeginInit();
             SuspendLayout();
             // 
             // lblMensajeError
@@ -117,15 +118,6 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // txt_idEspecialidad
-            // 
-            txt_idEspecialidad.Anchor = AnchorStyles.None;
-            txt_idEspecialidad.Location = new Point(414, 259);
-            txt_idEspecialidad.Margin = new Padding(3, 4, 3, 4);
-            txt_idEspecialidad.Name = "txt_idEspecialidad";
-            txt_idEspecialidad.Size = new Size(356, 27);
-            txt_idEspecialidad.TabIndex = 23;
-            // 
             // label2
             // 
             label2.Anchor = AnchorStyles.None;
@@ -138,13 +130,22 @@
             label2.TabIndex = 22;
             label2.Text = "ID Especialidad";
             // 
+            // nud_idEspecialidad
+            // 
+            nud_idEspecialidad.Anchor = AnchorStyles.None;
+            nud_idEspecialidad.Location = new Point(414, 260);
+            nud_idEspecialidad.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
+            nud_idEspecialidad.Name = "nud_idEspecialidad";
+            nud_idEspecialidad.Size = new Size(150, 27);
+            nud_idEspecialidad.TabIndex = 23;
+            // 
             // FormAltaPlan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
             ClientSize = new Size(1061, 600);
-            Controls.Add(txt_idEspecialidad);
+            Controls.Add(nud_idEspecialidad);
             Controls.Add(label2);
             Controls.Add(lblMensajeError);
             Controls.Add(label5);
@@ -154,6 +155,7 @@
             Controls.Add(btnCancelar);
             Name = "FormAltaPlan";
             Text = "FormAltaPlanes";
+            ((System.ComponentModel.ISupportInitialize)nud_idEspecialidad).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -166,7 +168,7 @@
         private Label label1;
         private Button btnAceptar;
         private Button btnCancelar;
-        private TextBox txt_idEspecialidad;
         private Label label2;
+        private NumericUpDown nud_idEspecialidad;
     }
 }

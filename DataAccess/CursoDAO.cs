@@ -28,29 +28,13 @@ namespace DataAccess
             }
         }
 
-        public bool bajaCurso(int idCurso)
+        public void bajaCurso(int idCurso)
         {
-            try
+            using (AcademiaDbContext context = new AcademiaDbContext())
             {
-                using (AcademiaDbContext context = new AcademiaDbContext())
-                {
-                    var curso = context.Cursos.SingleOrDefault(c => c.IdCurso == idCurso);
-                    if (curso != null)
-                    {
-                        context.Cursos.Remove(curso);
-                        context.SaveChanges();
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-            catch (DbUpdateException ex)
-            {
-                System.Console.WriteLine("Error al eliminar el curso: " + ex.Message);
-                return false;
+                var curso = context.Cursos.SingleOrDefault(c => c.IdCurso == idCurso);
+                context.Cursos.Remove(curso);
+                context.SaveChanges();
             }
         }
 
@@ -106,6 +90,32 @@ namespace DataAccess
                 }
             }
             return cursos;
+        }
+
+        public bool getCursoXDocente(int idCurso)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.DocentesCursos.Count(d => d.IdCurso == idCurso);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool getCursoXInscripciones(int idCurso)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.AlumnosInscripciones.Count(a => a.IdCurso == idCurso);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
         }
     }
 }

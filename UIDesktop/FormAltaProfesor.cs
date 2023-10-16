@@ -26,7 +26,7 @@ namespace UIDesktop
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txt_nombre.Text != "" && txt_apellido.Text != "" && txt_direccion.Text != "" && txt_email.Text != "" && txt_telefono.Text != "" && txt_legajo.Text != "")
+            if (txt_nombre.Text != "" && txt_apellido.Text != "" && txt_direccion.Text != "" && txt_email.Text != "" && txt_telefono.Text != "")
             {
                 Controller altaProfesor = new Controller();
                 Persona profesor = new Persona();
@@ -36,7 +36,7 @@ namespace UIDesktop
                 profesor.Email = txt_email.Text;
                 profesor.Telefono = txt_telefono.Text;
                 profesor.FechaNac = dtp_fechaNac.Value;
-                profesor.Legajo = int.Parse(txt_legajo.Text);
+                profesor.Legajo = (int)nud_Id.Value;
                 profesor.TipoPersona = "Docente";
                 if (altaProfesor.crearProfesor(profesor))
                 {
@@ -47,14 +47,13 @@ namespace UIDesktop
                     txt_email.Text = null;
                     txt_telefono.Text = null;
                     dtp_fechaNac.Value = default;
-                    txt_legajo.Text = null;
+                    nud_Id.Value = 0;
                     this.Close();
                 }
                 else
                 {
                     MessageBox.Show("No se pudo cargar el nuevo profesor");
                 }
-
             }
             else
             {
@@ -66,26 +65,6 @@ namespace UIDesktop
         {
             lblMensajeError.Text = "     " + mensaje;
             lblMensajeError.Visible = true;
-        }
-
-        private void txt_telefono_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si la tecla no es un número ni una tecla de control, se ignora.
-                e.Handled = true;
-            }
-        }
-
-        private void txt_legajo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                // Si la tecla no es un número ni una tecla de control, se ignora.
-                e.Handled = true;
-            }
         }
     }
 }

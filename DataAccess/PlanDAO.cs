@@ -28,29 +28,13 @@ namespace DataAccess
             }
         }
 
-        public bool bajaPlan(int idPlan)
+        public void bajaPlan(int idPlan)
         {
-            try
+            using (AcademiaDbContext context = new AcademiaDbContext())
             {
-                using (AcademiaDbContext context = new AcademiaDbContext())
-                {
-                    var plan = context.Planes.SingleOrDefault(p => p.IdPlan == idPlan);
-                    if (plan != null)
-                    {
-                        context.Planes.Remove(plan);
-                        context.SaveChanges();
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-            catch (DbUpdateException ex)
-            {
-                System.Console.WriteLine("Error al eliminar el plan: " + ex.Message);
-                return false;
+                var plan = context.Planes.SingleOrDefault(p => p.IdPlan == idPlan);
+                context.Planes.Remove(plan);
+                context.SaveChanges();
             }
         }
 
@@ -104,6 +88,45 @@ namespace DataAccess
             }
             return planes;
 
+        }
+
+        public bool getPlanxPersona(int idPlan)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.Personas.Count(p => p.IdPlan == idPlan);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool getPlanxMateria(int idPlan)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.Materias.Count(m => m.IdPlan == idPlan);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool getPlanxComision(int idPlan)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.Comisiones.Count(c => c.IdPlan == idPlan);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
         }
     }
 }

@@ -31,7 +31,6 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            txt_IdDelete = new TextBox();
             lbl_IdDelete = new Label();
             dtgv_BajaProfesor = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
@@ -45,26 +44,19 @@
             label5 = new Label();
             btnEliminar = new Button();
             btnCancelar = new Button();
+            nud_IdToDelete = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaProfesor).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).BeginInit();
             SuspendLayout();
-            // 
-            // txt_IdDelete
-            // 
-            txt_IdDelete.Anchor = AnchorStyles.None;
-            txt_IdDelete.Location = new Point(580, 394);
-            txt_IdDelete.Name = "txt_IdDelete";
-            txt_IdDelete.Size = new Size(103, 23);
-            txt_IdDelete.TabIndex = 36;
-            txt_IdDelete.KeyPress += txt_IdDelete_KeyPress;
             // 
             // lbl_IdDelete
             // 
             lbl_IdDelete.Anchor = AnchorStyles.None;
             lbl_IdDelete.AutoSize = true;
             lbl_IdDelete.ForeColor = Color.Gainsboro;
-            lbl_IdDelete.Location = new Point(356, 397);
+            lbl_IdDelete.Location = new Point(407, 529);
             lbl_IdDelete.Name = "lbl_IdDelete";
-            lbl_IdDelete.Size = new Size(202, 15);
+            lbl_IdDelete.Size = new Size(259, 20);
             lbl_IdDelete.TabIndex = 35;
             lbl_IdDelete.Text = "Ingrese el ID del profesor a ELIMINAR";
             // 
@@ -100,7 +92,8 @@
             dtgv_BajaProfesor.DefaultCellStyle = dataGridViewCellStyle2;
             dtgv_BajaProfesor.EnableHeadersVisualStyles = false;
             dtgv_BajaProfesor.GridColor = Color.Gainsboro;
-            dtgv_BajaProfesor.Location = new Point(75, 151);
+            dtgv_BajaProfesor.Location = new Point(86, 201);
+            dtgv_BajaProfesor.Margin = new Padding(3, 4, 3, 4);
             dtgv_BajaProfesor.MultiSelect = false;
             dtgv_BajaProfesor.Name = "dtgv_BajaProfesor";
             dtgv_BajaProfesor.ReadOnly = true;
@@ -119,7 +112,7 @@
             dtgv_BajaProfesor.ShowCellToolTips = false;
             dtgv_BajaProfesor.ShowEditingIcon = false;
             dtgv_BajaProfesor.ShowRowErrors = false;
-            dtgv_BajaProfesor.Size = new Size(951, 205);
+            dtgv_BajaProfesor.Size = new Size(1087, 273);
             dtgv_BajaProfesor.TabIndex = 34;
             // 
             // ID
@@ -184,9 +177,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(36, 65);
+            label5.Location = new Point(41, 87);
             label5.Name = "label5";
-            label5.Size = new Size(193, 29);
+            label5.Size = new Size(236, 36);
             label5.TabIndex = 33;
             label5.Text = "Baja de Profesor";
             // 
@@ -197,9 +190,10 @@
             btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnEliminar.ForeColor = Color.Gainsboro;
-            btnEliminar.Location = new Point(571, 441);
+            btnEliminar.Location = new Point(653, 588);
+            btnEliminar.Margin = new Padding(3, 4, 3, 4);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(142, 56);
+            btnEliminar.Size = new Size(162, 75);
             btnEliminar.TabIndex = 32;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -212,36 +206,46 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(326, 441);
+            btnCancelar.Location = new Point(373, 588);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(142, 56);
+            btnCancelar.Size = new Size(162, 75);
             btnCancelar.TabIndex = 31;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
+            // nud_IdToDelete
+            // 
+            nud_IdToDelete.Anchor = AnchorStyles.None;
+            nud_IdToDelete.Location = new Point(672, 527);
+            nud_IdToDelete.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nud_IdToDelete.Name = "nud_IdToDelete";
+            nud_IdToDelete.Size = new Size(150, 27);
+            nud_IdToDelete.TabIndex = 36;
+            // 
             // FormBajaProfesor
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1063, 562);
-            Controls.Add(txt_IdDelete);
+            ClientSize = new Size(1215, 749);
+            Controls.Add(nud_IdToDelete);
             Controls.Add(lbl_IdDelete);
             Controls.Add(dtgv_BajaProfesor);
             Controls.Add(label5);
             Controls.Add(btnEliminar);
             Controls.Add(btnCancelar);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormBajaProfesor";
             Text = "FormBajaProfesor";
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaProfesor).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox txt_IdDelete;
         private Label lbl_IdDelete;
         private DataGridView dtgv_BajaProfesor;
         private DataGridViewTextBoxColumn ID;
@@ -255,5 +259,6 @@
         private Label label5;
         private Button btnEliminar;
         private Button btnCancelar;
+        private NumericUpDown nud_IdToDelete;
     }
 }

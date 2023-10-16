@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             label5 = new Label();
-            txt_Id = new TextBox();
             label1 = new Label();
             btnAceptar = new Button();
             btnCancelar = new Button();
@@ -39,8 +38,10 @@
             lbl_Habilitado = new Label();
             lbl_NombreUsuario = new Label();
             lbl_Id = new Label();
+            nud_Id = new NumericUpDown();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ipb_Usuario).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_Id).BeginInit();
             SuspendLayout();
             // 
             // label5
@@ -54,15 +55,6 @@
             label5.Size = new Size(286, 36);
             label5.TabIndex = 21;
             label5.Text = "Consulta de Usuario";
-            // 
-            // txt_Id
-            // 
-            txt_Id.Anchor = AnchorStyles.None;
-            txt_Id.Location = new Point(270, 351);
-            txt_Id.Margin = new Padding(3, 4, 3, 4);
-            txt_Id.Name = "txt_Id";
-            txt_Id.Size = new Size(251, 27);
-            txt_Id.TabIndex = 14;
             // 
             // label1
             // 
@@ -145,7 +137,7 @@
             lbl_IdPersona.Anchor = AnchorStyles.None;
             lbl_IdPersona.AutoSize = true;
             lbl_IdPersona.ForeColor = Color.Gainsboro;
-            lbl_IdPersona.Location = new Point(18, 240);
+            lbl_IdPersona.Location = new Point(18, 230);
             lbl_IdPersona.Name = "lbl_IdPersona";
             lbl_IdPersona.Size = new Size(103, 20);
             lbl_IdPersona.TabIndex = 3;
@@ -181,12 +173,21 @@
             lbl_Id.Anchor = AnchorStyles.None;
             lbl_Id.AutoSize = true;
             lbl_Id.ForeColor = Color.Gainsboro;
-            lbl_Id.Location = new Point(18, 129);
+            lbl_Id.Location = new Point(18, 139);
             lbl_Id.Name = "lbl_Id";
             lbl_Id.Size = new Size(27, 20);
             lbl_Id.TabIndex = 0;
             lbl_Id.Text = "ID:";
             lbl_Id.Visible = false;
+            // 
+            // nud_Id
+            // 
+            nud_Id.Anchor = AnchorStyles.None;
+            nud_Id.Location = new Point(327, 346);
+            nud_Id.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+            nud_Id.Name = "nud_Id";
+            nud_Id.Size = new Size(150, 27);
+            nud_Id.TabIndex = 23;
             // 
             // frm_ConsultaUsuario
             // 
@@ -194,9 +195,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
             ClientSize = new Size(1215, 811);
+            Controls.Add(nud_Id);
             Controls.Add(panel1);
             Controls.Add(label5);
-            Controls.Add(txt_Id);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
@@ -205,6 +206,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ipb_Usuario).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_Id).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -212,7 +214,6 @@
         #endregion
 
         private Label label5;
-        private TextBox txt_Id;
         private Label label1;
         private Button btnAceptar;
         private Button btnCancelar;
@@ -222,5 +223,6 @@
         private Label lbl_NombreUsuario;
         private Label lbl_Id;
         private FontAwesome.Sharp.IconPictureBox ipb_Usuario;
+        private NumericUpDown nud_Id;
     }
 }

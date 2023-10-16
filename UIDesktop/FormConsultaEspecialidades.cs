@@ -19,43 +19,28 @@ namespace UIDesktop
             InitializeComponent();
         }
 
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             Controller controller = new Controller();
             lbl_Id.Text = "ID:";
             lbl_DescEspecialidad.Text = "Descripción de la especialidad:";
-            if (txt_Id != null)
+            Especialidade especialidad = controller.especialidadGetOne((int)nud_Id.Value);
+            if (especialidad is null)
             {
-                Especialidade especialidad = controller.especialidadGetOne(int.Parse(txt_Id.Text));
-                if (especialidad.IdEspecialidad == 0)
-                {
-                    ipb_Usuario.Visible = false;
-                    panel1.Visible = false;
-                    lbl_Id.Visible = false;
-                    lbl_DescEspecialidad.Visible = false;
-                    MessageBox.Show("La especialidad ingresada no existe");
-                }
-                else
-                {
-                    lbl_Id.Text += " " + especialidad.IdEspecialidad;
-                    lbl_DescEspecialidad.Text += " " + especialidad.DescEspecialidad;
-                    ipb_Usuario.Visible = true;
-                    panel1.Visible = true;
-                    lbl_Id.Visible = true;
-                    lbl_DescEspecialidad.Visible = true;
-                }
-
+                ipb_Usuario.Visible = false;
+                panel1.Visible = false;
+                lbl_Id.Visible = false;
+                lbl_DescEspecialidad.Visible = false;
+                MessageBox.Show("La especialidad ingresada no existe");
             }
-        }
-
-        private void txt_Id_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Verifica si la tecla presionada es un número o una tecla de control (como borrar o retroceder).
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            else
             {
-                // Si la tecla no es un número ni una tecla de control, se ignora.
-                e.Handled = true;
+                lbl_Id.Text += " " + especialidad.IdEspecialidad;
+                lbl_DescEspecialidad.Text += " " + especialidad.DescEspecialidad;
+                ipb_Usuario.Visible = true;
+                panel1.Visible = true;
+                lbl_Id.Visible = true;
+                lbl_DescEspecialidad.Visible = true;
             }
         }
     }

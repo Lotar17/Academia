@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
@@ -39,11 +38,10 @@
             ID = new DataGridViewTextBoxColumn();
             nombre_usuario = new DataGridViewTextBoxColumn();
             Habilitado = new DataGridViewTextBoxColumn();
-            controllerBindingSource = new BindingSource(components);
             lbl_IdDelete = new Label();
-            txt_IdDelete = new TextBox();
+            nud_IdToDelete = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaUsuario).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)controllerBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).BeginInit();
             SuspendLayout();
             // 
             // label5
@@ -166,10 +164,6 @@
             Habilitado.Name = "Habilitado";
             Habilitado.ReadOnly = true;
             // 
-            // controllerBindingSource
-            // 
-            controllerBindingSource.DataSource = typeof(Dominio.Controller);
-            // 
             // lbl_IdDelete
             // 
             lbl_IdDelete.Anchor = AnchorStyles.None;
@@ -181,15 +175,14 @@
             lbl_IdDelete.TabIndex = 23;
             lbl_IdDelete.Text = "Ingrese el ID del usuario a ELIMINAR";
             // 
-            // txt_IdDelete
+            // nud_IdToDelete
             // 
-            txt_IdDelete.Anchor = AnchorStyles.None;
-            txt_IdDelete.Location = new Point(680, 513);
-            txt_IdDelete.Margin = new Padding(3, 4, 3, 4);
-            txt_IdDelete.Name = "txt_IdDelete";
-            txt_IdDelete.Size = new Size(117, 27);
-            txt_IdDelete.TabIndex = 24;
-            txt_IdDelete.KeyPress += txt_IdDelete_KeyPress;
+            nud_IdToDelete.Anchor = AnchorStyles.None;
+            nud_IdToDelete.Location = new Point(681, 515);
+            nud_IdToDelete.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nud_IdToDelete.Name = "nud_IdToDelete";
+            nud_IdToDelete.Size = new Size(150, 27);
+            nud_IdToDelete.TabIndex = 24;
             // 
             // FormBajaUsuario
             // 
@@ -197,7 +190,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
             ClientSize = new Size(1215, 811);
-            Controls.Add(txt_IdDelete);
+            Controls.Add(nud_IdToDelete);
             Controls.Add(lbl_IdDelete);
             Controls.Add(dtgv_BajaUsuario);
             Controls.Add(label5);
@@ -207,7 +200,7 @@
             Name = "FormBajaUsuario";
             Text = "Baja de Usuario";
             ((System.ComponentModel.ISupportInitialize)dtgv_BajaUsuario).EndInit();
-            ((System.ComponentModel.ISupportInitialize)controllerBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nud_IdToDelete).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -218,11 +211,10 @@
         private Button btnEliminar;
         private Button btnCancelar;
         private DataGridView dtgv_BajaUsuario;
-        private BindingSource controllerBindingSource;
         private Label lbl_IdDelete;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn nombre_usuario;
         private DataGridViewTextBoxColumn Habilitado;
-        private TextBox txt_IdDelete;
+        private NumericUpDown nud_IdToDelete;
     }
 }

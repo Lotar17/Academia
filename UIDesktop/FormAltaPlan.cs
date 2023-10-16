@@ -26,20 +26,19 @@ namespace UIDesktop
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txt_descPlan.Text != "" && txt_idEspecialidad.Text != "")
+            if (txt_descPlan.Text != "")
             {
                 Controller controller = new Controller();
                 Plane plan = new Plane();
                 plan.DescPlan = txt_descPlan.Text;
-                plan.IdPlan = int.Parse(txt_idEspecialidad.Text);
-                plan.IdEspecialidad = int.Parse(txt_idEspecialidad.Text);
+                plan.IdEspecialidad = (int)nud_idEspecialidad.Value;
                 if (controller.especialidadGetOne((int)plan.IdEspecialidad) != null)
                 {
                     if (controller.crearPlan(plan))
                     {
                         MessageBox.Show("Plan cargado con éxito");
                         txt_descPlan.Text = null;
-                        txt_idEspecialidad.Text = null;
+                        nud_idEspecialidad.Value = 0;
                         this.Close();
                     }
                     else

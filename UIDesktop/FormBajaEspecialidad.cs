@@ -37,11 +37,19 @@ namespace UIDesktop
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             // int idToDelete = (int)dtgv_BajaUsuario.Rows[rowIndexToDelete].Cells["ID"].Value;
-            int idToDelete = int.Parse(txt_IdDelete.Text);
+            int idToDelete = (int)nud_IdToDelete.Value;
             Controller controller = new Controller();
-            if (controller.borrarEspecialidad(idToDelete))
+            if (controller.especialidadGetOne(idToDelete) != null)
             {
-                MessageBox.Show("Especialidad borrada con exito");
+                if (controller.getEspecialidadxPlan(idToDelete))
+                {
+                    controller.borrarEspecialidad(idToDelete);
+                    MessageBox.Show("Especialidad borrada con exito");
+                }
+                else
+                {
+                    MessageBox.Show("Existen instancias de PLANES con el ID de ESPECIALIDAD a borrar.\n Por favor modifique esas instancias para poder borrar la especialidad.");
+                }
             }
             else
             {
