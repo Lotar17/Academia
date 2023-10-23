@@ -89,6 +89,8 @@
             lblEmail = new Label();
             lblNombreApellido = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            btnInscripcionACursos = new FontAwesome.Sharp.IconButton();
+            btnDocentesXCurso = new FontAwesome.Sharp.IconButton();
             panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo).BeginInit();
             panelChildForm.SuspendLayout();
@@ -108,6 +110,8 @@
             // 
             panelSideMenu.AutoScroll = true;
             panelSideMenu.BackColor = Color.FromArgb(30, 11, 99);
+            panelSideMenu.Controls.Add(btnDocentesXCurso);
+            panelSideMenu.Controls.Add(btnInscripcionACursos);
             panelSideMenu.Controls.Add(btnReporteCursos);
             panelSideMenu.Controls.Add(iconButton1);
             panelSideMenu.Controls.Add(btnMenuCursos);
@@ -137,7 +141,7 @@
             btnReporteCursos.Location = new Point(0, 420);
             btnReporteCursos.Name = "btnReporteCursos";
             btnReporteCursos.Padding = new Padding(10, 0, 30, 0);
-            btnReporteCursos.Size = new Size(250, 60);
+            btnReporteCursos.Size = new Size(229, 60);
             btnReporteCursos.TabIndex = 13;
             btnReporteCursos.Text = "Reporte de Cursos";
             btnReporteCursos.TextAlign = ContentAlignment.MiddleLeft;
@@ -156,10 +160,10 @@
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.IconSize = 40;
             iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(0, 587);
+            iconButton1.Location = new Point(0, 600);
             iconButton1.Name = "iconButton1";
             iconButton1.Padding = new Padding(10, 0, 30, 0);
-            iconButton1.Size = new Size(250, 60);
+            iconButton1.Size = new Size(229, 60);
             iconButton1.TabIndex = 12;
             iconButton1.Text = "Log Out";
             iconButton1.TextAlign = ContentAlignment.MiddleLeft;
@@ -181,7 +185,7 @@
             btnMenuCursos.Location = new Point(0, 360);
             btnMenuCursos.Name = "btnMenuCursos";
             btnMenuCursos.Padding = new Padding(10, 0, 30, 0);
-            btnMenuCursos.Size = new Size(250, 60);
+            btnMenuCursos.Size = new Size(229, 60);
             btnMenuCursos.TabIndex = 11;
             btnMenuCursos.Text = "Cursos";
             btnMenuCursos.TextAlign = ContentAlignment.MiddleLeft;
@@ -203,7 +207,7 @@
             btnMenuComisiones.Location = new Point(0, 300);
             btnMenuComisiones.Name = "btnMenuComisiones";
             btnMenuComisiones.Padding = new Padding(10, 0, 30, 0);
-            btnMenuComisiones.Size = new Size(250, 60);
+            btnMenuComisiones.Size = new Size(229, 60);
             btnMenuComisiones.TabIndex = 10;
             btnMenuComisiones.Text = "Comisiones";
             btnMenuComisiones.TextAlign = ContentAlignment.MiddleLeft;
@@ -225,7 +229,7 @@
             btnMenuPlanesYMaterias.Location = new Point(0, 240);
             btnMenuPlanesYMaterias.Name = "btnMenuPlanesYMaterias";
             btnMenuPlanesYMaterias.Padding = new Padding(10, 0, 30, 0);
-            btnMenuPlanesYMaterias.Size = new Size(250, 60);
+            btnMenuPlanesYMaterias.Size = new Size(229, 60);
             btnMenuPlanesYMaterias.TabIndex = 9;
             btnMenuPlanesYMaterias.Text = "Planes y Materias";
             btnMenuPlanesYMaterias.TextAlign = ContentAlignment.MiddleLeft;
@@ -247,7 +251,7 @@
             btnMenuProfesores.Location = new Point(0, 180);
             btnMenuProfesores.Name = "btnMenuProfesores";
             btnMenuProfesores.Padding = new Padding(10, 0, 30, 0);
-            btnMenuProfesores.Size = new Size(250, 60);
+            btnMenuProfesores.Size = new Size(229, 60);
             btnMenuProfesores.TabIndex = 8;
             btnMenuProfesores.Text = "Profesores";
             btnMenuProfesores.TextAlign = ContentAlignment.MiddleLeft;
@@ -269,7 +273,7 @@
             btnMenuEspecialidades.Location = new Point(0, 120);
             btnMenuEspecialidades.Name = "btnMenuEspecialidades";
             btnMenuEspecialidades.Padding = new Padding(10, 0, 30, 0);
-            btnMenuEspecialidades.Size = new Size(250, 60);
+            btnMenuEspecialidades.Size = new Size(229, 60);
             btnMenuEspecialidades.TabIndex = 7;
             btnMenuEspecialidades.Text = "Especialidades";
             btnMenuEspecialidades.TextAlign = ContentAlignment.MiddleLeft;
@@ -291,7 +295,7 @@
             btnMenuAlumnos.Location = new Point(0, 60);
             btnMenuAlumnos.Name = "btnMenuAlumnos";
             btnMenuAlumnos.Padding = new Padding(10, 0, 30, 0);
-            btnMenuAlumnos.Size = new Size(250, 60);
+            btnMenuAlumnos.Size = new Size(229, 60);
             btnMenuAlumnos.TabIndex = 6;
             btnMenuAlumnos.Text = "Alumnos";
             btnMenuAlumnos.TextAlign = ContentAlignment.MiddleLeft;
@@ -313,7 +317,7 @@
             btnMenuUsuarios.Location = new Point(0, 0);
             btnMenuUsuarios.Name = "btnMenuUsuarios";
             btnMenuUsuarios.Padding = new Padding(10, 0, 30, 0);
-            btnMenuUsuarios.Size = new Size(250, 60);
+            btnMenuUsuarios.Size = new Size(229, 60);
             btnMenuUsuarios.TabIndex = 1;
             btnMenuUsuarios.Text = "Usuarios";
             btnMenuUsuarios.TextAlign = ContentAlignment.MiddleLeft;
@@ -599,33 +603,33 @@
             DropdownComisiones.MenuItemTextColor = Color.Empty;
             DropdownComisiones.Name = "rjDropdownComisiones";
             DropdownComisiones.PrimaryColor = Color.Empty;
-            DropdownComisiones.Size = new Size(211, 128);
+            DropdownComisiones.Size = new Size(166, 100);
             // 
             // menuItemAltaComisiones
             // 
             menuItemAltaComisiones.Name = "menuItemAltaComisiones";
-            menuItemAltaComisiones.Size = new Size(210, 24);
+            menuItemAltaComisiones.Size = new Size(165, 24);
             menuItemAltaComisiones.Text = "Alta";
             menuItemAltaComisiones.Click += menuItemAltaComisiones_Click;
             // 
             // menuItemBajaComisiones
             // 
             menuItemBajaComisiones.Name = "menuItemBajaComisiones";
-            menuItemBajaComisiones.Size = new Size(210, 24);
+            menuItemBajaComisiones.Size = new Size(165, 24);
             menuItemBajaComisiones.Text = "Baja";
             menuItemBajaComisiones.Click += menuItemBajaComisiones_Click;
             // 
             // menuItemModificacionComisiones
             // 
             menuItemModificacionComisiones.Name = "menuItemModificacionComisiones";
-            menuItemModificacionComisiones.Size = new Size(210, 24);
+            menuItemModificacionComisiones.Size = new Size(165, 24);
             menuItemModificacionComisiones.Text = "Modificacion";
             menuItemModificacionComisiones.Click += menuItemModificacionComisiones_Click;
             // 
             // menuItemConsultaComisiones
             // 
             menuItemConsultaComisiones.Name = "menuItemConsultaComisiones";
-            menuItemConsultaComisiones.Size = new Size(210, 24);
+            menuItemConsultaComisiones.Size = new Size(165, 24);
             menuItemConsultaComisiones.Text = "Consulta";
             menuItemConsultaComisiones.Click += menuItemConsultaComisiones_Click;
             // 
@@ -726,6 +730,48 @@
             iconPictureBox1.TabIndex = 1;
             iconPictureBox1.TabStop = false;
             // 
+            // btnInscripcionACursos
+            // 
+            btnInscripcionACursos.Dock = DockStyle.Top;
+            btnInscripcionACursos.FlatAppearance.BorderSize = 0;
+            btnInscripcionACursos.FlatStyle = FlatStyle.Flat;
+            btnInscripcionACursos.ForeColor = Color.Gainsboro;
+            btnInscripcionACursos.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
+            btnInscripcionACursos.IconColor = Color.Gainsboro;
+            btnInscripcionACursos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnInscripcionACursos.IconSize = 40;
+            btnInscripcionACursos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInscripcionACursos.Location = new Point(0, 480);
+            btnInscripcionACursos.Name = "btnInscripcionACursos";
+            btnInscripcionACursos.Padding = new Padding(10, 0, 30, 0);
+            btnInscripcionACursos.Size = new Size(229, 60);
+            btnInscripcionACursos.TabIndex = 14;
+            btnInscripcionACursos.Text = "Inscripcion a Cursos";
+            btnInscripcionACursos.TextAlign = ContentAlignment.MiddleLeft;
+            btnInscripcionACursos.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnInscripcionACursos.UseVisualStyleBackColor = true;
+            // 
+            // btnDocentesXCurso
+            // 
+            btnDocentesXCurso.Dock = DockStyle.Top;
+            btnDocentesXCurso.FlatAppearance.BorderSize = 0;
+            btnDocentesXCurso.FlatStyle = FlatStyle.Flat;
+            btnDocentesXCurso.ForeColor = Color.Gainsboro;
+            btnDocentesXCurso.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            btnDocentesXCurso.IconColor = Color.Gainsboro;
+            btnDocentesXCurso.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnDocentesXCurso.IconSize = 40;
+            btnDocentesXCurso.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDocentesXCurso.Location = new Point(0, 540);
+            btnDocentesXCurso.Name = "btnDocentesXCurso";
+            btnDocentesXCurso.Padding = new Padding(10, 0, 30, 0);
+            btnDocentesXCurso.Size = new Size(229, 60);
+            btnDocentesXCurso.TabIndex = 15;
+            btnDocentesXCurso.Text = "Docentes por curso";
+            btnDocentesXCurso.TextAlign = ContentAlignment.MiddleLeft;
+            btnDocentesXCurso.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDocentesXCurso.UseVisualStyleBackColor = true;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(10F, 20F);
@@ -818,5 +864,7 @@
         private Label lblNombreApellido;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton btnReporteCursos;
+        private FontAwesome.Sharp.IconButton btnDocentesXCurso;
+        private FontAwesome.Sharp.IconButton btnInscripcionACursos;
     }
 }
