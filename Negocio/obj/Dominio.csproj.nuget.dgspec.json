@@ -11,7 +11,7 @@
         "projectName": "DataAccess",
         "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,7 +96,7 @@
         "projectName": "Entities",
         "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -151,7 +151,7 @@
         "projectName": "Dominio",
         "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\source\\repos\\Academia\\Negocio\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",

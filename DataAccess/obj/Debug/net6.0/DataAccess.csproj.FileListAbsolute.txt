@@ -115,3 +115,20 @@ L:\lotar\UTN\3 Año\.NET\repos\Academia\DataAccess\obj\Debug\net6.0\refint\DataA
 L:\lotar\UTN\3 Año\.NET\repos\Academia\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 L:\lotar\UTN\3 Año\.NET\repos\Academia\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 L:\lotar\UTN\3 Año\.NET\repos\Academia\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\NET\Academia-main\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\NET\Academia-main\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+D:\NET\Academia-main\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\NET\Academia-main\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\NET\Academia-main\DataAccess\bin\Debug\net6.0\Entities.dll
+D:\NET\Academia-main\DataAccess\bin\Debug\net6.0\Entities.pdb
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+D:\NET\Academia-main\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

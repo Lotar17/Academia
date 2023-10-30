@@ -321,5 +321,23 @@ namespace Dominio
         }
 
         //FIN METODOS CURSOS//
+
+        //METODOS INSCRIPCION ALUMNO A CURSO//
+
+        public bool inscribir(int idCurso)
+        {
+            return cursoDAO.inscribirAlumno(idCurso);
+        }
+
+        public bool getCupo(Curso curso)
+        {
+            return cursoDAO.getCupo(curso);
+        }
+
+        public bool getCursoXAlumno(int idCurso)
+        {
+            return cursoDAO.getCursoXAlumno(idCurso);
+        }
+
     }
 }

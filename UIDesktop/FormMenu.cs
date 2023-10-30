@@ -312,5 +312,10 @@ namespace Academia
                 btnMenuCursos.Visible = false;
             }
         }
+
+        private void btnInscripcionACursos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormInscripcionCursos());
+        }
     }
 }

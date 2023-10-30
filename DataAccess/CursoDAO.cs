@@ -117,5 +117,55 @@ namespace DataAccess
                 return false;
             }
         }
+
+        public bool inscribirAlumno(int idCurso)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                AlumnosInscripcione alumnosInscripcione = new AlumnosInscripcione();
+                alumnosInscripcione.IdCurso = idCurso;
+                alumnosInscripcione.IdAlumno = UsuarioLoginCache._IdPersona;
+                alumnosInscripcione.Condicion = "INSCRIPTO";
+                alumnosInscripcione.Nota = null;
+                context.AlumnosInscripciones.Add(alumnosInscripcione);
+                return true;
+            }
+        }
+
+        public bool getCursoXAlumno(int idCurso)
+        {
+            int idAlumno = UsuarioLoginCache._IdPersona;
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                var count = context.AlumnosInscripciones.Count(a => a.IdCurso == idCurso && a.IdAlumno == idAlumno);
+                if (count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool getCupo(Curso c)
+        {
+            int cantidadInscriptos = 0;
+            int cupo = (int)c.Cupo;
+            using(AcademiaDbContext context = new AcademiaDbContext())
+            {
+                foreach(AlumnosInscripcione alu in context.AlumnosInscripciones)
+                {
+                    if (c.IdCurso == alu.IdCurso)
+                    { cantidadInscriptos++;}
+                }
+            }
+            if(cantidadInscriptos <= cupo)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

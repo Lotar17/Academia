@@ -31,6 +31,8 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             panelSideMenu = new Panel();
+            btnDocentesXCurso = new FontAwesome.Sharp.IconButton();
+            btnInscripcionACursos = new FontAwesome.Sharp.IconButton();
             btnReporteCursos = new FontAwesome.Sharp.IconButton();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             btnMenuCursos = new FontAwesome.Sharp.IconButton();
@@ -89,8 +91,6 @@
             lblEmail = new Label();
             lblNombreApellido = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            btnInscripcionACursos = new FontAwesome.Sharp.IconButton();
-            btnDocentesXCurso = new FontAwesome.Sharp.IconButton();
             panelSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo).BeginInit();
             panelChildForm.SuspendLayout();
@@ -127,6 +127,49 @@
             panelSideMenu.Size = new Size(250, 647);
             panelSideMenu.TabIndex = 0;
             // 
+            // btnDocentesXCurso
+            // 
+            btnDocentesXCurso.Dock = DockStyle.Top;
+            btnDocentesXCurso.FlatAppearance.BorderSize = 0;
+            btnDocentesXCurso.FlatStyle = FlatStyle.Flat;
+            btnDocentesXCurso.ForeColor = Color.Gainsboro;
+            btnDocentesXCurso.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            btnDocentesXCurso.IconColor = Color.Gainsboro;
+            btnDocentesXCurso.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnDocentesXCurso.IconSize = 40;
+            btnDocentesXCurso.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDocentesXCurso.Location = new Point(0, 540);
+            btnDocentesXCurso.Name = "btnDocentesXCurso";
+            btnDocentesXCurso.Padding = new Padding(10, 0, 30, 0);
+            btnDocentesXCurso.Size = new Size(233, 60);
+            btnDocentesXCurso.TabIndex = 15;
+            btnDocentesXCurso.Text = "Docentes por curso";
+            btnDocentesXCurso.TextAlign = ContentAlignment.MiddleLeft;
+            btnDocentesXCurso.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDocentesXCurso.UseVisualStyleBackColor = true;
+            // 
+            // btnInscripcionACursos
+            // 
+            btnInscripcionACursos.Dock = DockStyle.Top;
+            btnInscripcionACursos.FlatAppearance.BorderSize = 0;
+            btnInscripcionACursos.FlatStyle = FlatStyle.Flat;
+            btnInscripcionACursos.ForeColor = Color.Gainsboro;
+            btnInscripcionACursos.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
+            btnInscripcionACursos.IconColor = Color.Gainsboro;
+            btnInscripcionACursos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnInscripcionACursos.IconSize = 40;
+            btnInscripcionACursos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInscripcionACursos.Location = new Point(0, 480);
+            btnInscripcionACursos.Name = "btnInscripcionACursos";
+            btnInscripcionACursos.Padding = new Padding(10, 0, 30, 0);
+            btnInscripcionACursos.Size = new Size(233, 60);
+            btnInscripcionACursos.TabIndex = 14;
+            btnInscripcionACursos.Text = "Inscripcion a Cursos";
+            btnInscripcionACursos.TextAlign = ContentAlignment.MiddleLeft;
+            btnInscripcionACursos.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnInscripcionACursos.UseVisualStyleBackColor = true;
+            btnInscripcionACursos.Click += btnInscripcionACursos_Click;
+            // 
             // btnReporteCursos
             // 
             btnReporteCursos.Dock = DockStyle.Top;
@@ -141,7 +184,7 @@
             btnReporteCursos.Location = new Point(0, 420);
             btnReporteCursos.Name = "btnReporteCursos";
             btnReporteCursos.Padding = new Padding(10, 0, 30, 0);
-            btnReporteCursos.Size = new Size(229, 60);
+            btnReporteCursos.Size = new Size(233, 60);
             btnReporteCursos.TabIndex = 13;
             btnReporteCursos.Text = "Reporte de Cursos";
             btnReporteCursos.TextAlign = ContentAlignment.MiddleLeft;
@@ -163,7 +206,7 @@
             iconButton1.Location = new Point(0, 600);
             iconButton1.Name = "iconButton1";
             iconButton1.Padding = new Padding(10, 0, 30, 0);
-            iconButton1.Size = new Size(229, 60);
+            iconButton1.Size = new Size(233, 60);
             iconButton1.TabIndex = 12;
             iconButton1.Text = "Log Out";
             iconButton1.TextAlign = ContentAlignment.MiddleLeft;
@@ -185,7 +228,7 @@
             btnMenuCursos.Location = new Point(0, 360);
             btnMenuCursos.Name = "btnMenuCursos";
             btnMenuCursos.Padding = new Padding(10, 0, 30, 0);
-            btnMenuCursos.Size = new Size(229, 60);
+            btnMenuCursos.Size = new Size(233, 60);
             btnMenuCursos.TabIndex = 11;
             btnMenuCursos.Text = "Cursos";
             btnMenuCursos.TextAlign = ContentAlignment.MiddleLeft;
@@ -207,7 +250,7 @@
             btnMenuComisiones.Location = new Point(0, 300);
             btnMenuComisiones.Name = "btnMenuComisiones";
             btnMenuComisiones.Padding = new Padding(10, 0, 30, 0);
-            btnMenuComisiones.Size = new Size(229, 60);
+            btnMenuComisiones.Size = new Size(233, 60);
             btnMenuComisiones.TabIndex = 10;
             btnMenuComisiones.Text = "Comisiones";
             btnMenuComisiones.TextAlign = ContentAlignment.MiddleLeft;
@@ -229,7 +272,7 @@
             btnMenuPlanesYMaterias.Location = new Point(0, 240);
             btnMenuPlanesYMaterias.Name = "btnMenuPlanesYMaterias";
             btnMenuPlanesYMaterias.Padding = new Padding(10, 0, 30, 0);
-            btnMenuPlanesYMaterias.Size = new Size(229, 60);
+            btnMenuPlanesYMaterias.Size = new Size(233, 60);
             btnMenuPlanesYMaterias.TabIndex = 9;
             btnMenuPlanesYMaterias.Text = "Planes y Materias";
             btnMenuPlanesYMaterias.TextAlign = ContentAlignment.MiddleLeft;
@@ -251,7 +294,7 @@
             btnMenuProfesores.Location = new Point(0, 180);
             btnMenuProfesores.Name = "btnMenuProfesores";
             btnMenuProfesores.Padding = new Padding(10, 0, 30, 0);
-            btnMenuProfesores.Size = new Size(229, 60);
+            btnMenuProfesores.Size = new Size(233, 60);
             btnMenuProfesores.TabIndex = 8;
             btnMenuProfesores.Text = "Profesores";
             btnMenuProfesores.TextAlign = ContentAlignment.MiddleLeft;
@@ -273,7 +316,7 @@
             btnMenuEspecialidades.Location = new Point(0, 120);
             btnMenuEspecialidades.Name = "btnMenuEspecialidades";
             btnMenuEspecialidades.Padding = new Padding(10, 0, 30, 0);
-            btnMenuEspecialidades.Size = new Size(229, 60);
+            btnMenuEspecialidades.Size = new Size(233, 60);
             btnMenuEspecialidades.TabIndex = 7;
             btnMenuEspecialidades.Text = "Especialidades";
             btnMenuEspecialidades.TextAlign = ContentAlignment.MiddleLeft;
@@ -295,7 +338,7 @@
             btnMenuAlumnos.Location = new Point(0, 60);
             btnMenuAlumnos.Name = "btnMenuAlumnos";
             btnMenuAlumnos.Padding = new Padding(10, 0, 30, 0);
-            btnMenuAlumnos.Size = new Size(229, 60);
+            btnMenuAlumnos.Size = new Size(233, 60);
             btnMenuAlumnos.TabIndex = 6;
             btnMenuAlumnos.Text = "Alumnos";
             btnMenuAlumnos.TextAlign = ContentAlignment.MiddleLeft;
@@ -317,7 +360,7 @@
             btnMenuUsuarios.Location = new Point(0, 0);
             btnMenuUsuarios.Name = "btnMenuUsuarios";
             btnMenuUsuarios.Padding = new Padding(10, 0, 30, 0);
-            btnMenuUsuarios.Size = new Size(229, 60);
+            btnMenuUsuarios.Size = new Size(233, 60);
             btnMenuUsuarios.TabIndex = 1;
             btnMenuUsuarios.Text = "Usuarios";
             btnMenuUsuarios.TextAlign = ContentAlignment.MiddleLeft;
@@ -366,33 +409,33 @@
             DropdownUsuarios.MenuItemTextColor = Color.Empty;
             DropdownUsuarios.Name = "rjDropdownUsuarios";
             DropdownUsuarios.PrimaryColor = Color.Empty;
-            DropdownUsuarios.Size = new Size(166, 100);
+            DropdownUsuarios.Size = new Size(145, 92);
             // 
             // menuItemAltaUsuarios
             // 
             menuItemAltaUsuarios.Name = "menuItemAltaUsuarios";
-            menuItemAltaUsuarios.Size = new Size(165, 24);
+            menuItemAltaUsuarios.Size = new Size(144, 22);
             menuItemAltaUsuarios.Text = "Alta";
             menuItemAltaUsuarios.Click += menuItemAltaUsuarios_Click;
             // 
             // menuItemBajaUsuarios
             // 
             menuItemBajaUsuarios.Name = "menuItemBajaUsuarios";
-            menuItemBajaUsuarios.Size = new Size(165, 24);
+            menuItemBajaUsuarios.Size = new Size(144, 22);
             menuItemBajaUsuarios.Text = "Baja";
             menuItemBajaUsuarios.Click += menuItemBajaUsuarios_Click;
             // 
             // menuItemModificacionUsuarios
             // 
             menuItemModificacionUsuarios.Name = "menuItemModificacionUsuarios";
-            menuItemModificacionUsuarios.Size = new Size(165, 24);
+            menuItemModificacionUsuarios.Size = new Size(144, 22);
             menuItemModificacionUsuarios.Text = "Modificacion";
             menuItemModificacionUsuarios.Click += menuItemModificacionUsuarios_Click;
             // 
             // menuItemConsultaUsuarios
             // 
             menuItemConsultaUsuarios.Name = "menuItemConsultaUsuarios";
-            menuItemConsultaUsuarios.Size = new Size(165, 24);
+            menuItemConsultaUsuarios.Size = new Size(144, 22);
             menuItemConsultaUsuarios.Text = "Consulta";
             menuItemConsultaUsuarios.Click += menuItemConsultaUsuarios_Click;
             // 
@@ -405,33 +448,33 @@
             DropdownAlumnos.MenuItemTextColor = Color.Empty;
             DropdownAlumnos.Name = "rjDropdownAlumnos";
             DropdownAlumnos.PrimaryColor = Color.Empty;
-            DropdownAlumnos.Size = new Size(166, 100);
+            DropdownAlumnos.Size = new Size(145, 92);
             // 
             // menuItemAltaAlumnos
             // 
             menuItemAltaAlumnos.Name = "menuItemAltaAlumnos";
-            menuItemAltaAlumnos.Size = new Size(165, 24);
+            menuItemAltaAlumnos.Size = new Size(144, 22);
             menuItemAltaAlumnos.Text = "Alta";
             menuItemAltaAlumnos.Click += menuItemAltaAlumnos_Click;
             // 
             // menuItemBajaAlumnos
             // 
             menuItemBajaAlumnos.Name = "menuItemBajaAlumnos";
-            menuItemBajaAlumnos.Size = new Size(165, 24);
+            menuItemBajaAlumnos.Size = new Size(144, 22);
             menuItemBajaAlumnos.Text = "Baja";
             menuItemBajaAlumnos.Click += menuItemBajaAlumnos_Click;
             // 
             // menuItemModificacionAlumnos
             // 
             menuItemModificacionAlumnos.Name = "menuItemModificacionAlumnos";
-            menuItemModificacionAlumnos.Size = new Size(165, 24);
+            menuItemModificacionAlumnos.Size = new Size(144, 22);
             menuItemModificacionAlumnos.Text = "Modificacion";
             menuItemModificacionAlumnos.Click += menuItemModificacionAlumnos_Click;
             // 
             // menuItemConsultaAlumnos
             // 
             menuItemConsultaAlumnos.Name = "menuItemConsultaAlumnos";
-            menuItemConsultaAlumnos.Size = new Size(165, 24);
+            menuItemConsultaAlumnos.Size = new Size(144, 22);
             menuItemConsultaAlumnos.Text = "Consulta";
             menuItemConsultaAlumnos.Click += menuItemConsultaAlumnos_Click;
             // 
@@ -444,33 +487,33 @@
             DropdownEspecialidades.MenuItemTextColor = Color.Empty;
             DropdownEspecialidades.Name = "rjDropdownEspecialidades";
             DropdownEspecialidades.PrimaryColor = Color.Empty;
-            DropdownEspecialidades.Size = new Size(166, 100);
+            DropdownEspecialidades.Size = new Size(145, 92);
             // 
             // menuItemAltaEspecialidades
             // 
             menuItemAltaEspecialidades.Name = "menuItemAltaEspecialidades";
-            menuItemAltaEspecialidades.Size = new Size(165, 24);
+            menuItemAltaEspecialidades.Size = new Size(144, 22);
             menuItemAltaEspecialidades.Text = "Alta";
             menuItemAltaEspecialidades.Click += menuItemAltaEspecialidades_Click;
             // 
             // menuItemBajaEspecialidades
             // 
             menuItemBajaEspecialidades.Name = "menuItemBajaEspecialidades";
-            menuItemBajaEspecialidades.Size = new Size(165, 24);
+            menuItemBajaEspecialidades.Size = new Size(144, 22);
             menuItemBajaEspecialidades.Text = "Baja";
             menuItemBajaEspecialidades.Click += menuItemBajaEspecialidades_Click;
             // 
             // menuItemModificacionEspecialidades
             // 
             menuItemModificacionEspecialidades.Name = "menuItemModificacionEspecialidades";
-            menuItemModificacionEspecialidades.Size = new Size(165, 24);
+            menuItemModificacionEspecialidades.Size = new Size(144, 22);
             menuItemModificacionEspecialidades.Text = "Modificacion";
             menuItemModificacionEspecialidades.Click += menuItemModificacionEspecialidades_Click;
             // 
             // menuItemConsultaEspecialidades
             // 
             menuItemConsultaEspecialidades.Name = "menuItemConsultaEspecialidades";
-            menuItemConsultaEspecialidades.Size = new Size(165, 24);
+            menuItemConsultaEspecialidades.Size = new Size(144, 22);
             menuItemConsultaEspecialidades.Text = "Consulta";
             menuItemConsultaEspecialidades.Click += menuItemConsultaEspecialidades_Click;
             // 
@@ -483,33 +526,33 @@
             DropdownProfesores.MenuItemTextColor = Color.Empty;
             DropdownProfesores.Name = "rjDropdownProfesores";
             DropdownProfesores.PrimaryColor = Color.Empty;
-            DropdownProfesores.Size = new Size(166, 100);
+            DropdownProfesores.Size = new Size(145, 92);
             // 
             // menuItemAltaProfesores
             // 
             menuItemAltaProfesores.Name = "menuItemAltaProfesores";
-            menuItemAltaProfesores.Size = new Size(165, 24);
+            menuItemAltaProfesores.Size = new Size(144, 22);
             menuItemAltaProfesores.Text = "Alta";
             menuItemAltaProfesores.Click += menuItemAltaProfesores_Click;
             // 
             // menuItemBajaProfesores
             // 
             menuItemBajaProfesores.Name = "menuItemBajaProfesores";
-            menuItemBajaProfesores.Size = new Size(165, 24);
+            menuItemBajaProfesores.Size = new Size(144, 22);
             menuItemBajaProfesores.Text = "Baja";
             menuItemBajaProfesores.Click += menuItemBajaProfesores_Click;
             // 
             // menuItemModificacionProfesores
             // 
             menuItemModificacionProfesores.Name = "menuItemModificacionProfesores";
-            menuItemModificacionProfesores.Size = new Size(165, 24);
+            menuItemModificacionProfesores.Size = new Size(144, 22);
             menuItemModificacionProfesores.Text = "Modificacion";
             menuItemModificacionProfesores.Click += menuItemModificacionProfesores_Click;
             // 
             // menuItemConsultaProfesores
             // 
             menuItemConsultaProfesores.Name = "menuItemConsultaProfesores";
-            menuItemConsultaProfesores.Size = new Size(165, 24);
+            menuItemConsultaProfesores.Size = new Size(144, 22);
             menuItemConsultaProfesores.Text = "Consulta";
             menuItemConsultaProfesores.Click += menuItemConsultaProfesores_Click;
             // 
@@ -522,40 +565,40 @@
             DropdownPlanesYMaterias.MenuItemTextColor = Color.Empty;
             DropdownPlanesYMaterias.Name = "rjDropdownPlanesYMaterias";
             DropdownPlanesYMaterias.PrimaryColor = Color.Empty;
-            DropdownPlanesYMaterias.Size = new Size(136, 52);
+            DropdownPlanesYMaterias.Size = new Size(120, 48);
             // 
             // planesToolStripMenuItem
             // 
             planesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuItemAltaPlanes, menuItemBajaPlanes, menuItemModificacionPlanes, menuItemConsultaPlanes });
             planesToolStripMenuItem.Name = "planesToolStripMenuItem";
-            planesToolStripMenuItem.Size = new Size(135, 24);
+            planesToolStripMenuItem.Size = new Size(119, 22);
             planesToolStripMenuItem.Text = "Planes";
             // 
             // menuItemAltaPlanes
             // 
             menuItemAltaPlanes.Name = "menuItemAltaPlanes";
-            menuItemAltaPlanes.Size = new Size(179, 26);
+            menuItemAltaPlanes.Size = new Size(144, 22);
             menuItemAltaPlanes.Text = "Alta";
             menuItemAltaPlanes.Click += menuItemAltaPlanes_Click;
             // 
             // menuItemBajaPlanes
             // 
             menuItemBajaPlanes.Name = "menuItemBajaPlanes";
-            menuItemBajaPlanes.Size = new Size(179, 26);
+            menuItemBajaPlanes.Size = new Size(144, 22);
             menuItemBajaPlanes.Text = "Baja";
             menuItemBajaPlanes.Click += menuItemBajaPlanes_Click;
             // 
             // menuItemModificacionPlanes
             // 
             menuItemModificacionPlanes.Name = "menuItemModificacionPlanes";
-            menuItemModificacionPlanes.Size = new Size(179, 26);
+            menuItemModificacionPlanes.Size = new Size(144, 22);
             menuItemModificacionPlanes.Text = "Modificacion";
             menuItemModificacionPlanes.Click += menuItemModificacionPlanes_Click;
             // 
             // menuItemConsultaPlanes
             // 
             menuItemConsultaPlanes.Name = "menuItemConsultaPlanes";
-            menuItemConsultaPlanes.Size = new Size(179, 26);
+            menuItemConsultaPlanes.Size = new Size(144, 22);
             menuItemConsultaPlanes.Text = "Consulta";
             menuItemConsultaPlanes.Click += menuItemConsultaPlanes_Click;
             // 
@@ -563,34 +606,34 @@
             // 
             materiasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuItemAltaMaterias, menuItemBajaMaterias, menuItemModificacionMaterias, menuItemConsultaMaterias });
             materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            materiasToolStripMenuItem.Size = new Size(135, 24);
+            materiasToolStripMenuItem.Size = new Size(119, 22);
             materiasToolStripMenuItem.Text = "Materias";
             // 
             // menuItemAltaMaterias
             // 
             menuItemAltaMaterias.Name = "menuItemAltaMaterias";
-            menuItemAltaMaterias.Size = new Size(179, 26);
+            menuItemAltaMaterias.Size = new Size(144, 22);
             menuItemAltaMaterias.Text = "Alta";
             menuItemAltaMaterias.Click += menuItemAltaMaterias_Click;
             // 
             // menuItemBajaMaterias
             // 
             menuItemBajaMaterias.Name = "menuItemBajaMaterias";
-            menuItemBajaMaterias.Size = new Size(179, 26);
+            menuItemBajaMaterias.Size = new Size(144, 22);
             menuItemBajaMaterias.Text = "Baja";
             menuItemBajaMaterias.Click += menuItemBajaMaterias_Click;
             // 
             // menuItemModificacionMaterias
             // 
             menuItemModificacionMaterias.Name = "menuItemModificacionMaterias";
-            menuItemModificacionMaterias.Size = new Size(179, 26);
+            menuItemModificacionMaterias.Size = new Size(144, 22);
             menuItemModificacionMaterias.Text = "Modificacion";
             menuItemModificacionMaterias.Click += menuItemModificacionMaterias_Click;
             // 
             // menuItemConsultaMaterias
             // 
             menuItemConsultaMaterias.Name = "menuItemConsultaMaterias";
-            menuItemConsultaMaterias.Size = new Size(179, 26);
+            menuItemConsultaMaterias.Size = new Size(144, 22);
             menuItemConsultaMaterias.Text = "Consulta";
             menuItemConsultaMaterias.Click += menuItemConsultaMaterias_Click;
             // 
@@ -603,33 +646,33 @@
             DropdownComisiones.MenuItemTextColor = Color.Empty;
             DropdownComisiones.Name = "rjDropdownComisiones";
             DropdownComisiones.PrimaryColor = Color.Empty;
-            DropdownComisiones.Size = new Size(166, 100);
+            DropdownComisiones.Size = new Size(145, 92);
             // 
             // menuItemAltaComisiones
             // 
             menuItemAltaComisiones.Name = "menuItemAltaComisiones";
-            menuItemAltaComisiones.Size = new Size(165, 24);
+            menuItemAltaComisiones.Size = new Size(144, 22);
             menuItemAltaComisiones.Text = "Alta";
             menuItemAltaComisiones.Click += menuItemAltaComisiones_Click;
             // 
             // menuItemBajaComisiones
             // 
             menuItemBajaComisiones.Name = "menuItemBajaComisiones";
-            menuItemBajaComisiones.Size = new Size(165, 24);
+            menuItemBajaComisiones.Size = new Size(144, 22);
             menuItemBajaComisiones.Text = "Baja";
             menuItemBajaComisiones.Click += menuItemBajaComisiones_Click;
             // 
             // menuItemModificacionComisiones
             // 
             menuItemModificacionComisiones.Name = "menuItemModificacionComisiones";
-            menuItemModificacionComisiones.Size = new Size(165, 24);
+            menuItemModificacionComisiones.Size = new Size(144, 22);
             menuItemModificacionComisiones.Text = "Modificacion";
             menuItemModificacionComisiones.Click += menuItemModificacionComisiones_Click;
             // 
             // menuItemConsultaComisiones
             // 
             menuItemConsultaComisiones.Name = "menuItemConsultaComisiones";
-            menuItemConsultaComisiones.Size = new Size(165, 24);
+            menuItemConsultaComisiones.Size = new Size(144, 22);
             menuItemConsultaComisiones.Text = "Consulta";
             menuItemConsultaComisiones.Click += menuItemConsultaComisiones_Click;
             // 
@@ -642,33 +685,33 @@
             DropdownCursos.MenuItemTextColor = Color.Empty;
             DropdownCursos.Name = "rjDropdownCursos";
             DropdownCursos.PrimaryColor = Color.Empty;
-            DropdownCursos.Size = new Size(166, 100);
+            DropdownCursos.Size = new Size(145, 92);
             // 
             // menuItemAltaCursos
             // 
             menuItemAltaCursos.Name = "menuItemAltaCursos";
-            menuItemAltaCursos.Size = new Size(165, 24);
+            menuItemAltaCursos.Size = new Size(144, 22);
             menuItemAltaCursos.Text = "Alta";
             menuItemAltaCursos.Click += menuItemAltaCursos_Click;
             // 
             // menuItemBajaCursos
             // 
             menuItemBajaCursos.Name = "menuItemBajaCursos";
-            menuItemBajaCursos.Size = new Size(165, 24);
+            menuItemBajaCursos.Size = new Size(144, 22);
             menuItemBajaCursos.Text = "Baja";
             menuItemBajaCursos.Click += menuItemBajaCursos_Click;
             // 
             // menuItemModificacionCursos
             // 
             menuItemModificacionCursos.Name = "menuItemModificacionCursos";
-            menuItemModificacionCursos.Size = new Size(165, 24);
+            menuItemModificacionCursos.Size = new Size(144, 22);
             menuItemModificacionCursos.Text = "Modificacion";
             menuItemModificacionCursos.Click += menuItemModificacionCursos_Click;
             // 
             // menuItemConsultaCursos
             // 
             menuItemConsultaCursos.Name = "menuItemConsultaCursos";
-            menuItemConsultaCursos.Size = new Size(165, 24);
+            menuItemConsultaCursos.Size = new Size(144, 22);
             menuItemConsultaCursos.Text = "Consulta";
             menuItemConsultaCursos.Click += menuItemConsultaCursos_Click;
             // 
@@ -692,7 +735,7 @@
             lblTipoUsuario.ForeColor = Color.Gainsboro;
             lblTipoUsuario.Location = new Point(335, 60);
             lblTipoUsuario.Name = "lblTipoUsuario";
-            lblTipoUsuario.Size = new Size(104, 20);
+            lblTipoUsuario.Size = new Size(89, 17);
             lblTipoUsuario.TabIndex = 4;
             lblTipoUsuario.Text = "Tipo Usuario";
             // 
@@ -702,7 +745,7 @@
             lblEmail.ForeColor = Color.Gainsboro;
             lblEmail.Location = new Point(335, 40);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(51, 20);
+            lblEmail.Size = new Size(42, 17);
             lblEmail.TabIndex = 3;
             lblEmail.Text = "Email";
             // 
@@ -712,7 +755,7 @@
             lblNombreApellido.ForeColor = Color.Gainsboro;
             lblNombreApellido.Location = new Point(335, 20);
             lblNombreApellido.Name = "lblNombreApellido";
-            lblNombreApellido.Size = new Size(145, 20);
+            lblNombreApellido.Size = new Size(123, 17);
             lblNombreApellido.TabIndex = 2;
             lblNombreApellido.Text = "Nombre y Apellido";
             // 
@@ -730,51 +773,9 @@
             iconPictureBox1.TabIndex = 1;
             iconPictureBox1.TabStop = false;
             // 
-            // btnInscripcionACursos
-            // 
-            btnInscripcionACursos.Dock = DockStyle.Top;
-            btnInscripcionACursos.FlatAppearance.BorderSize = 0;
-            btnInscripcionACursos.FlatStyle = FlatStyle.Flat;
-            btnInscripcionACursos.ForeColor = Color.Gainsboro;
-            btnInscripcionACursos.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
-            btnInscripcionACursos.IconColor = Color.Gainsboro;
-            btnInscripcionACursos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnInscripcionACursos.IconSize = 40;
-            btnInscripcionACursos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInscripcionACursos.Location = new Point(0, 480);
-            btnInscripcionACursos.Name = "btnInscripcionACursos";
-            btnInscripcionACursos.Padding = new Padding(10, 0, 30, 0);
-            btnInscripcionACursos.Size = new Size(229, 60);
-            btnInscripcionACursos.TabIndex = 14;
-            btnInscripcionACursos.Text = "Inscripcion a Cursos";
-            btnInscripcionACursos.TextAlign = ContentAlignment.MiddleLeft;
-            btnInscripcionACursos.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnInscripcionACursos.UseVisualStyleBackColor = true;
-            // 
-            // btnDocentesXCurso
-            // 
-            btnDocentesXCurso.Dock = DockStyle.Top;
-            btnDocentesXCurso.FlatAppearance.BorderSize = 0;
-            btnDocentesXCurso.FlatStyle = FlatStyle.Flat;
-            btnDocentesXCurso.ForeColor = Color.Gainsboro;
-            btnDocentesXCurso.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
-            btnDocentesXCurso.IconColor = Color.Gainsboro;
-            btnDocentesXCurso.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDocentesXCurso.IconSize = 40;
-            btnDocentesXCurso.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDocentesXCurso.Location = new Point(0, 540);
-            btnDocentesXCurso.Name = "btnDocentesXCurso";
-            btnDocentesXCurso.Padding = new Padding(10, 0, 30, 0);
-            btnDocentesXCurso.Size = new Size(229, 60);
-            btnDocentesXCurso.TabIndex = 15;
-            btnDocentesXCurso.Text = "Docentes por curso";
-            btnDocentesXCurso.TextAlign = ContentAlignment.MiddleLeft;
-            btnDocentesXCurso.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnDocentesXCurso.UseVisualStyleBackColor = true;
-            // 
             // FormMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1329, 747);
             Controls.Add(panelChildForm);

@@ -69,3 +69,15 @@ L:\lotar\UTN\3 Año\.NET\repos\Academia\Entities\obj\Debug\net6.0\Entities.dll
 L:\lotar\UTN\3 Año\.NET\repos\Academia\Entities\obj\Debug\net6.0\refint\Entities.dll
 L:\lotar\UTN\3 Año\.NET\repos\Academia\Entities\obj\Debug\net6.0\Entities.pdb
 L:\lotar\UTN\3 Año\.NET\repos\Academia\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\NET\Academia-main\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\NET\Academia-main\Entities\bin\Debug\net6.0\Entities.dll
+D:\NET\Academia-main\Entities\bin\Debug\net6.0\Entities.pdb
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\Entities.dll
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\refint\Entities.dll
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\Entities.pdb
+D:\NET\Academia-main\Entities\obj\Debug\net6.0\ref\Entities.dll

@@ -10,6 +10,7 @@ namespace Entities
     {
         public static int _IdUsuario { get; set; }
         public static string _NombreUsuario { get; set; }
+        public static int _IdPersona { get; set; }
         public static string _Nombre { get; set; }   
         public static string _Apellido { get; set; }
         public static string _Email { get; set;}
