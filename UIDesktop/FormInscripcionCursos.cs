@@ -47,7 +47,7 @@ namespace UIDesktop
             Controller controller = new Controller();
             if (controller.getCursoXAlumno(idCurso))
             {
-                if (controller.inscribir(idCurso))
+                if (controller.inscribirAlumno(idCurso))
                 {
                     MessageBox.Show("Inscripcion cargada con exito");
                 }

@@ -132,6 +132,19 @@ namespace DataAccess
             }
         }
 
+        public bool inscribirDocente(int idCurso)
+        {
+            using (AcademiaDbContext context = new AcademiaDbContext())
+            {
+                DocentesCurso docentesCurso = new DocentesCurso();
+                docentesCurso.IdCurso = idCurso;
+                docentesCurso.IdDocente = UsuarioLoginCache._IdPersona;
+                docentesCurso.Cargo= null;
+                context.DocentesCursos.Add(docentesCurso);
+                return true;
+            }
+        }
+
         public bool getCursoXAlumno(int idCurso)
         {
             int idAlumno = UsuarioLoginCache._IdPersona;

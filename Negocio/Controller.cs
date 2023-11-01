@@ -7,6 +7,8 @@ using System.Data;
 using System.Data.SqlClient;
 using DataAccess;
 using Entities;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Dominio
 {
@@ -324,7 +326,7 @@ namespace Dominio
 
         //METODOS INSCRIPCION ALUMNO A CURSO//
 
-        public bool inscribir(int idCurso)
+        public bool inscribirAlumno(int idCurso)
         {
             return cursoDAO.inscribirAlumno(idCurso);
         }
@@ -337,6 +339,32 @@ namespace Dominio
         public bool getCursoXAlumno(int idCurso)
         {
             return cursoDAO.getCursoXAlumno(idCurso);
+        }
+
+        //FIN METODOS INSCRIPCION ALUMNO A CURSO//
+
+        //INICIO METODOS INSCRIPCION DOCENTE A CURSO//
+
+        public async Task<List<Curso>> cursosGetAll()
+        {
+            HttpClient httpClient = new HttpClient();
+            var response = await httpClient.GetAsync("https://localhost:7197/api/Cursos");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var cursos = JsonConvert.DeserializeObject<List<Curso>>(content);
+                return cursos;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public bool inscribirDocente(int idCurso)
+        {
+            return cursoDAO.inscribirDocente(idCurso) ;
         }
 
     }

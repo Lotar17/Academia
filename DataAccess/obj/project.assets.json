@@ -3740,19 +3740,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matia\\.nuget\\packages\\": {}
+    "C:\\Users\\lotar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matia\\Source\\Repos\\Academia\\DataAccess\\obj\\",
+      "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\lotar\\.nuget\\packages\\",
+      "outputPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3766,8 +3766,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\matia\\source\\repos\\Academia\\Entities\\Entities.csproj"
+            "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj": {
+              "projectPath": "L:\\lotar\\UTN\\3 Año\\.NET\\repos\\Academia\\Entities\\Entities.csproj"
             }
           }
         }
@@ -3823,7 +3823,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

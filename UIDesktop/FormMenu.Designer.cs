@@ -147,6 +147,7 @@
             btnDocentesXCurso.TextAlign = ContentAlignment.MiddleLeft;
             btnDocentesXCurso.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnDocentesXCurso.UseVisualStyleBackColor = true;
+            btnDocentesXCurso.Click += btnDocentesXCurso_Click;
             // 
             // btnInscripcionACursos
             // 

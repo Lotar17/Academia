@@ -317,5 +317,10 @@ namespace Academia
         {
             openChildForm(new FormInscripcionCursos());
         }
+
+        private void btnDocentesXCurso_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormDocentesCursos());
+        }
     }
 }
