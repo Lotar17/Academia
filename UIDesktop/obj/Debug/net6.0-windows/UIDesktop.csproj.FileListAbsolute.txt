@@ -703,3 +703,6 @@ L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDes
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.genruntimeconfig.cache
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\obj\Debug\net6.0-windows\ref\UIDesktop.dll
 L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Administrador\Source\Repos\Academia\UIDesktop\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Administrador\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormDocentesCursos.resources
+C:\Users\Administrador\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormInscripcionCursos.resources

@@ -128,6 +128,13 @@ namespace DataAccess
                 alumnosInscripcione.Condicion = "INSCRIPTO";
                 alumnosInscripcione.Nota = null;
                 context.AlumnosInscripciones.Add(alumnosInscripcione);
+                Curso cursoAActualizar = context.Cursos.Find(idCurso);
+                if (cursoAActualizar != null)
+                {
+                    cursoAActualizar.Cupo -= 1;
+
+                    context.SaveChanges();
+                }
                 return true;
             }
         }
@@ -151,7 +158,7 @@ namespace DataAccess
             using (AcademiaDbContext context = new AcademiaDbContext())
             {
                 var count = context.AlumnosInscripciones.Count(a => a.IdCurso == idCurso && a.IdAlumno == idAlumno);
-                if (count > 0)
+                if (count == 0)
                 {
                     return true;
                 }

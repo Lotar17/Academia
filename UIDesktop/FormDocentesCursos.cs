@@ -29,6 +29,8 @@ namespace UIDesktop
             dgv_Cursos.DataSource = cursos;
             dgv_Cursos.Columns["IdComisionNavigation"].Visible = false;
             dgv_Cursos.Columns["IdMateriaNavigation"].Visible = false;
+            dgv_Cursos.Columns["AlumnosInscripciones"].Visible = false;
+            dgv_Cursos.Columns["DocentesCursos"].Visible = false;
         }
 
         private void btn_Inscripcion_Click(object sender, EventArgs e)

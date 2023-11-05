@@ -12,14 +12,29 @@ using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
 using System.IO;
 using Entities;
+using Dominio;
 
 namespace UIDesktop
 {
     public partial class FormReporteCursos : Form
     {
+        private List<Curso> cursos;
+
         public FormReporteCursos()
         {
             InitializeComponent();
+            retrieveCursos();
+        }
+
+        public async void retrieveCursos()
+        {
+            Controller controller = new Controller();
+            cursos = await controller.cursosGetAll();
+            dgv_Cursos.DataSource = cursos;
+            dgv_Cursos.Columns["IdComisionNavigation"].Visible = false;
+            dgv_Cursos.Columns["IdMateriaNavigation"].Visible = false;
+            dgv_Cursos.Columns["AlumnosInscripciones"].Visible = false;
+            dgv_Cursos.Columns["DocentesCursos"].Visible = false;
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
@@ -33,17 +48,17 @@ namespace UIDesktop
             paginahtml_text = paginahtml_text.Replace("@fecha", DateTime.Now.ToString("dd/MM/yyyy"));
 
             string filas = string.Empty;
-            foreach (DataGridViewRow row in dtgvCursos.Rows)
+            Controller controller = new Controller();
+            foreach (DataGridViewRow row in dgv_Cursos.Rows)
             {
                 filas += "<tr>";
-                filas += "<td>" + row.Cells["anio_calendario"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["materia"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["descripcion"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["comision"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["cupo"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["AnioCalendario"].Value.ToString() + "</td>";
+                filas += "<td>" + controller.materiaGetOne(int.Parse(row.Cells["IdMateria"].Value.ToString())).DescMateria + "</td>";
+                filas += "<td>" + controller.comisionGetOne(int.Parse(row.Cells["IdComision"].Value.ToString())).DescComision + "</td>";
+                filas += "<td>" + row.Cells["Cupo"].Value.ToString() + "</td>";
                 filas += "</tr>";
             }
-            paginahtml_text = paginahtml_text.Replace("@FILAS", filas);
+            paginahtml_text = paginahtml_text.Replace("@filas", filas);
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
@@ -53,12 +68,9 @@ namespace UIDesktop
                     PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
                     pdfDoc.Open();
                     pdfDoc.Add(new Phrase(""));
-                    //Agregamos la imagen del banner al documento
                     iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.Rosario_Central_logo, System.Drawing.Imaging.ImageFormat.Png);
                     img.ScaleToFit(60, 60);
                     img.Alignment = iTextSharp.text.Image.UNDERLYING;
-
-                    //img.SetAbsolutePosition(10,100);
                     img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 60);
                     pdfDoc.Add(img);
                     using (StringReader sr = new StringReader(paginahtml_text))

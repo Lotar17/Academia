@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             btnImprimir = new Button();
-            dtgvCursos = new DataGridView();
-            ID = new DataGridViewTextBoxColumn();
-            nombre_usuario = new DataGridViewTextBoxColumn();
-            Habilitado = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dtgvCursos).BeginInit();
+            dgv_Cursos = new DataGridView();
+            lbl_Reporte = new Label();
+            lbl_DescEspecialidad = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgv_Cursos).BeginInit();
             SuspendLayout();
             // 
             // btnImprimir
@@ -50,84 +49,86 @@
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(142, 56);
             btnImprimir.TabIndex = 12;
-            btnImprimir.Text = "Cancelar";
+            btnImprimir.Text = "Imprimir";
             btnImprimir.UseVisualStyleBackColor = false;
             btnImprimir.Click += btnImprimir_Click;
             // 
-            // dtgvCursos
+            // dgv_Cursos
             // 
-            dtgvCursos.AllowUserToAddRows = false;
-            dtgvCursos.AllowUserToDeleteRows = false;
-            dtgvCursos.AllowUserToOrderColumns = true;
-            dtgvCursos.AllowUserToResizeColumns = false;
-            dtgvCursos.AllowUserToResizeRows = false;
-            dtgvCursos.Anchor = AnchorStyles.None;
-            dtgvCursos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtgvCursos.BackgroundColor = Color.FromArgb(32, 30, 45);
-            dtgvCursos.BorderStyle = BorderStyle.Fixed3D;
-            dtgvCursos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.Transparent;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dtgvCursos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dtgvCursos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgvCursos.Columns.AddRange(new DataGridViewColumn[] { ID, nombre_usuario, Habilitado });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.Transparent;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle2.SelectionBackColor = Color.Transparent;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dtgvCursos.DefaultCellStyle = dataGridViewCellStyle2;
-            dtgvCursos.EnableHeadersVisualStyles = false;
-            dtgvCursos.GridColor = Color.Gainsboro;
-            dtgvCursos.Location = new Point(273, 137);
-            dtgvCursos.MultiSelect = false;
-            dtgvCursos.Name = "dtgvCursos";
-            dtgvCursos.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.Transparent;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dtgvCursos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dtgvCursos.RowHeadersVisible = false;
-            dtgvCursos.RowHeadersWidth = 51;
-            dtgvCursos.RowTemplate.Height = 25;
-            dtgvCursos.ShowCellErrors = false;
-            dtgvCursos.ShowCellToolTips = false;
-            dtgvCursos.ShowEditingIcon = false;
-            dtgvCursos.ShowRowErrors = false;
-            dtgvCursos.Size = new Size(479, 205);
-            dtgvCursos.TabIndex = 23;
+            dgv_Cursos.AllowUserToAddRows = false;
+            dgv_Cursos.AllowUserToDeleteRows = false;
+            dgv_Cursos.AllowUserToOrderColumns = true;
+            dgv_Cursos.AllowUserToResizeColumns = false;
+            dgv_Cursos.AllowUserToResizeRows = false;
+            dgv_Cursos.Anchor = AnchorStyles.None;
+            dgv_Cursos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv_Cursos.BackgroundColor = Color.FromArgb(32, 30, 45);
+            dgv_Cursos.BorderStyle = BorderStyle.Fixed3D;
+            dgv_Cursos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.Transparent;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dgv_Cursos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dgv_Cursos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.Transparent;
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = Color.Gainsboro;
+            dataGridViewCellStyle8.SelectionBackColor = Color.Transparent;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            dgv_Cursos.DefaultCellStyle = dataGridViewCellStyle8;
+            dgv_Cursos.EnableHeadersVisualStyles = false;
+            dgv_Cursos.GridColor = Color.Gainsboro;
+            dgv_Cursos.Location = new Point(273, 137);
+            dgv_Cursos.MultiSelect = false;
+            dgv_Cursos.Name = "dgv_Cursos";
+            dgv_Cursos.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.Transparent;
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            dgv_Cursos.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dgv_Cursos.RowHeadersVisible = false;
+            dgv_Cursos.RowHeadersWidth = 51;
+            dgv_Cursos.RowTemplate.Height = 25;
+            dgv_Cursos.ShowCellErrors = false;
+            dgv_Cursos.ShowCellToolTips = false;
+            dgv_Cursos.ShowEditingIcon = false;
+            dgv_Cursos.ShowRowErrors = false;
+            dgv_Cursos.Size = new Size(479, 205);
+            dgv_Cursos.TabIndex = 23;
             // 
-            // ID
+            // lbl_Reporte
             // 
-            ID.HeaderText = "ID";
-            ID.MinimumWidth = 6;
-            ID.Name = "ID";
-            ID.ReadOnly = true;
+            lbl_Reporte.Anchor = AnchorStyles.None;
+            lbl_Reporte.AutoSize = true;
+            lbl_Reporte.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_Reporte.ForeColor = Color.Gainsboro;
+            lbl_Reporte.Location = new Point(109, 46);
+            lbl_Reporte.Name = "lbl_Reporte";
+            lbl_Reporte.Size = new Size(228, 29);
+            lbl_Reporte.TabIndex = 45;
+            lbl_Reporte.Text = "Reportes de Cursos";
             // 
-            // nombre_usuario
+            // lbl_DescEspecialidad
             // 
-            nombre_usuario.HeaderText = "Nombre de Usuario";
-            nombre_usuario.MinimumWidth = 6;
-            nombre_usuario.Name = "nombre_usuario";
-            nombre_usuario.ReadOnly = true;
-            // 
-            // Habilitado
-            // 
-            Habilitado.HeaderText = "Habilitado";
-            Habilitado.MinimumWidth = 6;
-            Habilitado.Name = "Habilitado";
-            Habilitado.ReadOnly = true;
+            lbl_DescEspecialidad.Anchor = AnchorStyles.None;
+            lbl_DescEspecialidad.AutoSize = true;
+            lbl_DescEspecialidad.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_DescEspecialidad.ForeColor = Color.Gainsboro;
+            lbl_DescEspecialidad.Location = new Point(109, 93);
+            lbl_DescEspecialidad.Name = "lbl_DescEspecialidad";
+            lbl_DescEspecialidad.Size = new Size(392, 17);
+            lbl_DescEspecialidad.TabIndex = 46;
+            lbl_DescEspecialidad.Text = "Se generara un reporte en PDF con la siguiente informacion:";
             // 
             // FormReporteCursos
             // 
@@ -135,21 +136,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
             ClientSize = new Size(1063, 608);
-            Controls.Add(dtgvCursos);
+            Controls.Add(lbl_DescEspecialidad);
+            Controls.Add(lbl_Reporte);
+            Controls.Add(dgv_Cursos);
             Controls.Add(btnImprimir);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FormReporteCursos";
             Text = "Reporte de Cursos";
-            ((System.ComponentModel.ISupportInitialize)dtgvCursos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_Cursos).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btnImprimir;
-        private DataGridView dtgvCursos;
-        private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn nombre_usuario;
-        private DataGridViewTextBoxColumn Habilitado;
+        private DataGridView dgv_Cursos;
+        private Label lbl_Reporte;
+        private Label lbl_DescEspecialidad;
     }
 }

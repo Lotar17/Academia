@@ -16,6 +16,11 @@ namespace Academia
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelSideMenu.Controls.Add(leftBorderBtn);
+
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void Academia_Load(object sender, EventArgs e)          //carga los dropdown

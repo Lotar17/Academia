@@ -275,7 +275,6 @@
         private Label label1;
         private Button btnAceptar;
         private Button btnCancelar;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label lbl_nombreapellido;
         private Label lbl_email;
         private Label lbl_telefono;

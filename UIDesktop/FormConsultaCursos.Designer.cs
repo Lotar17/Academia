@@ -111,7 +111,7 @@
             ipb_Usuario.Anchor = AnchorStyles.None;
             ipb_Usuario.BackColor = Color.FromArgb(32, 30, 45);
             ipb_Usuario.ForeColor = Color.Gainsboro;
-            ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
             ipb_Usuario.IconColor = Color.Gainsboro;
             ipb_Usuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             ipb_Usuario.IconSize = 100;

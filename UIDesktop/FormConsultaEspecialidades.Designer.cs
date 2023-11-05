@@ -49,10 +49,9 @@
             panel1.Controls.Add(ipb_Usuario);
             panel1.Controls.Add(lbl_DescEspecialidad);
             panel1.Controls.Add(lbl_Id);
-            panel1.Location = new Point(659, 157);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(577, 118);
             panel1.Name = "panel1";
-            panel1.Size = new Size(476, 340);
+            panel1.Size = new Size(417, 256);
             panel1.TabIndex = 28;
             panel1.Visible = false;
             // 
@@ -61,14 +60,13 @@
             ipb_Usuario.Anchor = AnchorStyles.None;
             ipb_Usuario.BackColor = Color.FromArgb(32, 30, 45);
             ipb_Usuario.ForeColor = Color.Gainsboro;
-            ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            ipb_Usuario.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
             ipb_Usuario.IconColor = Color.Gainsboro;
             ipb_Usuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            ipb_Usuario.IconSize = 114;
-            ipb_Usuario.Location = new Point(336, 23);
-            ipb_Usuario.Margin = new Padding(3, 4, 3, 4);
+            ipb_Usuario.IconSize = 100;
+            ipb_Usuario.Location = new Point(294, 17);
             ipb_Usuario.Name = "ipb_Usuario";
-            ipb_Usuario.Size = new Size(114, 133);
+            ipb_Usuario.Size = new Size(100, 100);
             ipb_Usuario.TabIndex = 23;
             ipb_Usuario.TabStop = false;
             ipb_Usuario.Visible = false;
@@ -78,9 +76,9 @@
             lbl_DescEspecialidad.Anchor = AnchorStyles.None;
             lbl_DescEspecialidad.AutoSize = true;
             lbl_DescEspecialidad.ForeColor = Color.Gainsboro;
-            lbl_DescEspecialidad.Location = new Point(17, 288);
+            lbl_DescEspecialidad.Location = new Point(15, 216);
             lbl_DescEspecialidad.Name = "lbl_DescEspecialidad";
-            lbl_DescEspecialidad.Size = new Size(215, 20);
+            lbl_DescEspecialidad.Size = new Size(168, 15);
             lbl_DescEspecialidad.TabIndex = 3;
             lbl_DescEspecialidad.Text = "Descripcion de la especialidad:";
             lbl_DescEspecialidad.Visible = false;
@@ -90,9 +88,9 @@
             lbl_Id.Anchor = AnchorStyles.None;
             lbl_Id.AutoSize = true;
             lbl_Id.ForeColor = Color.Gainsboro;
-            lbl_Id.Location = new Point(17, 251);
+            lbl_Id.Location = new Point(15, 188);
             lbl_Id.Name = "lbl_Id";
-            lbl_Id.Size = new Size(27, 20);
+            lbl_Id.Size = new Size(21, 15);
             lbl_Id.TabIndex = 0;
             lbl_Id.Text = "ID:";
             lbl_Id.Visible = false;
@@ -103,9 +101,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Gainsboro;
-            label5.Location = new Point(223, 157);
+            label5.Location = new Point(195, 118);
             label5.Name = "label5";
-            label5.Size = new Size(383, 36);
+            label5.Size = new Size(313, 29);
             label5.TabIndex = 27;
             label5.Text = "Consulta de Especialidades";
             // 
@@ -115,9 +113,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(234, 309);
+            label1.Location = new Point(205, 232);
             label1.Name = "label1";
-            label1.Size = new Size(313, 20);
+            label1.Size = new Size(264, 17);
             label1.TabIndex = 25;
             label1.Text = "Ingrese el ID de la especialidad a buscar";
             // 
@@ -128,10 +126,9 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAceptar.ForeColor = Color.Gainsboro;
-            btnAceptar.Location = new Point(679, 580);
-            btnAceptar.Margin = new Padding(3, 4, 3, 4);
+            btnAceptar.Location = new Point(594, 435);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(162, 75);
+            btnAceptar.Size = new Size(142, 56);
             btnAceptar.TabIndex = 24;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -144,10 +141,9 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Gainsboro;
-            btnCancelar.Location = new Point(399, 580);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(349, 435);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(162, 75);
+            btnCancelar.Size = new Size(142, 56);
             btnCancelar.TabIndex = 23;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -155,25 +151,25 @@
             // nud_Id
             // 
             nud_Id.Anchor = AnchorStyles.None;
-            nud_Id.Location = new Point(316, 343);
+            nud_Id.Location = new Point(276, 257);
+            nud_Id.Margin = new Padding(3, 2, 3, 2);
             nud_Id.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             nud_Id.Name = "nud_Id";
-            nud_Id.Size = new Size(150, 27);
+            nud_Id.Size = new Size(131, 23);
             nud_Id.TabIndex = 29;
             // 
             // FormConsultaEspecialidades
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 30, 45);
-            ClientSize = new Size(1215, 749);
+            ClientSize = new Size(1063, 562);
             Controls.Add(nud_Id);
             Controls.Add(panel1);
             Controls.Add(label5);
             Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormConsultaEspecialidades";
             Text = "FormConsultaEspecialidades";
             panel1.ResumeLayout(false);
