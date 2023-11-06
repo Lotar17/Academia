@@ -27,7 +27,7 @@ namespace UIDesktop
             lbl_NombreUsuario.Text = "Nombre de Usuario:";
             lbl_Habilitado.Text = "Estado:";
             UsuarioADO usuario = controller.usuarioGetOne((int)nud_Id.Value);
-            if (usuario is null)
+            if (usuario.IdPersona == 0)
             {
                 ipb_Usuario.Visible = false;
                 panel1.Visible = false;

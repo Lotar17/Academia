@@ -200,8 +200,7 @@ namespace DataAccess
                         usuario.NombreUsuario = nombreUsuario;
                         usuario.Habilitado = habilitado;
                         usuario.IdPersona = idPersona;
-                    }
-                    
+                    }      
                 }
             }
             return usuario;

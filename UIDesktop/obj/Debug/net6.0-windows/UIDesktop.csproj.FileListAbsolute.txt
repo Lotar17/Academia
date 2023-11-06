@@ -706,3 +706,4 @@ L:\lotar\UTN\3 Año\.NET\repos\Academia\UIDesktop\bin\Debug\net6.0-windows\Newto
 C:\Users\Administrador\Source\Repos\Academia\UIDesktop\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\Administrador\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormDocentesCursos.resources
 C:\Users\Administrador\Source\Repos\Academia\UIDesktop\obj\Debug\net6.0-windows\UIDesktop.FormInscripcionCursos.resources
+C:\Users\matia\Source\Repos\Academia\UIDesktop\bin\Debug\net6.0-windows\Newtonsoft.Json.dll

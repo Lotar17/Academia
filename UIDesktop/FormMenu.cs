@@ -306,7 +306,7 @@ namespace Academia
             lblNombreApellido.Text = UsuarioLoginCache._Apellido + ", " + UsuarioLoginCache._Nombre;
             lblEmail.Text = UsuarioLoginCache._Email;
             lblTipoUsuario.Text = "Tipo de usuario: " + UsuarioLoginCache._TipoUsuario;
-            if (UsuarioLoginCache._TipoUsuario == "Alumno" || UsuarioLoginCache._TipoUsuario == "Profesor")
+            if (UsuarioLoginCache._TipoUsuario == "Alumno")
             {
                 btnMenuUsuarios.Visible = false;
                 btnMenuAlumnos.Visible = false;
@@ -315,6 +315,17 @@ namespace Academia
                 btnMenuPlanesYMaterias.Visible = false;
                 btnMenuComisiones.Visible = false;
                 btnMenuCursos.Visible = false;
+            }
+            else if (UsuarioLoginCache._TipoUsuario == "Docente")
+            {
+                btnMenuUsuarios.Visible = false;
+                btnMenuAlumnos.Visible = false;
+                btnMenuEspecialidades.Visible = false;
+                btnMenuProfesores.Visible = false;
+                btnMenuPlanesYMaterias.Visible = false;
+                btnMenuComisiones.Visible = false;
+                btnMenuCursos.Visible = false;
+                btnInscripcionACursos.Visible = false;
             }
         }
 
